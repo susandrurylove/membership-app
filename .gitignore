@@ -1,3 +1,7 @@
 .DS_Store
 .attached-images/
 node_modules/
+
+.claude*
+*.prompt.txt
+*.log
