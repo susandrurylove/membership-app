@@ -5,3 +5,5 @@ node_modules/
 .claude*
 *.prompt.txt
 *.log
+
+.ombrain-*
