@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilitator Manual — The Elevate Your Body To Love Cards</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  body { background:#fff; }
+  .doc { max-width: 820px; margin: 0 auto; padding: 40px 32px 80px; }
+  .doc h1 { text-align:center; color:var(--gold-deep); }
+  .doc h2 { color:var(--gold-deep); border-bottom:1px solid var(--line); padding-bottom:6px; margin-top:42px; }
+  .sys { break-inside: avoid; margin: 22px 0; padding: 18px 22px; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; }
+  .sys h3 { margin:0 0 2px; }
+  .sys .theme { font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--sage); }
+  .sys .lab { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-deep); font-weight:600; }
+  .sys p { margin:2px 0 10px; font-size:1rem; }
+  .noprint { text-align:center; margin:20px 0 30px; }
+  @media print { .noprint, header.site, footer.site { display:none !important; } .sys{ box-shadow:none; } body{font-size:12pt;} }
+</style>
+</head>
+<body>
+<div class="doc" id="doc">
+  <div class="noprint">
+    <a class="btn btn-gold" onclick="window.print()">Print / Save as PDF</a>
+    <a class="btn btn-ghost" href="index.html#facilitator">← Back to the program</a>
+  </div>
+
+  <h1>The Elevate Your Body To Love</h1>
+  <p class="center" style="font-style:italic;color:var(--ink-soft)">Certified Facilitator Manual · A Journey of Transformation, Healing and Empowerment · Susan Drury</p>
+
+  <h2>A Word to the Facilitator</h2>
+  <p>Welcome, dear facilitator. In your hands is more than a deck — it is a map of wisdom hidden inside every cell of the body. Your role is not to fix, diagnose, or advise. It is to hold a sacred container in which each person meets their own embodied wisdom, in the light of reverence, curiosity, and compassion. You guide; their body teaches.</p>
+
+  <h2>The Core Agreement</h2>
+  <p>Everyone speaks only to their own experience. No advice. No feedback. No fixing. What is shared in the circle is also medicine for the one listening. Confidentiality is honored. Every person's pace is respected — nothing needs to be resolved by dinner time.</p>
+
+  <h2>Creating Sacred Space</h2>
+  <p>Find at least ten uninterrupted minutes in a quiet place. Light a candle, lay a cloth, or simply take three deep breaths together. Set intention aloud. The more intention you bring, the more receptive the room becomes.</p>
+
+  <h2>The 3-Card Process (Purpose → Inquiry → Transcendence)</h2>
+  <p>For each card, in order: (1) Read slowly, aloud. (2) Close the eyes; notice sensations, emotions, memories. (3) Place a hand on the body area and say: <em>"I see you. I hear you. Thank you."</em> (4) Write down one thing that stood out. (5) When ready, move to the next card. For Transcendence, speak the statement in first person, as if already true — invite the cells of that part to re-member this as truth.</p>
+
+  <h2>Facilitating a Circle — Three Rounds</h2>
+  <p><strong>Round 1 · Purpose:</strong> each person intuitively chooses a system, reads the Purpose card, shares the title, image, and message aloud with any personal relevance. Others respond in a single sentence of relevance or not.<br>
+  <strong>Round 2 · Inquiry:</strong> same format with the Inquiry card.<br>
+  <strong>Round 3 · Transcendence:</strong> each shares relevance and any new understanding gained — here each person's wisdom becomes a catalyst for others. Close with group silence, then a round of appreciation. Allow an hour or more, with journaling time between rounds.</p>
+
+  <h2>Safety & Referral (Non-Negotiable)</h2>
+  <p>These cards support healing; they do not replace professional care. If a participant experiences overwhelming distress, dissociation, panic, or thoughts of self-harm, gently pause the process and direct them to professional support — a licensed therapist, a crisis line (<strong>988</strong> in Canada & the US), or the nearest emergency room. Recognizing the need for additional support is itself an act of wisdom. Remind participants: not all healing is expressed on the physical level, and that is okay.</p>
+
+  <h2>The 21 Body Systems — Facilitator Reference</h2>
+  <p class="muted" style="font-size:.95rem">Each entry: Purpose (what it does), Inquiry (what it may mirror), Transcendence (the elevated truth to speak aloud).</p>
+  <div id="systems"></div>
+
+  <h2>A Blessing for Your Journey</h2>
+  <p style="font-style:italic;text-align:center;white-space:pre-line;color:var(--ink-soft)">May you honor the temple of your body.
+May you listen deeply to its whispers and its roars.
+May you release with grace all that no longer serves.
+May you embrace with love all that you are becoming.
+And may you know yourself as the radiant, powerful, beloved being you have always been.
+
+With infinite love and support on your journey, Susan</p>
+</div>
+
+<script>
+const SYS = [
+["Stomach","Metabolizing experience","First organ of digestion — secretes acid to break food down for nourishment.","What can't be 'stomached'; an overly acidic view that leaves a sour taste or 'makes you sick'.","I recognize that any experience can be digested and provide nourishment toward my highest evolution."],
+["Hips & Legs","Stability & flexibility","Lower limbs that anchor you to earthly life with stability, mobility, and flexibility.","Taking a 'stance' of inflexibility; feeling no 'leg to stand on' or blocked from moving forward.","I stand, walk and dance in harmony with others, moving freely forward on my own singular path."],
+["Lungs","Life-force exchange","Inspire and inflate you with breath; exhale what is toxic to your inner environment.","Deflated by sadness or suffocated by a situation; unable to draw in inspiration or exhale what's toxic.","I freely inhale the inspiration that supports my life; I exhale what is not mine to carry."],
+["Liver–Gallbladder","Anger & discernment","Metabolizes, filters and detoxifies what you ingest; secretes bile for further processing.","Experiences that 'gall' you; anger and bitterness hardening into 'stones' of indignation.","I fully metabolize all I've taken in, filtering out what is not life-supporting for myself or others."],
+["Hands","Giving & receiving","Elegant instruments extending from the heart — the conduit of giving and receiving love through touch.","Feeling imbalanced in 'handling things'; heavy-handedness; becoming 'out of touch'.","I mindfully balance all I handle; I am open-handed in giving and receiving, for love has no end."],
+["Eyes","Perception & understanding","Organ of sight and light — the windows through which you perceive and connect with your world.","Unwilling to 'see' the way forward out of fear; trouble seeing 'eye to eye'; feeling over-looked.","The light of higher consciousness illuminates my vision; I see through eyes lit by love."],
+["Vocal Cords","Authentic expression","Your vehicle for spoken expression and the acoustic vibrations you send into the world.","Difficulty speaking your authentic self; feeling you have no voice; over- or under-voicing.","I speak my highest truth and authenticity with kindness and love, rippling blessings outward."],
+["Thyroid","Rhythm & transformation","Butterfly-shaped gland governing energetic metabolism — the pace of self-replenishment and output.","Hypo: dampening for safety. Hyper: outpacing and exhausting the life force to prove worth.","I take action in sync with my Divinely-coordinated inner tempo, in harmony with my surroundings."],
+["Heart","Giving & receiving love","The first distinction of 'you' after conception; the central sun and two-way pump of circulation.","Disheartened or broken-hearted; pouring out life-blood without first filling your own chambers.","To and through me love flows — filling my own cup and overflowing in joyful generosity."],
+["Kidneys","Emotional balance","Balancer and cleanser of fluids; filters waste and adjusts the body's inner ocean.","Emotional overwhelm; victim consciousness and blame; fear hardening into stony stuckness.","Through my strength and wisdom I filter, balance and release all that arises in the river of my life."],
+["Bladder","Release & completion","Reservoir that holds filtered waste and releases it when the signal comes.","Feeling 'burned' by held-back emotion; too ashamed to 'let it flow'; resentment when endings disappoint.","I embrace full responsibility for my happiness; I lovingly release what is ready to be passed."],
+["Breasts","Nurture & femininity","The great symbol of the mother and of feminine expression; nourishment and sensitivity.","Too much mothering; losing self through over-investment; 'hard lumps' of grief around one's own mother.","I nurture others as is authentic for me; I rejoice in myself — beautiful, complete, and creative."],
+["Feet","Grounding & direction","Your intricate contact with the earth — flexibility to move, pivot, and bear your weight.","Feeling stuck or lead-footed; unsure which direction; ground crumbling 'beneath your feet'.","I ground within this generous earth and step forward in perfect timing on my blessed journey."],
+["Spine","Courage & communication","Lets you stand upright and stay supple; the central channel of communication through your being.","Feeling you have 'no backbone'; bending too far; self-determination 'dislocated' or 'pinched'.","I stand tall and also bend and stretch through every adventure, elevating each moment to its highest."],
+["Head","Consciousness & identity","The control center creating the experience you call your 'self', built on assumptions from the past.","Too much 'head knowledge' over intuition; negative self-judgement; fearful ancient assumptions.","I open to spacious understandings beyond my past; through higher guidance I realize infinite possibility."],
+["Face","Identity & authenticity","The surface you show the world — how you 'face' life through expression and contact.","Ashamed of the face you show; needing a 'mask'; 'saving face' rather than revealing your true self.","I delight in the many ways I show my face; the radiance of my soul shines through all my expressions."],
+["Nervous System","Safety & connection","Lightning-fast network directing safety responses along millions of neural pathways.","Over-reactive perception of danger; too 'wired' to settle; childhood circuits still short-circuiting you.","My nervous system rewires beyond old threats; messages of safety radiate through me into the world."],
+["Shoulders","Responsibility & extension","Ball-and-socket joints from which the arms extend, balancing strength and flexibility.","'Shouldering' beyond what's yours; left = emotional demands, right = duty to protect others.","I am stable yet flexible, knowing what is and isn't mine to carry; I give and receive with trust."],
+["Immune System","Identity & boundaries","Specialized cells patrolling to distinguish 'self' from 'other' and to attack, defend, or repair.","Endlessly attacking/defending against what you judge as 'other'; dwelling on old invasions; self-inflammation.","Healing is my highest purpose; ultimately there is nothing to attack or defend — I am One with all."],
+["Reproduction","Creation & sexuality","Your sacred creative and procreative center — the impetus of regeneration and passion.","Shame or disconnection from sexuality/creativity; ancestral wounds; feeling unsafe to fully open.","I honor my body as a sacred, generative vessel; I open and express the creative forces flowing through me."],
+["Web of Your Being","Unified wholeness","The energetic web connecting all systems into one unified, conscious whole.","Letting external voices 'conduct' you; denying parts of yourself; self-criticism shattering self-love.","I am the blessed conductor of all aspects of my reality — body, mind, emotion, spirit — in service to Self."]
+];
+document.getElementById('systems').innerHTML = SYS.map((s,i)=>`
+  <div class="sys">
+    <div class="theme">System ${i+1} · ${s[1]}</div>
+    <h3>${s[0]}</h3>
+    <p><span class="lab">Purpose</span> — ${s[2]}</p>
+    <p><span class="lab">Inquiry</span> — ${s[3]}</p>
+    <p><span class="lab">Transcendence</span> — <em>${s[4]}</em></p>
+  </div>`).join('');
+</script>
+</body>
+</html>

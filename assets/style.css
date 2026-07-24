@@ -1,0 +1,170 @@
+/* Susan Drury — Membership App
+   Aesthetic: lovely, divine, grounded. Cream ground, gold accents, serif voice. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  --cream: #faf8f4;
+  --cream-2: #f4efe6;
+  --ink: #2e2a24;
+  --ink-soft: #5b5346;
+  --gold: #c8a44d;
+  --gold-deep: #a9842f;
+  --sage: #8a9a7b;
+  --line: #e6ddcd;
+  --dark: #262019;
+  --dark-2: #322a20;
+  --shadow: 0 12px 40px rgba(70, 55, 30, 0.10);
+  --radius: 18px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --body: 'EB Garamond', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 19px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.15; color: var(--ink); }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 400; letter-spacing: .01em; }
+h2 { font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 400; }
+h3 { font-size: 1.5rem; }
+a { color: var(--gold-deep); text-decoration: none; }
+a:hover { color: var(--gold); }
+p { margin: 0 0 1rem; color: var(--ink-soft); }
+em { color: var(--ink); }
+
+.gold { color: var(--gold-deep); }
+.center { text-align: center; }
+.muted { color: var(--ink-soft); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+/* Header / nav */
+header.site {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(250, 248, 244, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.brand { font-family: var(--serif); font-size: 1.5rem; color: var(--gold-deep); letter-spacing: .02em; cursor: pointer; }
+.brand small { display: block; font-family: var(--body); font-size: .62rem; letter-spacing: .28em; text-transform: uppercase; color: var(--ink-soft); }
+.nav-links { display: flex; gap: 22px; align-items: center; }
+.nav-links a { font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
+.nav-links a:hover, .nav-links a.active { color: var(--gold-deep); }
+.menu-btn { display: none; background: none; border: 0; font-size: 1.6rem; color: var(--ink); cursor: pointer; }
+
+/* Hero */
+.hero { padding: 90px 0 70px; text-align: center; background:
+  radial-gradient(1200px 400px at 50% -10%, rgba(200,164,77,.10), transparent 60%); }
+.hero .eyebrow { letter-spacing: .3em; text-transform: uppercase; font-size: .72rem; color: var(--gold-deep); }
+.hero p.lede { font-size: 1.35rem; max-width: 640px; margin: 18px auto 0; font-style: italic; color: var(--ink-soft); }
+.sun { width: 58px; height: 58px; margin: 0 auto 20px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, #f3e2b0, var(--gold) 70%);
+  box-shadow: 0 0 0 8px rgba(200,164,77,.12), 0 0 40px rgba(200,164,77,.35); }
+
+/* Buttons */
+.btn { display: inline-block; padding: 13px 28px; border-radius: 999px; font-family: var(--serif);
+  font-size: 1.05rem; letter-spacing: .02em; cursor: pointer; border: 1px solid transparent; transition: .2s; }
+.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-deep)); color: #fff; box-shadow: var(--shadow); }
+.btn-gold:hover { color: #fff; filter: brightness(1.05); transform: translateY(-1px); }
+.btn-ghost { border-color: var(--gold); color: var(--gold-deep); background: transparent; }
+.btn-ghost:hover { background: rgba(200,164,77,.08); }
+
+/* Grid of feature cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px;
+  box-shadow: var(--shadow); transition: .22s; display: flex; flex-direction: column; }
+.card:hover { transform: translateY(-3px); border-color: var(--gold); }
+.card .tag { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-deep); }
+.card h3 { margin: 8px 0 6px; }
+.card p { font-size: .98rem; }
+.card .go { margin-top: auto; font-family: var(--serif); color: var(--gold-deep); font-size: 1.05rem; }
+
+/* Section */
+section.block { padding: 66px 0; }
+section.block.alt { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section-head { text-align: center; max-width: 640px; margin: 0 auto 40px; }
+.section-head .eyebrow { letter-spacing: .28em; text-transform: uppercase; font-size: .72rem; color: var(--gold-deep); }
+
+/* Daily Tao panel */
+.tao-panel { background: var(--dark); color: #efe7d6; border-radius: var(--radius); padding: 48px;
+  box-shadow: var(--shadow); position: relative; overflow: hidden; }
+.tao-panel:before { content: ""; position: absolute; inset: 0;
+  background: radial-gradient(700px 240px at 80% -20%, rgba(200,164,77,.22), transparent 60%); }
+.tao-panel * { position: relative; }
+.tao-panel .chapter { letter-spacing: .28em; text-transform: uppercase; font-size: .72rem; color: var(--gold); }
+.tao-panel h2 { color: #f6efdf; margin: 6px 0 18px; }
+.tao-verse { font-family: var(--serif); font-size: 1.5rem; font-style: italic; line-height: 1.5; color: #f2ead9; white-space: pre-line; }
+.tao-panel h4 { color: var(--gold); letter-spacing: .12em; text-transform: uppercase; font-size: .74rem; margin: 26px 0 6px; }
+.tao-panel p { color: #d9cfba; }
+
+/* Teaching / lesson lists */
+.teaching { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--gold);
+  border-radius: 14px; padding: 24px 26px; margin-bottom: 18px; box-shadow: var(--shadow); }
+.teaching h3 { margin: 0 0 6px; }
+.teaching .assignment { background: var(--cream-2); border-radius: 12px; padding: 14px 18px; margin-top: 14px; font-size: .98rem; }
+.teaching .assignment strong { color: var(--gold-deep); letter-spacing: .04em; }
+
+/* Body systems / accordion */
+.acc { border: 1px solid var(--line); border-radius: 14px; background: #fff; margin-bottom: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.acc summary { cursor: pointer; padding: 18px 22px; font-family: var(--serif); font-size: 1.35rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.acc summary::-webkit-details-marker { display: none; }
+.acc summary .theme { font-family: var(--body); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-deep); }
+.acc[open] summary { border-bottom: 1px solid var(--line); background: var(--cream); }
+.acc .body { padding: 6px 22px 22px; }
+.acc .body h4 { color: var(--gold-deep); letter-spacing: .1em; text-transform: uppercase; font-size: .72rem; margin: 16px 0 4px; }
+
+/* Lesson plan classes */
+.classcard { background:#fff; border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:var(--shadow); }
+.classcard .num { font-family:var(--serif); font-size:2.4rem; color:var(--gold); line-height:1; }
+.classcard h3 { margin:6px 0 10px; }
+.classcard ol { margin:0; padding-left:20px; }
+.classcard ol li { font-size:.95rem; margin-bottom:5px; color:var(--ink-soft); }
+
+/* Pricing */
+.tier { background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:34px; box-shadow:var(--shadow); text-align:center; }
+.tier.feature { border:2px solid var(--gold); }
+.tier .price { font-family:var(--serif); font-size:2.6rem; color:var(--gold-deep); }
+.tier .price small { font-size:1rem; color:var(--ink-soft); }
+.tier ul { list-style:none; padding:0; margin:18px 0; text-align:left; }
+.tier ul li { padding:8px 0; border-bottom:1px solid var(--line); font-size:.98rem; }
+.tier ul li:before { content:"✦"; color:var(--gold); margin-right:10px; }
+
+/* FAQ */
+.faq details { border-bottom:1px solid var(--line); padding:8px 0; }
+.faq summary { cursor:pointer; font-family:var(--serif); font-size:1.35rem; padding:14px 0; list-style:none; color:var(--ink); }
+.faq summary::-webkit-details-marker { display:none; }
+.faq summary:before { content:"＋"; color:var(--gold); margin-right:12px; }
+.faq details[open] summary:before { content:"－"; }
+.faq .a { padding: 0 0 18px 30px; }
+
+/* Blessing / footer */
+.blessing { text-align:center; font-family:var(--serif); font-style:italic; font-size:1.5rem; color:var(--ink-soft); max-width:640px; margin:0 auto; white-space:pre-line; }
+footer.site { background: var(--dark); color:#cdc3b0; padding:54px 0 30px; margin-top:20px; text-align:center; }
+footer.site .brand { color: var(--gold); }
+footer.site a { color:#e6dcc7; }
+footer.site .fine { font-size:.8rem; color:#9d947f; margin-top:18px; }
+
+/* Back link */
+.back { display:inline-block; margin: 30px 0 0; font-family:var(--serif); color:var(--gold-deep); }
+
+/* Utility spacing */
+.mt0{margin-top:0}.mb0{margin-bottom:0}.mt2{margin-top:2rem}.mb2{margin-bottom:2rem}
+.pill { display:inline-block; background:rgba(200,164,77,.12); color:var(--gold-deep); border-radius:999px; padding:4px 14px; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; }
+
+@media (max-width: 760px) {
+  .nav-links { position:fixed; inset:72px 0 auto 0; flex-direction:column; background:var(--cream);
+    border-bottom:1px solid var(--line); padding:20px 24px; gap:18px; transform:translateY(-140%); transition:.3s; }
+  .nav-links.open { transform:translateY(0); }
+  .menu-btn { display:block; }
+  .tao-panel { padding:30px; }
+  body { font-size:18px; }
+}
