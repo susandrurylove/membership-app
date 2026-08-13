@@ -4,23 +4,23 @@ const databaseUrl = process.env.DATABASE_URL;
 if (!databaseUrl) throw new Error("DATABASE_URL is required");
 
 const expectedTables = [
-  "activity_events",
-  "app_integrations",
-  "app_launch_grants",
-  "audit_events",
+  "audit_logs",
   "content_categories",
-  "course_enrollments",
-  "course_progress",
+  "course_lessons",
   "course_sections",
   "courses",
   "invitation_tokens",
-  "lessons",
+  "lesson_progress",
   "media_assets",
+  "member_activities",
+  "member_sessions",
   "memberships",
-  "password_credentials",
-  "session_tokens",
+  "password_reset_tokens",
+  "sso_launch_grants",
+  "teaching_assets",
   "teachings",
   "users",
+  "webhook_deliveries",
 ];
 
 const connection = await mysql.createConnection(databaseUrl);

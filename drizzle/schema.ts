@@ -141,7 +141,7 @@ export const mediaAssets = mysqlTable(
   {
     id: int("id").autoincrement().primaryKey(),
     kind: mysqlEnum("kind", ["video", "audio", "image", "document"]).notNull(),
-    storageProvider: varchar("storageProvider", { length: 32 }).default("s3").notNull(),
+    storageProvider: varchar("storageProvider", { length: 32 }).default("bunny").notNull(),
     storageKey: varchar("storageKey", { length: 512 }).notNull(),
     originalName: varchar("originalName", { length: 512 }).notNull(),
     mimeType: varchar("mimeType", { length: 160 }).notNull(),
@@ -387,4 +387,3 @@ export type Course = typeof courses.$inferSelect;
 export type CourseLesson = typeof courseLessons.$inferSelect;
 export type LessonProgress = typeof lessonProgress.$inferSelect;
 export type MediaAsset = typeof mediaAssets.$inferSelect;
-

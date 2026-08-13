@@ -1,0 +1,1 @@
+ALTER TABLE `media_assets` MODIFY COLUMN `storageProvider` varchar(32) NOT NULL DEFAULT 'bunny';
