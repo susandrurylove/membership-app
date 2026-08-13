@@ -1,34 +1,39 @@
 import { describe, expect, it } from "vitest";
+import type { TrpcContext } from "./_core/context";
+import { MEMBER_SESSION_COOKIE } from "./auth";
 import { appRouter } from "./routers";
 import { COOKIE_NAME } from "../shared/const";
-import type { TrpcContext } from "./_core/context";
 
 type CookieCall = {
   name: string;
   options: Record<string, unknown>;
 };
 
-type AuthenticatedUser = NonNullable<TrpcContext["user"]>;
-
 function createAuthContext(): { ctx: TrpcContext; clearedCookies: CookieCall[] } {
   const clearedCookies: CookieCall[] = [];
-
-  const user: AuthenticatedUser = {
-    id: 1,
-    openId: "sample-user",
-    email: "sample@example.com",
-    name: "Sample User",
-    loginMethod: "manus",
-    role: "user",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-    lastSignedIn: new Date(),
-  };
+  const now = new Date();
 
   const ctx: TrpcContext = {
-    user,
+    user: {
+      id: 1,
+      openId: "local_test_user",
+      email: "member@example.com",
+      name: "Portal Member",
+      loginMethod: "password",
+      passwordHash: null,
+      accountStatus: "active",
+      role: "user",
+      invitationAcceptedAt: now,
+      createdAt: now,
+      updatedAt: now,
+      lastSignedIn: now,
+    },
+    membership: null,
+    sessionTokenHash: null,
+    authMethod: "member",
     req: {
       protocol: "https",
+      secure: true,
       headers: {},
     } as TrpcContext["req"],
     res: {
@@ -42,21 +47,21 @@ function createAuthContext(): { ctx: TrpcContext; clearedCookies: CookieCall[] }
 }
 
 describe("auth.logout", () => {
-  it("clears the session cookie and reports success", async () => {
+  it("clears both the first-party and preview compatibility cookies", async () => {
     const { ctx, clearedCookies } = createAuthContext();
     const caller = appRouter.createCaller(ctx);
 
-    const result = await caller.auth.logout();
-
-    expect(result).toEqual({ success: true });
-    expect(clearedCookies).toHaveLength(1);
-    expect(clearedCookies[0]?.name).toBe(COOKIE_NAME);
+    await expect(caller.auth.logout()).resolves.toEqual({ success: true });
+    expect(clearedCookies.map(call => call.name)).toEqual([
+      MEMBER_SESSION_COOKIE,
+      COOKIE_NAME,
+    ]);
     expect(clearedCookies[0]?.options).toMatchObject({
-      maxAge: -1,
       secure: true,
-      sameSite: "none",
+      sameSite: "lax",
       httpOnly: true,
       path: "/",
     });
+    expect(clearedCookies[0]?.options).not.toHaveProperty("maxAge");
   });
 });

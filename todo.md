@@ -1,0 +1,31 @@
+# Project TODO
+
+- [x] Initialize the full-stack React, Express, tRPC, MySQL, and authenticated-user project scaffold.
+- [x] Audit SusanDrury.com typography, colors, spacing, imagery, navigation patterns, and reusable brand assets.
+- [x] Document the integration contract required from Elevate To Love, Enlightened Body, and Tao Interactive for short-lived SSO token exchange.
+- [x] Document app-specific launch URLs, audience values, confidential credentials, and callback behavior still required before production SSO activation.
+- [x] Define member, administrator, membership-status, content, course, lesson, progress, activity, media, and app-access domain models.
+- [x] Add MySQL schema definitions and generated forward migration scripts for all portal entities.
+- [x] Add Railway configuration, production build/start commands, health check, and environment-variable documentation.
+- [x] Implement secure login and logout using an authentication provider that is deployable on Railway.
+- [x] Implement reusable authenticated, active-member, and administrator-only server procedure guards.
+- [x] Enforce server-side paid-member authorization for every teachings, courses, progress, activity, media, and connected-app procedure.
+- [x] Add authorization tests for each protected feature router covering signed-out, inactive-member, active-member, and administrator states.
+- [x] Enforce client-side protected routing with explicit loading, signed-out, inactive-member, member, and administrator states.
+- [x] Build a SusanDrury.com-branded login and access-status experience.
+- [x] Build the personalized member dashboard with recent activity and quick-access cards.
+- [x] Build the teachings library with category filters and video, audio, image, text, and mixed-content viewers.
+- [x] Build course listings, course details, ordered lessons, member progress, and completion-state controls.
+- [x] Build secure short-lived SSO launch endpoints for Elevate To Love, Enlightened Body, and Tao Interactive.
+- [x] Prevent external app credentials and reusable signing secrets from reaching the browser or repository.
+- [x] Build Susan’s administrator dashboard and role-gated navigation.
+- [x] Build administrator member search, activation, suspension, tier assignment, and access-expiration controls.
+- [x] Build administrator teaching creation, editing, categorization, publishing, ordering, and media-upload controls.
+- [x] Build administrator course and lesson creation, editing, publishing, ordering, and media controls.
+- [x] Add safe S3-compatible object-storage handling for uploaded media rather than storing file bytes in MySQL.
+- [x] Add purposeful empty states without fabricated teachings, courses, reviews, ratings, testimonials, or customer records.
+- [x] Add Vitest coverage for authorization, member status, course progress, admin permissions, and SSO token issuance.
+- [x] Run TypeScript checks, unit tests, production build, and migration validation.
+- [x] Verify the primary member and administrator journeys at desktop and mobile breakpoints.
+- [ ] Create the `susandrurylove/membership-app` GitHub repository and push the preliminary release.
+- [x] Document Railway MySQL provisioning, environment variables, migration execution, custom-domain setup for `membership.SusanDrury.com`, and the remaining external-app API inputs.
