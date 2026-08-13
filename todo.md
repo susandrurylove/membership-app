@@ -27,5 +27,5 @@
 - [x] Add Vitest coverage for authorization, member status, course progress, admin permissions, and SSO token issuance.
 - [x] Run TypeScript checks, unit tests, production build, and migration validation.
 - [x] Verify the primary member and administrator journeys at desktop and mobile breakpoints.
-- [ ] Create the `susandrurylove/membership-app` GitHub repository and push the preliminary release.
+- [x] Create the `susandrurylove/membership-app` GitHub repository and push the preliminary release.
 - [x] Document Railway MySQL provisioning, environment variables, migration execution, custom-domain setup for `membership.SusanDrury.com`, and the remaining external-app API inputs.
