@@ -37,12 +37,20 @@ try {
     throw new Error(`Missing required tables: ${missingTables.join(", ")}`);
   }
 
+  const [[mediaProviderColumn]] = await connection.query(
+    "SELECT COLUMN_DEFAULT AS columnDefault FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'media_assets' AND COLUMN_NAME = 'storageProvider'"
+  );
+  if (!mediaProviderColumn || mediaProviderColumn.columnDefault !== "bunny") {
+    throw new Error("Migration verification failed: media_assets.storageProvider must default to bunny");
+  }
+
   console.log(JSON.stringify({
     connected: true,
     databaseName: server.databaseName,
     serverFamily: String(server.serverVersion).toLowerCase().includes("mysql") ? "MySQL" : "MySQL-compatible",
     requiredTables: expectedTables.length,
     missingTables,
+    mediaStorageProviderDefault: mediaProviderColumn.columnDefault,
   }));
 } finally {
   await connection.end();
