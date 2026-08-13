@@ -49,7 +49,6 @@ Uploaded videos, audio, images, and documents live in Susan’s dedicated `membe
 | `BUNNY_STORAGE_ACCESS_KEY` | Server-only write/read key for the `membership-susan` storage zone |
 | `BUNNY_STORAGE_ZONE` | `membership-susan` |
 | `BUNNY_STORAGE_ENDPOINT` | `https://ny.storage.bunnycdn.com` |
-| `BUNNY_CDN_BASE_URL` | `https://membership-susan.b-cdn.net` for public brand assets |
 
 ## External App SSO Variables
 

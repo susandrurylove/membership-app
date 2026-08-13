@@ -53,8 +53,8 @@
 - [x] Reconnect the Railway service to `susandrurylove/membership-app` and confirm the Settings source error clears.
 - [x] Grant Railway’s linked `peacefulgeek` GitHub identity write access and confirm Railway catalogs the repository with an installation ID.
 - [x] Verify Porkbun DNS propagation, Railway ownership, valid TLS, and live delivery at `membership.susandrury.com`.
-- [ ] Run final production verification for deployment, MySQL connectivity and schema, authentication protections, custom domain, TLS, Git source, and auto-deploy.
-- [ ] Confirm the production checks pass three consecutive times with `membership.susandrury.com` as the sole public domain.
+- [x] Run final production verification for deployment, MySQL connectivity and schema, authentication protections, custom domain, TLS, Git source, and auto-deploy.
+- [x] Confirm the production checks pass three consecutive times with `membership.susandrury.com` as the sole public domain.
 - [x] Prepare Susan’s supplied transparent gold `SD` logo as optimized WebP portal and app-icon assets without altering the artwork.
 - [x] Upload every prepared logo asset to Susan’s dedicated `membership-susan` Bunny storage zone and deliver it through the cacheable public brand route.
 - [x] Keep Susan’s logo files out of platform-managed storage and the Git repository.
@@ -64,6 +64,7 @@
 - [x] Replace all media upload and storage fallbacks with Susan’s `membership-susan` Bunny zone, deliver public brand assets through a cacheable allowlisted route, and deliver protected member media through the authenticated app proxy.
 - [x] Add end-to-end route tests for authenticated Bunny-backed media delivery, byte ranges, unauthorized access, and invalid object scopes.
 - [x] Remove legacy OAuth, built-in APIs, analytics scripts, runtime plugins, debug assets, storage proxies, cloud-database assumptions, and unused platform integration files/packages.
-- [ ] Confirm production uses Railway MySQL only and contains no alternate managed-database path or fallback.
-- [ ] Run three independent repository and built-output scans proving no legacy runtime, CDN, storage, OAuth, analytics, API, database, or environment coupling remains.
-- [ ] Re-run unit tests, TypeScript validation, production build, migrations, authentication, Bunny media, custom domain, TLS, MySQL, Git source, and live-route checks after decoupling.
+- [x] Confirm production uses Railway MySQL only and contains no alternate managed-database path or fallback.
+- [x] Run three independent repository and built-output scans proving no legacy runtime, CDN, storage, OAuth, analytics, API, database, or environment coupling remains.
+- [x] Re-run unit tests, TypeScript validation, production build, migrations, authentication, Bunny media, custom domain, TLS, MySQL, Git source, and live-route checks after decoupling.
+- [x] Confirm Railway MySQL is the sole authoritative database and verify migration 0002 in production by asserting the `media_assets.storageProvider` column default is `bunny`.
