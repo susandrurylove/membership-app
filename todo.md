@@ -29,7 +29,10 @@
 - [x] Verify the primary member and administrator journeys at desktop and mobile breakpoints.
 - [x] Create the `susandrurylove/membership-app` GitHub repository and push the preliminary release.
 - [x] Document Railway MySQL provisioning, environment variables, migration execution, custom-domain setup for `membership.SusanDrury.com`, and the remaining external-app API inputs.
-- [ ] Grant Railway’s GitHub App access to `susandrurylove/membership-app` in the organization installation settings.
-- [ ] Verify `susandrurylove/membership-app` appears as an available Railway deployment source.
-- [ ] Resolve the Railway GitHub App repository authorization entirely through GitHub and Railway APIs, without browser automation.
-- [ ] Fix the Railway pre-deploy migration path so Drizzle can find `meta/_journal.json`, then redeploy and verify health.
+- [x] Grant Railway access to `susandrurylove/membership-app` by connecting the GitHub source directly through Railway’s API when the picker omitted it.
+- [x] Verify the Railway service source targets `susandrurylove/membership-app` on `main` and receives GitHub deployment triggers.
+- [x] Resolve the Railway repository authorization entirely through GitHub and Railway APIs, without browser automation.
+- [x] Fix the Railway pre-deploy migration path so Drizzle can find `meta/_journal.json`, then redeploy and verify health.
+- [x] Create the `Susan Drury Membership` Railway project in the `susandrurylove` workspace.
+- [x] Provision a healthy Railway MySQL service and expose it to the app as `DATABASE_URL` through a service reference.
+- [x] Configure baseline production variables, deploy commit `1d9db3e664ef7a406d0ce519f89373062e295a53`, and verify `/api/health` returns HTTP 200.
