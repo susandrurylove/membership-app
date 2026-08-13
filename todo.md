@@ -46,7 +46,7 @@
 - [x] Add rendered DOM tests for admin tab focus classes, member card/table variants, and video/audio/image media layouts.
 - [x] Add automated contrast checks for the primary Susan Drury text, teal, gold, ivory, and status-color pairings.
 - [x] Extend keyboard interaction tests to teaching, course, and media administrator controls.
-- [ ] Configure Railway for the canonical `https://membership.susandrury.com` origin and prepare the custom-domain DNS handoff.
-- [ ] Push and deploy the responsive redesign, then verify the live health endpoint and representative protected routes.
+- [x] Configure Railway for the canonical `https://membership.susandrury.com` origin and prepare the custom-domain DNS handoff.
+- [x] Push and deploy the responsive redesign, then verify the live health endpoint and representative protected routes.
 - [x] Re-verify the existing Railway `Susan Drury Membership` project and its GitHub deployment trigger after the Railway new-project picker reports `repository not found`.
 - [x] Document the exact existing Railway project location so a duplicate project is not created from the failing repository picker.
