@@ -1,8 +1,6 @@
 import type { CreateExpressContextOptions } from "@trpc/server/adapters/express";
 import type { Membership, User } from "../../drizzle/schema";
 import { authenticateMemberRequest } from "../auth";
-import { getMembershipByUserId } from "../db";
-import { sdk } from "./sdk";
 
 export type TrpcContext = {
   req: CreateExpressContextOptions["req"];
@@ -10,7 +8,7 @@ export type TrpcContext = {
   user: User | null;
   membership: Membership | null;
   sessionTokenHash: string | null;
-  authMethod: "member" | "manus" | null;
+  authMethod: "member" | null;
 };
 
 export async function createContext(
@@ -33,19 +31,6 @@ export async function createContext(
     user = null;
   }
 
-  if (!user && process.env.OAUTH_SERVER_URL && process.env.VITE_APP_ID) {
-    try {
-      user = await sdk.authenticateRequest(opts.req);
-      if (user) {
-        membership = (await getMembershipByUserId(user.id)) ?? null;
-        authMethod = "manus";
-      }
-    } catch {
-      user = null;
-      membership = null;
-    }
-  }
-
   return {
     req: opts.req,
     res: opts.res,
@@ -55,4 +40,3 @@ export async function createContext(
     authMethod,
   };
 }
-

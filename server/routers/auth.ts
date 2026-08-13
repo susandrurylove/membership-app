@@ -1,8 +1,5 @@
-import { COOKIE_NAME } from "@shared/const";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
-import { getSessionCookieOptions } from "../_core/cookies";
-import { ENV } from "../_core/env";
 import { publicProcedure, router } from "../_core/trpc";
 import {
   authenticateEmailAndPassword,
@@ -55,15 +52,16 @@ export const authRouter = router({
       throw new TRPCError({ code: "FORBIDDEN", message: "Preview sign-in is disabled." });
     }
 
+    const previewOpenId = "development-preview-admin";
     await upsertUser({
-      openId: ENV.ownerOpenId,
-      name: process.env.OWNER_NAME || "Portal Administrator",
+      openId: previewOpenId,
+      name: "Portal Administrator",
       loginMethod: "development-preview",
       role: "admin",
       accountStatus: "active",
       lastSignedIn: new Date(),
     });
-    const user = await getUserByOpenId(ENV.ownerOpenId);
+    const user = await getUserByOpenId(previewOpenId);
     if (!user) {
       throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Preview account could not be prepared." });
     }
@@ -118,9 +116,7 @@ export const authRouter = router({
   logout: publicProcedure.mutation(async ({ ctx }) => {
     await revokeCurrentMemberSession(ctx.req);
     const { maxAge: _memberMaxAge, ...memberClearOptions } = memberCookieOptions(ctx.req);
-    const oauthClearOptions = getSessionCookieOptions(ctx.req);
     ctx.res.clearCookie(MEMBER_SESSION_COOKIE, memberClearOptions);
-    ctx.res.clearCookie(COOKIE_NAME, oauthClearOptions);
     return { success: true } as const;
   }),
 });

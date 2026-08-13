@@ -74,7 +74,7 @@ export function MediaPanel() {
           <div className="space-y-2"><Label htmlFor="media-alt">Image description or media note</Label><Input id="media-alt" value={altText} onChange={event => setAltText(event.target.value)} placeholder="Describe the image for accessibility" /></div>
           <Button disabled={uploading} className="h-11 w-full rounded-full bg-[#2f7772] px-6 text-white hover:bg-[#245f5c] lg:w-auto" onClick={() => void uploadFile()}>{uploading ? <Loader2 className="size-4 animate-spin" /> : <><UploadCloud className="mr-2 size-4" /> Upload</>}</Button>
         </div>
-        <p className="mt-3 text-xs text-muted-foreground">Maximum file size: 64 MB. Larger production videos should be uploaded directly to the configured S3-compatible bucket and registered through a future direct-upload workflow.</p>
+        <p className="mt-3 text-xs text-muted-foreground">Maximum file size: 64 MB. Larger production videos should be uploaded directly to Susan’s membership Bunny storage zone and registered through a future direct-upload workflow.</p>
         {uploadError ? <p role="alert" className="mt-4 rounded-xl bg-[#fff8f4] px-4 py-3 text-sm text-[#823b32]">{uploadError}</p> : null}
       </div>
 

@@ -3,13 +3,14 @@ import express from "express";
 import { createServer } from "http";
 import net from "net";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
-import { registerOAuthRoutes } from "./oauth";
-import { registerStorageProxy } from "./storageProxy";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
 import { registerSsoRoutes } from "../routes/sso";
 import { registerAdminMediaRoutes } from "../routes/adminMedia";
+import { registerMemberMediaRoutes } from "../routes/memberMedia";
+import { registerPublicBrandRoutes } from "../routes/publicBrand";
+import { checkDatabaseHealth } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -36,16 +37,21 @@ async function startServer() {
 
   app.disable("x-powered-by");
   app.set("trust proxy", 1);
-  app.get("/api/health", (_req, res) => {
-    res.status(200).json({ status: "ok", service: "susan-drury-membership" });
+  app.get("/api/health", async (_req, res) => {
+    const database = await checkDatabaseHealth();
+    res.status(database ? 200 : 503).json({
+      status: database ? "ok" : "degraded",
+      service: "susan-drury-membership",
+      database: database ? "connected" : "unavailable",
+    });
   });
 
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   registerSsoRoutes(app);
   registerAdminMediaRoutes(app);
-  registerStorageProxy(app);
-  registerOAuthRoutes(app);
+  registerMemberMediaRoutes(app);
+  registerPublicBrandRoutes(app);
 
   app.use(
     "/api/trpc",

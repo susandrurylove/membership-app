@@ -1,4 +1,5 @@
 import { useAuth } from "@/_core/hooks/useAuth";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { cn } from "@/lib/utils";
 import {
   BookHeart,
@@ -70,9 +71,13 @@ export function MemberShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-[#e5dbc8] bg-[#fffdf8]/94 backdrop-blur-xl">
         <div className="mx-auto flex h-18 w-full max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:h-22 lg:px-10">
           <Link href="/" className="flex min-w-0 items-center gap-3 rounded-full focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 focus-visible:outline-none">
-            <span className="grid size-10 shrink-0 place-items-center rounded-full border border-[#d6c18a] bg-[#f7f0dd] lg:size-11">
-              <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="" className="size-7 lg:size-8" />
-            </span>
+            <img
+              src={SUSAN_LOGO.medium}
+              srcSet={`${SUSAN_LOGO.small} 48w, ${SUSAN_LOGO.medium} 96w`}
+              sizes="(min-width: 1024px) 52px, 46px"
+              alt=""
+              className="h-11 w-auto shrink-0 object-contain drop-shadow-[0_5px_12px_rgba(119,88,15,0.16)] lg:h-13"
+            />
             <span className="min-w-0">
               <strong className="block truncate text-xs font-semibold tracking-[0.14em] text-[#243f4d] uppercase sm:text-sm">Susan Drury</strong>
               <span className="mt-0.5 hidden text-[9px] tracking-[0.19em] text-[#9b7726] uppercase sm:block">Member sanctuary</span>

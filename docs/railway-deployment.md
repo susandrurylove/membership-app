@@ -1,6 +1,6 @@
 # Railway Deployment and Environment Guide
 
-**Author:** Manus AI  
+**Author:** Susan Drury Membership Project
 **Target hostname:** `membership.susandrury.com`
 
 ## Deployment Model
@@ -40,18 +40,16 @@ The public membership page currently sends buyers to ThriveCart checkout. The pr
 
 Do not register a ThriveCart webhook yet: `/api/webhooks/thrivecart` is not part of this preliminary release. Manual administration remains authoritative until the synchronization endpoint is implemented and tested against Susan’s real checkout events.
 
-## S3-Compatible Media Variables
+## Bunny Media Variables
 
-Uploaded videos, audio, images, and documents must live in private object storage. MySQL contains only metadata and object keys.
+Uploaded videos, audio, images, and documents live in Susan’s dedicated `membership-susan` Bunny storage zone. MySQL contains only metadata and Bunny object keys. The application keeps the storage access key server-side and serves protected member media through authenticated application routes.
 
 | Variable | Purpose |
 |---|---|
-| `S3_ENDPOINT` | S3-compatible API endpoint |
-| `S3_REGION` | Provider region, or `auto` when supported |
-| `S3_BUCKET` | Private media bucket name |
-| `S3_ACCESS_KEY_ID` | Server-only storage credential |
-| `S3_SECRET_ACCESS_KEY` | Server-only storage secret |
-| `S3_FORCE_PATH_STYLE` | Optional `true` for providers that require path-style bucket addressing |
+| `BUNNY_STORAGE_ACCESS_KEY` | Server-only write/read key for the `membership-susan` storage zone |
+| `BUNNY_STORAGE_ZONE` | `membership-susan` |
+| `BUNNY_STORAGE_ENDPOINT` | `https://ny.storage.bunnycdn.com` |
+| `BUNNY_CDN_BASE_URL` | `https://membership-susan.b-cdn.net` for public brand assets |
 
 ## External App SSO Variables
 

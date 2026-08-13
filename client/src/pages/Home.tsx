@@ -4,6 +4,7 @@ import { QueryErrorState } from "@/components/QueryErrorState";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { trpc } from "@/lib/trpc";
 import {
   ArrowRight,
@@ -74,7 +75,7 @@ export default function Home() {
     <main className="portal-page">
       <section className="relative overflow-hidden rounded-[2rem] border border-[#dfcfaa] bg-[#f5eddb] px-5 py-9 shadow-[0_24px_70px_rgba(72,83,72,0.09)] sm:px-9 sm:py-11 lg:px-12">
         <div className="pointer-events-none absolute -right-20 -top-24 size-72 rounded-full border-[42px] border-[#d9b866]/22" />
-        <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="" className="pointer-events-none absolute right-8 top-7 hidden size-36 opacity-[0.07] md:block lg:right-14 lg:size-44" />
+        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-7 top-6 hidden h-40 w-auto object-contain opacity-[0.14] md:block lg:right-12 lg:h-52" />
         <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
           <div>
             <p className="mb-4 text-[10px] font-bold tracking-[0.24em] text-[#77580f] uppercase">Your private sanctuary</p>

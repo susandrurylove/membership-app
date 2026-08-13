@@ -1,4 +1,5 @@
 import { and, eq, gt, isNull } from "drizzle-orm";
+import { sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import {
   invitationTokens,
@@ -7,7 +8,6 @@ import {
   memberships,
   users,
 } from "../drizzle/schema";
-import { ENV } from "./_core/env";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
@@ -21,6 +21,18 @@ export async function getDb() {
     }
   }
   return _db;
+}
+
+export async function checkDatabaseHealth() {
+  const db = await getDb();
+  if (!db) return false;
+  try {
+    await db.execute(sql`SELECT 1`);
+    return true;
+  } catch (error) {
+    console.error("[Database] Health check failed:", error);
+    return false;
+  }
 }
 
 export async function upsertUser(user: InsertUser): Promise<void> {
@@ -54,11 +66,6 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   if (user.role !== undefined) {
     values.role = user.role;
     updateSet.role = user.role;
-  } else if (user.openId === ENV.ownerOpenId) {
-    values.role = "admin";
-    values.accountStatus = "active";
-    updateSet.role = "admin";
-    updateSet.accountStatus = "active";
   }
 
   if (!values.lastSignedIn) values.lastSignedIn = new Date();

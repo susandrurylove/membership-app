@@ -2,7 +2,7 @@
 
 This repository contains the private membership portal for Susan Drury’s clients. It unifies Susan’s teachings, structured courses, member progress, and secure handoffs to Elevate To Love, Enlightened Body, and Tao Interactive in one authenticated experience.
 
-The portal is designed for `membership.susandrury.com` and prepared for deployment on Railway with MySQL and private S3-compatible object storage.
+The portal is designed for `membership.susandrury.com` and deployed on Railway with Railway MySQL and Susan’s dedicated Bunny storage/CDN.
 
 ## Product Capabilities
 
@@ -14,13 +14,13 @@ The portal is designed for `membership.susandrury.com` and prepared for deployme
 | Courses | Ordered sections and lessons, lesson status, member progress, completion state, and recent activity |
 | Connected apps | One-time launch codes and server-to-server exchange for all three apps; disabled safely until each destination is configured |
 | Administration | Member invitations and access, categories, teachings, media uploads, courses, sections, and lessons |
-| Deployment | Railway config, MySQL migrations, health check, production build, S3-compatible media adapter, and custom-domain guide |
+| Deployment | Railway config, MySQL migrations, health check, production build, Bunny media adapter, and custom-domain guide |
 
 No customer records, teachings, courses, ratings, reviews, or testimonials are seeded. Susan creates real member and content records through the administrator interface.
 
 ## Stack
 
-The application uses React 19, Tailwind CSS 4, Wouter, tRPC 11, Express 4, Drizzle ORM, MySQL, Vitest, and the AWS SDK for S3-compatible storage. Authentication sessions are opaque random credentials whose SHA-256 hashes are stored in MySQL. Passwords use salted `scrypt` hashing.
+The application uses React 19, Tailwind CSS 4, Wouter, tRPC 11, Express 4, Drizzle ORM, Railway MySQL, Vitest, and Bunny’s Storage HTTP API. Authentication sessions are opaque random credentials whose SHA-256 hashes are stored in MySQL. Passwords use salted `scrypt` hashing.
 
 ## Repository Structure
 
@@ -46,7 +46,7 @@ pnpm install
 pnpm dev
 ```
 
-The application requires a MySQL `DATABASE_URL`. The managed preview environment supplies its own database and object-storage credentials. For an external environment, configure the variables described in [`docs/railway-deployment.md`](docs/railway-deployment.md).
+The application requires a MySQL `DATABASE_URL` and Bunny storage variables. Configure the Railway and Bunny variables described in [`docs/railway-deployment.md`](docs/railway-deployment.md).
 
 ## Quality Commands
 
@@ -84,7 +84,7 @@ The administrator panel generates copyable invitation links; direct email delive
 
 ## Deployment
 
-The committed [`railway.json`](railway.json) builds the app, runs forward migrations as a pre-deploy step, starts the Node server using Railway’s `PORT`, and checks `/api/health`. Follow [`docs/railway-deployment.md`](docs/railway-deployment.md) for MySQL, S3-compatible storage, custom domain, administrator bootstrap, and SSO variables.
+The committed [`railway.json`](railway.json) builds the app, runs forward migrations as a pre-deploy step, starts the Node server using Railway’s `PORT`, and checks `/api/health`. Follow [`docs/railway-deployment.md`](docs/railway-deployment.md) for Railway MySQL, Bunny storage, custom domain, administrator bootstrap, and SSO variables.
 
 ## Security Notes
 

@@ -2,6 +2,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { trpc } from "@/lib/trpc";
 import { ArrowRight, Loader2, ShieldCheck } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -31,17 +32,22 @@ export default function Login() {
     if (!loading && user) setLocation("/", { replace: true });
   }, [loading, setLocation, user]);
 
+  useEffect(() => {
+    if (!import.meta.env.DEV || loading || user || previewSignIn.isPending) return;
+    if (new URLSearchParams(window.location.search).get("qa-preview") === "1") {
+      previewSignIn.mutate();
+    }
+  }, [loading, previewSignIn, user]);
+
   return (
     <main className="min-h-screen bg-[#faf7ef] text-[#243f4d]">
       <div className="grid min-h-screen lg:grid-cols-[0.9fr_1.1fr]">
         <section className="relative hidden overflow-hidden border-r border-[#ddcfb0] bg-[#e8f0eb] p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
           <div className="pointer-events-none absolute -right-28 top-24 size-96 rounded-full border-[58px] border-[#c9a84c]/25" />
           <div className="pointer-events-none absolute -bottom-36 -left-24 size-96 rounded-full bg-[#cfe2db]/70" />
-          <a href="https://susandrury.com" className="relative flex items-center gap-3 text-sm tracking-[0.16em] uppercase">
-            <span className="grid size-12 place-items-center rounded-full border border-[#d4bd82] bg-[#fffaf0]">
-              <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-8" />
-            </span>
-            Susan Drury
+          <a href="https://susandrury.com" className="relative flex items-center gap-4 text-sm tracking-[0.16em] uppercase">
+            <img src={SUSAN_LOGO.large} alt="Susan Drury" className="h-16 w-auto object-contain drop-shadow-[0_8px_18px_rgba(119,88,15,0.18)]" />
+            <span>Susan Drury</span>
           </a>
 
           <div className="relative max-w-2xl">
@@ -62,9 +68,7 @@ export default function Login() {
           <div className="pointer-events-none absolute -right-24 -top-28 size-64 rounded-full bg-[#f0dfad]/30 lg:hidden" />
           <div className="relative w-full max-w-md rounded-[2rem] border border-[#e0d5c0] bg-[#fffdf8]/94 p-6 shadow-[0_22px_70px_rgba(54,72,73,0.1)] sm:p-9 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
             <div className="mb-8 flex items-center gap-3 lg:hidden">
-              <span className="grid size-11 place-items-center rounded-full border border-[#d4bd82] bg-[#f8f0dc]">
-                <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-7" />
-              </span>
+              <img src={SUSAN_LOGO.medium} alt="Susan Drury" className="h-12 w-auto object-contain drop-shadow-[0_6px_14px_rgba(119,88,15,0.16)]" />
               <span>
                 <span className="block text-xs font-semibold tracking-[0.14em] uppercase">Susan Drury</span>
                 <span className="mt-0.5 block text-[9px] tracking-[0.16em] text-[#9b7726] uppercase">Member sanctuary</span>

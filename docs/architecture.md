@@ -1,6 +1,6 @@
 # Susan Drury Membership Portal Architecture
 
-**Author:** Manus AI  
+**Author:** Susan Drury Membership Project
 **Status:** Implementation baseline  
 **Primary production target:** Railway with MySQL  
 **Public hostname:** `membership.susandrury.com`
@@ -18,7 +18,7 @@ The current public membership offers Silver, Gold, and Platinum levels and expli
 | React client | Presents the member and administrator interfaces; never decides authorization by itself | Untrusted client |
 | Express and tRPC server | Authenticates sessions, enforces entitlements, validates mutations, issues app launch grants, and records activity | Trusted application |
 | MySQL | Stores identities, password hashes, sessions, memberships, content metadata, course structure, progress, app grants, and audit events | Trusted data store |
-| S3-compatible object storage | Stores uploaded video, audio, and image bytes; MySQL stores only keys and metadata | Trusted media store |
+| Bunny storage and CDN | Stores uploaded video, audio, image, and document bytes in Susan’s dedicated `membership-susan` zone; MySQL stores only keys and metadata | Trusted media store |
 | ThriveCart | Reports purchase and subscription lifecycle events to the portal | Authenticated external source |
 | Three Susan Drury apps | Redeem one-time launch grants and establish their own local sessions | Authenticated relying parties |
 
@@ -84,7 +84,7 @@ The portal will implement the one-time exchange contract and a safe “integrati
 
 Teachings support `video`, `audio`, `image`, `text`, and `mixed` presentation types. Content records contain titles, slugs, descriptions, body text, publishing state, category, ordering, and optional media references. Course records contain ordered modules or lessons, and progress records are unique per member and lesson. Completion is server-authoritative and produces an activity record.
 
-Uploaded bytes never enter MySQL. Production media is written to an S3-compatible private bucket and served through time-limited access or an authenticated proxy. The database keeps the object key, MIME type, original filename, byte size, duration when known, and accessibility metadata. This separation keeps migrations small and permits future CDN changes without rewriting course data.
+Uploaded bytes never enter MySQL. Production media is written directly to Susan’s dedicated `membership-susan` Bunny storage zone. Public brand artwork is stored there as WebP and delivered through a cacheable, whitelisted `/api/public/brand/*` route; protected teaching and course media is delivered only through the application’s authenticated member-media route. Both routes read the object from Bunny with the server-only storage key, while the protected route also supports byte-range responses for audio and video playback. The database keeps the Bunny object key, MIME type, original filename, byte size, duration when known, and accessibility metadata.
 
 ## Administrator Security
 
@@ -105,4 +105,3 @@ The custom domain is configured after the first successful Railway deployment. D
 [3]: https://developers.thrivecart.com/documentation/event_subscription/intro/ "ThriveCart Developers — Event Subscriptions"
 [4]: https://susandrury.com/mobile-app "Susan Drury — Elevate to Love App"
 [5]: https://susandrury.com/enlightened-body-app "Susan Drury — The Enlightened Body"
-

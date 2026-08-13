@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 import type { TrpcContext } from "./_core/context";
 import { MEMBER_SESSION_COOKIE } from "./auth";
 import { appRouter } from "./routers";
-import { COOKIE_NAME } from "../shared/const";
 
 type CookieCall = {
   name: string;
@@ -47,15 +46,12 @@ function createAuthContext(): { ctx: TrpcContext; clearedCookies: CookieCall[] }
 }
 
 describe("auth.logout", () => {
-  it("clears both the first-party and preview compatibility cookies", async () => {
+  it("clears the first-party member session cookie", async () => {
     const { ctx, clearedCookies } = createAuthContext();
     const caller = appRouter.createCaller(ctx);
 
     await expect(caller.auth.logout()).resolves.toEqual({ success: true });
-    expect(clearedCookies.map(call => call.name)).toEqual([
-      MEMBER_SESSION_COOKIE,
-      COOKIE_NAME,
-    ]);
+    expect(clearedCookies.map(call => call.name)).toEqual([MEMBER_SESSION_COOKIE]);
     expect(clearedCookies[0]?.options).toMatchObject({
       secure: true,
       sameSite: "lax",

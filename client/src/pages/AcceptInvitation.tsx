@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { trpc } from "@/lib/trpc";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { useState } from "react";
@@ -42,8 +43,8 @@ export default function AcceptInvitation() {
   return (
     <main className="grid min-h-screen place-items-center bg-[#faf7ef] px-5 py-10 text-[#243f4d]">
       <div className="w-full max-w-lg rounded-[2rem] border border-[#ded6c5] bg-[#fffdf8] p-6 shadow-[0_24px_80px_rgba(54,72,73,0.1)] sm:p-11">
-        <div className="mb-8 flex items-center gap-3">
-          <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-11" />
+        <div className="mb-8 flex items-center gap-4">
+          <img src={SUSAN_LOGO.medium} alt="Susan Drury" className="h-14 w-auto object-contain drop-shadow-[0_6px_14px_rgba(119,88,15,0.16)]" />
           <span className="text-sm tracking-[0.16em] uppercase">Member Sanctuary</span>
         </div>
 

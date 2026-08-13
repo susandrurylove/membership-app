@@ -7,6 +7,26 @@ function source(path: string) {
 }
 
 describe("Susan Drury responsive brand system", () => {
+  it("uses only the dedicated membership Bunny WebP logo assets", () => {
+    const brandAssets = source("client/src/lib/brandAssets.ts");
+    const brandedSurfaces = [
+      brandAssets,
+      source("client/src/components/MemberShell.tsx"),
+      source("client/src/pages/Home.tsx"),
+      source("client/src/pages/Login.tsx"),
+      source("client/src/pages/AcceptInvitation.tsx"),
+      source("client/index.html"),
+    ].join("\n");
+
+    expect(brandAssets).toContain('/api/public/brand');
+    expect(brandAssets).toContain("susan-drury-logo-320.webp");
+    expect(brandedSurfaces).not.toContain("susan-website-pull.b-cdn.net");
+    expect(brandedSurfaces).not.toContain("membership-susan.b-cdn.net");
+    expect(brandedSurfaces).not.toContain("sd-mandala-mark.svg");
+    expect(brandedSurfaces).not.toContain("/legacy-storage/");
+    expect(source("client/src/pages/Login.tsx")).toContain("import.meta.env.DEV");
+  });
+
   it("uses the light ivory theme and no legacy dark shell backgrounds", () => {
     const styles = source("client/src/index.css");
     const shell = source("client/src/components/MemberShell.tsx");

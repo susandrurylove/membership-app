@@ -22,7 +22,7 @@
 - [x] Build administrator member search, activation, suspension, tier assignment, and access-expiration controls.
 - [x] Build administrator teaching creation, editing, categorization, publishing, ordering, and media-upload controls.
 - [x] Build administrator course and lesson creation, editing, publishing, ordering, and media controls.
-- [x] Add safe S3-compatible object-storage handling for uploaded media rather than storing file bytes in MySQL.
+- [x] Add safe external object-storage handling for uploaded media rather than storing file bytes in MySQL.
 - [x] Add purposeful empty states without fabricated teachings, courses, reviews, ratings, testimonials, or customer records.
 - [x] Add Vitest coverage for authorization, member status, course progress, admin permissions, and SSO token issuance.
 - [x] Run TypeScript checks, unit tests, production build, and migration validation.
@@ -50,3 +50,20 @@
 - [x] Push and deploy the responsive redesign, then verify the live health endpoint and representative protected routes.
 - [x] Re-verify the existing Railway `Susan Drury Membership` project and its GitHub deployment trigger after the Railway new-project picker reports `repository not found`.
 - [x] Document the exact existing Railway project location so a duplicate project is not created from the failing repository picker.
+- [x] Reconnect the Railway service to `susandrurylove/membership-app` and confirm the Settings source error clears.
+- [x] Grant Railway’s linked `peacefulgeek` GitHub identity write access and confirm Railway catalogs the repository with an installation ID.
+- [x] Verify Porkbun DNS propagation, Railway ownership, valid TLS, and live delivery at `membership.susandrury.com`.
+- [ ] Run final production verification for deployment, MySQL connectivity and schema, authentication protections, custom domain, TLS, Git source, and auto-deploy.
+- [ ] Confirm the production checks pass three consecutive times with `membership.susandrury.com` as the sole public domain.
+- [x] Prepare Susan’s supplied transparent gold `SD` logo as optimized WebP portal and app-icon assets without altering the artwork.
+- [x] Upload every prepared logo asset to Susan’s dedicated `membership-susan` Bunny storage zone and deliver it through the cacheable public brand route.
+- [x] Keep Susan’s logo files out of platform-managed storage and the Git repository.
+- [x] Replace temporary brand marks with Susan’s Bunny-stored official logo in the logged-in shell, login, invitation flow, and application metadata.
+- [x] Verify the official logo renders clearly and proportionally at mobile, tablet, and desktop breakpoints.
+- [x] Audit source, packages, environment variables, assets, analytics, authentication, storage, documentation, and build tooling for every legacy-platform dependency or reference.
+- [x] Replace all media upload and storage fallbacks with Susan’s `membership-susan` Bunny zone, deliver public brand assets through a cacheable allowlisted route, and deliver protected member media through the authenticated app proxy.
+- [x] Add end-to-end route tests for authenticated Bunny-backed media delivery, byte ranges, unauthorized access, and invalid object scopes.
+- [x] Remove legacy OAuth, built-in APIs, analytics scripts, runtime plugins, debug assets, storage proxies, cloud-database assumptions, and unused platform integration files/packages.
+- [ ] Confirm production uses Railway MySQL only and contains no alternate managed-database path or fallback.
+- [ ] Run three independent repository and built-output scans proving no legacy runtime, CDN, storage, OAuth, analytics, API, database, or environment coupling remains.
+- [ ] Re-run unit tests, TypeScript validation, production build, migrations, authentication, Bunny media, custom domain, TLS, MySQL, Git source, and live-route checks after decoupling.

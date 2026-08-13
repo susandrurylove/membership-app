@@ -31,6 +31,6 @@ Railway custom domain `membership.susandrury.com` is attached to the production 
 |---|---|---|---|
 | CNAME | `membership` | `4tv3nb1q.up.railway.app` | DNS only while Railway verifies and issues TLS |
 
-The record was absent when checked, so Railway currently reports `DNS_RECORD_STATUS_REQUIRES_UPDATE` and is validating ownership. After the CNAME propagates, Railway will verify the domain and issue its certificate automatically. The generated Railway domain remains live in the meantime.
+The Porkbun CNAME propagated successfully. Railway verified ownership and issued a valid certificate for `membership.susandrury.com`.
 
-Remaining production tasks are to add the DNS record above, bootstrap Susan's administrator account using `pnpm admin:create`, configure private S3-compatible media storage, and provide the three destination apps' SSO launch credentials before enabling their integrations.
+Remaining production tasks are to bootstrap Susan's administrator account using `pnpm admin:create` and provide the three destination apps' SSO launch credentials before enabling their integrations. Media storage uses Susan’s dedicated `membership-susan` Bunny zone.
