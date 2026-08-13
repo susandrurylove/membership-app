@@ -11,9 +11,8 @@ const connection = await mysql.createConnection(process.env.DATABASE_URL);
 
 try {
   const database = drizzle(connection);
-  await migrate(database, { migrationsFolder: "./drizzle/migrations" });
+  await migrate(database, { migrationsFolder: "./drizzle" });
   console.log("Database migrations completed successfully.");
 } finally {
   await connection.end();
 }
-
