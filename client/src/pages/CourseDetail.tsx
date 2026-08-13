@@ -46,23 +46,23 @@ export default function CourseDetail() {
     <main className="portal-page max-w-[1440px]">
       <Button asChild variant="ghost" className="-ml-3 text-[#2d7777]"><Link href="/courses"><ArrowLeft className="mr-2 size-4" /> All courses</Link></Button>
 
-      <header className="mt-6 rounded-[2rem] bg-[#0e1634] px-6 py-9 text-[#f5edd6] shadow-[0_24px_70px_rgba(14,22,52,0.2)] sm:px-9 sm:py-10">
+      <header className="mt-6 rounded-[2rem] border border-[#cedfd8] bg-[#e3efe9] px-5 py-8 text-[#243f4d] shadow-[0_22px_65px_rgba(47,91,85,0.1)] sm:px-9 sm:py-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end">
           <div>
-            <p className="mb-4 text-[11px] font-bold tracking-[0.24em] text-[#c9a84c] uppercase">Self-paced course</p>
-            <h1 className="font-serif text-4xl leading-tight sm:text-5xl">{item.title}</h1>
-            {item.summary ? <p className="mt-5 max-w-3xl leading-7 text-[#d6d8e2]">{item.summary}</p> : null}
+            <p className="mb-4 text-[10px] font-bold tracking-[0.24em] text-[#77580f] uppercase">Self-paced course</p>
+            <h1 className="font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">{item.title}</h1>
+            {item.summary ? <p className="mt-5 max-w-3xl leading-7 text-[#5c6e72]">{item.summary}</p> : null}
           </div>
           <div>
-            <div className="flex items-center justify-between text-xs text-[#c9cbd4]"><span>{progress.completed} of {progress.total} lessons</span><span className="font-semibold text-[#c9a84c]">{progress.percent}%</span></div>
-            <Progress value={progress.percent} className="mt-3 h-2 bg-white/10 [&>div]:bg-[#c9a84c]" />
+            <div className="flex items-center justify-between text-xs text-[#65777b]"><span>{progress.completed} of {progress.total} lessons</span><span className="font-semibold text-[#2f7772]">{progress.percent}%</span></div>
+            <Progress value={progress.percent} className="mt-3 h-2 bg-[#d5e1dc] [&>div]:bg-[#c9a84c]" />
           </div>
         </div>
       </header>
 
       {lessons.length ? (
         <div className="mt-8 grid gap-6 lg:grid-cols-[330px_minmax(0,1fr)] lg:items-start">
-          <aside className="rounded-[1.75rem] border border-[#ddd5c5] bg-white p-4 shadow-[0_16px_45px_rgba(23,32,68,0.05)] lg:sticky lg:top-8">
+          <aside className="editorial-card rounded-[1.75rem] p-4 lg:sticky lg:top-28">
             <div className="px-3 pb-4 pt-2"><p className="eyebrow">Course path</p><p className="mt-2 text-sm text-muted-foreground">Choose a lesson and continue at your own pace.</p></div>
             <div className="space-y-4">
               {sections.map(section => {
@@ -70,7 +70,7 @@ export default function CourseDetail() {
                 if (!sectionLessons.length) return null;
                 return (
                   <div key={section.id}>
-                    <p className="px-3 py-2 text-[10px] font-bold tracking-[0.16em] text-[#8b6a19] uppercase">{section.title}</p>
+                    <p className="px-3 py-2 text-[10px] font-bold tracking-[0.16em] text-[#77580f] uppercase">{section.title}</p>
                     <div className="space-y-1">
                       {sectionLessons.map(entry => <LessonLink key={entry.lesson.id} courseSlug={item.slug} entry={entry} selected={selected?.lesson.id === entry.lesson.id} />)}
                     </div>
@@ -82,18 +82,18 @@ export default function CourseDetail() {
           </aside>
 
           {selected ? (
-            <article key={`${selected.lesson.id}-${location}`} className="rounded-[1.75rem] border border-[#ddd5c5] bg-white p-6 shadow-[0_16px_45px_rgba(23,32,68,0.06)] sm:p-9">
+            <article key={`${selected.lesson.id}-${location}`} className="editorial-card rounded-[1.75rem] p-5 sm:p-9">
               <div className="flex flex-wrap items-start justify-between gap-5">
                 <div className="max-w-3xl">
                   <p className="eyebrow">Lesson</p>
-                  <h2 className="mt-3 font-serif text-4xl leading-tight text-[#172044]">{selected.lesson.title}</h2>
+                  <h2 className="mt-3 font-serif text-3xl leading-tight text-[#243f4d] sm:text-4xl">{selected.lesson.title}</h2>
                   {selected.lesson.summary ? <p className="mt-4 leading-7 text-muted-foreground">{selected.lesson.summary}</p> : null}
                 </div>
                 {selected.progress?.status === "completed" ? <span className="flex items-center gap-2 rounded-full bg-[#e7f0ec] px-4 py-2 text-xs font-semibold text-[#246866]"><CheckCircle2 className="size-4" /> Completed</span> : null}
               </div>
 
               {selected.media ? <div className="mt-8"><MediaViewer asset={selected.media} /></div> : null}
-              {selected.lesson.body ? <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#172044] prose-p:text-[#555b6e] prose-p:leading-8 mt-9 max-w-3xl"><MarkdownContent>{selected.lesson.body}</MarkdownContent></div> : null}
+              {selected.lesson.body ? <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#243f4d] prose-p:text-[#58686d] prose-p:leading-8 mt-9 max-w-3xl"><MarkdownContent>{selected.lesson.body}</MarkdownContent></div> : null}
               {!selected.media && !selected.lesson.body ? <div className="mt-8 rounded-2xl bg-[#f7f2e8] p-6 text-sm text-muted-foreground">Susan is preparing the content for this lesson.</div> : null}
 
               <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-[#ebe5d9] pt-6">
@@ -106,7 +106,7 @@ export default function CourseDetail() {
                     lastPositionSeconds: selected.progress?.lastPositionSeconds ?? 0,
                     completed: Boolean(selected.progress),
                   })}
-                  className="rounded-full bg-[#c9a84c] px-6 text-[#0e1634] hover:bg-[#ddc36f]"
+                  className="rounded-full bg-[#2f7772] px-6 text-white hover:bg-[#245f5c]"
                 >
                   {progressMutation.isPending ? <Loader2 className="size-4 animate-spin" /> : selected.progress?.status === "completed" ? <><Check className="mr-2 size-4" /> Completed</> : selected.progress ? <><Check className="mr-2 size-4" /> Mark complete</> : <><Play className="mr-2 size-4" /> Start lesson</>}
                 </Button>
@@ -129,8 +129,8 @@ export default function CourseDetail() {
 function LessonLink({ courseSlug, entry, selected }: { courseSlug: string; entry: any; selected: boolean }) {
   const complete = entry.progress?.status === "completed";
   return (
-    <Link href={`/courses/${courseSlug}?lesson=${entry.lesson.slug}`} className={cn("flex items-start gap-3 rounded-xl px-3 py-3 text-sm transition-colors", selected ? "bg-[#0e1634] text-white" : "text-[#4f5567] hover:bg-[#f7f2e8]") }>
-      {complete ? <CheckCircle2 className={cn("mt-0.5 size-4 shrink-0", selected ? "text-[#c9a84c]" : "text-[#2d7777]")} /> : <Circle className={cn("mt-0.5 size-4 shrink-0", selected ? "text-[#c9a84c]" : "text-[#aeb2c2]")} />}
+    <Link href={`/courses/${courseSlug}?lesson=${entry.lesson.slug}`} className={cn("flex items-start gap-3 rounded-xl border px-3 py-3 text-sm transition-colors", selected ? "border-[#bad4cb] bg-[#e5f0eb] text-[#245f5c]" : "border-transparent text-[#4f5f66] hover:bg-[#f7f2e8]") }>
+      {complete ? <CheckCircle2 className={cn("mt-0.5 size-4 shrink-0", selected ? "text-[#2f7772]" : "text-[#2d7777]")} /> : <Circle className={cn("mt-0.5 size-4 shrink-0", selected ? "text-[#9b7726]" : "text-[#9aa7a8]")} />}
       <span className="leading-5">{entry.lesson.title}</span>
     </Link>
   );

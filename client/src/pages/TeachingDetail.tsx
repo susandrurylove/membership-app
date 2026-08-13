@@ -31,7 +31,7 @@ export default function TeachingDetail() {
 
       <header className="mt-7 max-w-4xl">
         <p className="eyebrow">{category?.name || item.contentType}</p>
-        <h1 className="mt-4 font-serif text-5xl leading-tight text-[#172044] sm:text-6xl">{item.title}</h1>
+        <h1 className="mt-4 font-serif text-4xl leading-tight text-[#243f4d] sm:text-5xl lg:text-6xl">{item.title}</h1>
         {item.summary ? <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{item.summary}</p> : null}
       </header>
 
@@ -42,7 +42,7 @@ export default function TeachingDetail() {
       ) : null}
 
       {item.body ? (
-        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#172044] prose-p:text-[#555b6e] prose-p:leading-8 prose-a:text-[#2d7777] mt-12 max-w-3xl">
+        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#243f4d] prose-p:text-[#58686d] prose-p:leading-8 prose-a:text-[#2d7777] mt-12 max-w-3xl">
           <MarkdownContent>{item.body}</MarkdownContent>
         </article>
       ) : null}

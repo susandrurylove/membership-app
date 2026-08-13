@@ -22,20 +22,20 @@ export default function Teachings() {
 
   return (
     <main className="portal-page">
-      <header className="relative overflow-hidden rounded-[2rem] bg-[#1f7371] px-6 py-10 text-white shadow-[0_24px_70px_rgba(31,115,113,0.2)] sm:px-10 sm:py-12">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(245,237,214,0.28),transparent_25%),linear-gradient(135deg,transparent,rgba(14,22,52,0.22))]" />
+      <header className="relative overflow-hidden rounded-[2rem] border border-[#cddfd8] bg-[#e3efe9] px-5 py-9 text-[#243f4d] shadow-[0_22px_65px_rgba(47,91,85,0.1)] sm:px-10 sm:py-12">
+        <div className="pointer-events-none absolute -right-20 -top-24 size-72 rounded-full border-[44px] border-[#c9a84c]/20" />
         <div className="relative max-w-3xl">
-          <p className="mb-4 text-[11px] font-bold tracking-[0.24em] text-[#f1d988] uppercase">Wisdom to return to</p>
-          <h1 className="font-serif text-5xl leading-tight sm:text-6xl">Susan’s Teachings</h1>
-          <p className="mt-5 max-w-2xl text-base leading-8 text-white/82 sm:text-lg">Browse video, audio, imagery, and written reflections created to meet you wherever you are in your journey.</p>
+          <p className="mb-4 text-[10px] font-bold tracking-[0.24em] text-[#77580f] uppercase">Wisdom to return to</p>
+          <h1 className="font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">Susan’s Teachings</h1>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-[#5b6e72] sm:text-lg">Browse video, audio, imagery, and written reflections created to meet you wherever you are in your journey.</p>
         </div>
       </header>
 
       <section className="mt-9">
         <div className="flex gap-2 overflow-x-auto pb-3" aria-label="Filter teachings by category">
-          <button onClick={() => setCategory(undefined)} className={`shrink-0 rounded-full border px-5 py-2.5 text-xs font-semibold tracking-[0.1em] uppercase transition-colors ${!category ? "border-[#0e1634] bg-[#0e1634] text-white" : "border-[#d8cfbd] bg-white text-[#5f6474] hover:border-[#c9a84c]"}`}>All teachings</button>
+          <button onClick={() => setCategory(undefined)} className={`shrink-0 rounded-full border px-5 py-2.5 text-xs font-semibold tracking-[0.1em] uppercase transition-colors ${!category ? "border-[#2f7772] bg-[#2f7772] text-white" : "border-[#d8cfbd] bg-[#fffdf8] text-[#5f6970] hover:border-[#c9a84c]"}`}>All teachings</button>
           {categories.data?.map(item => (
-            <button key={item.id} onClick={() => setCategory(item.slug)} className={`shrink-0 rounded-full border px-5 py-2.5 text-xs font-semibold tracking-[0.08em] uppercase transition-colors ${category === item.slug ? "border-[#0e1634] bg-[#0e1634] text-white" : "border-[#d8cfbd] bg-white text-[#5f6474] hover:border-[#c9a84c]"}`}>
+            <button key={item.id} onClick={() => setCategory(item.slug)} className={`shrink-0 rounded-full border px-5 py-2.5 text-xs font-semibold tracking-[0.08em] uppercase transition-colors ${category === item.slug ? "border-[#2f7772] bg-[#2f7772] text-white" : "border-[#d8cfbd] bg-[#fffdf8] text-[#5f6970] hover:border-[#c9a84c]"}`}>
               {item.name} <span className="ml-1 opacity-60">{item.itemCount}</span>
             </button>
           ))}
@@ -52,21 +52,21 @@ export default function Teachings() {
             }}
           />
         ) : teachings.isLoading ? (
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {[0, 1, 2, 3, 4, 5].map(item => <Skeleton key={item} className="h-72 rounded-[1.75rem]" />)}
           </div>
         ) : teachings.data?.length ? (
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {teachings.data.map(item => {
               const Icon = typeIcons[item.contentType];
               return (
-                <Link key={item.id} href={`/teachings/${item.slug}`} className="group flex min-h-72 flex-col rounded-[1.75rem] border border-[#ddd5c5] bg-white p-6 shadow-[0_16px_45px_rgba(23,32,68,0.06)] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#c9a84c]/60 hover:shadow-[0_24px_55px_rgba(23,32,68,0.11)]">
+                <Link key={item.id} href={`/teachings/${item.slug}`} className="editorial-card group flex min-h-64 flex-col rounded-[1.75rem] p-5 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#c9a84c]/60 hover:shadow-[0_22px_52px_rgba(48,66,72,0.11)] sm:p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div className="grid size-12 place-items-center rounded-2xl bg-[#e7f0ec] text-[#246866]"><Icon className="size-5" /></div>
-                    {item.featured ? <Badge className="rounded-full bg-[#f4ead0] text-[#8b6a19] hover:bg-[#f4ead0]">Featured</Badge> : null}
+                    {item.featured ? <Badge className="rounded-full bg-[#f4ead0] text-[#77580f] hover:bg-[#f4ead0]">Featured</Badge> : null}
                   </div>
                   <p className="mt-8 text-[10px] font-bold tracking-[0.2em] text-[#2d7777] uppercase">{item.categoryName || item.contentType}</p>
-                  <h2 className="mt-3 font-serif text-2xl leading-snug text-[#172044]">{item.title}</h2>
+                  <h2 className="mt-3 font-serif text-2xl leading-snug text-[#243f4d]">{item.title}</h2>
                   <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted-foreground">{item.summary || "Open this teaching to receive Susan’s reflection."}</p>
                   <span className="mt-auto flex items-center gap-2 pt-6 text-xs font-bold tracking-[0.14em] text-[#2d7777] uppercase">Open teaching <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" /></span>
                 </Link>

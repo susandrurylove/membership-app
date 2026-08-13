@@ -32,42 +32,51 @@ export default function Login() {
   }, [loading, setLocation, user]);
 
   return (
-    <main className="min-h-screen bg-[#0e1634] text-[#f5edd6]">
-      <div className="grid min-h-screen lg:grid-cols-[1.08fr_0.92fr]">
-        <section className="relative hidden overflow-hidden border-r border-[#c9a84c]/25 p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(201,168,76,0.2),transparent_34%),radial-gradient(circle_at_20%_80%,rgba(45,119,119,0.38),transparent_42%)]" />
+    <main className="min-h-screen bg-[#faf7ef] text-[#243f4d]">
+      <div className="grid min-h-screen lg:grid-cols-[0.9fr_1.1fr]">
+        <section className="relative hidden overflow-hidden border-r border-[#ddcfb0] bg-[#e8f0eb] p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
+          <div className="pointer-events-none absolute -right-28 top-24 size-96 rounded-full border-[58px] border-[#c9a84c]/25" />
+          <div className="pointer-events-none absolute -bottom-36 -left-24 size-96 rounded-full bg-[#cfe2db]/70" />
           <a href="https://susandrury.com" className="relative flex items-center gap-3 text-sm tracking-[0.16em] uppercase">
-            <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-10 brightness-0 invert" />
+            <span className="grid size-12 place-items-center rounded-full border border-[#d4bd82] bg-[#fffaf0]">
+              <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-8" />
+            </span>
             Susan Drury
           </a>
 
           <div className="relative max-w-2xl">
-            <p className="mb-6 text-xs font-semibold tracking-[0.28em] text-[#c9a84c] uppercase">A private space for your practice</p>
-            <h1 className="max-w-xl font-serif text-6xl leading-[1.05] xl:text-7xl">Come home to what matters.</h1>
-            <p className="mt-7 max-w-lg text-lg leading-8 text-[#d6d8e2]">
-              Your teachings, courses, and transformational tools — gathered in one quiet, trusted place.
+            <p className="mb-5 text-xs font-semibold tracking-[0.28em] text-[#77580f] uppercase">A private space for your practice</p>
+            <h1 className="max-w-xl font-serif text-5xl leading-[1.06] text-[#243f4d] xl:text-7xl">Come home to what matters.</h1>
+            <p className="mt-7 max-w-lg text-lg leading-8 text-[#586c70]">
+              Your teachings, courses, and transformational tools—gathered in one quiet, trusted place.
             </p>
           </div>
 
-          <div className="relative flex items-center gap-3 text-sm text-[#d6d8e2]">
-            <ShieldCheck className="size-5 text-[#c9a84c]" />
+          <div className="relative flex items-center gap-3 text-sm text-[#52676c]">
+            <ShieldCheck className="size-5 text-[#2f7772]" />
             Private access for active members
           </div>
         </section>
 
-        <section className="grid place-items-center bg-[#faf7ef] px-6 py-12 text-[#172044] sm:px-10 lg:px-14">
-          <div className="w-full max-w-md">
-            <div className="mb-10 flex items-center gap-3 lg:hidden">
-              <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-10" />
-              <span className="text-sm tracking-[0.16em] uppercase">Susan Drury</span>
+        <section className="relative grid place-items-center overflow-hidden px-5 py-8 sm:px-10 sm:py-12 lg:px-14">
+          <div className="pointer-events-none absolute -right-24 -top-28 size-64 rounded-full bg-[#f0dfad]/30 lg:hidden" />
+          <div className="relative w-full max-w-md rounded-[2rem] border border-[#e0d5c0] bg-[#fffdf8]/94 p-6 shadow-[0_22px_70px_rgba(54,72,73,0.1)] sm:p-9 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+            <div className="mb-8 flex items-center gap-3 lg:hidden">
+              <span className="grid size-11 place-items-center rounded-full border border-[#d4bd82] bg-[#f8f0dc]">
+                <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-7" />
+              </span>
+              <span>
+                <span className="block text-xs font-semibold tracking-[0.14em] uppercase">Susan Drury</span>
+                <span className="mt-0.5 block text-[9px] tracking-[0.16em] text-[#9b7726] uppercase">Member sanctuary</span>
+              </span>
             </div>
 
-            <p className="mb-3 text-xs font-semibold tracking-[0.24em] text-[#2d7777] uppercase">Member sanctuary</p>
-            <h2 className="font-serif text-5xl leading-tight">Welcome back</h2>
-            <p className="mt-4 leading-7 text-[#636879]">Sign in with the email and password connected to your membership.</p>
+            <p className="mb-3 text-xs font-semibold tracking-[0.24em] text-[#2f7772] uppercase">Member sanctuary</p>
+            <h2 className="font-serif text-4xl leading-tight sm:text-5xl">Welcome back</h2>
+            <p className="mt-4 leading-7 text-[#65757a]">Sign in with the email and password connected to your membership.</p>
 
             <form
-              className="mt-9 space-y-5"
+              className="mt-8 space-y-5"
               onSubmit={event => {
                 event.preventDefault();
                 login.mutate({ email, password });
@@ -75,11 +84,11 @@ export default function Login() {
             >
               <div className="space-y-2">
                 <Label htmlFor="email">Email address</Label>
-                <Input id="email" type="email" autoComplete="email" required value={email} onChange={event => setEmail(event.target.value)} className="h-12 rounded-xl border-[#d9d2c2] bg-white" />
+                <Input id="email" type="email" autoComplete="email" required value={email} onChange={event => setEmail(event.target.value)} className="h-12 rounded-xl border-[#d9d0be] bg-white" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" autoComplete="current-password" required minLength={12} value={password} onChange={event => setPassword(event.target.value)} className="h-12 rounded-xl border-[#d9d2c2] bg-white" />
+                <Input id="password" type="password" autoComplete="current-password" required minLength={12} value={password} onChange={event => setPassword(event.target.value)} className="h-12 rounded-xl border-[#d9d0be] bg-white" />
               </div>
 
               {login.error ? (
@@ -88,20 +97,20 @@ export default function Login() {
                 </p>
               ) : null}
 
-              <Button type="submit" disabled={login.isPending} className="h-12 w-full rounded-full bg-[#c9a84c] text-xs font-bold tracking-[0.16em] text-[#0e1634] uppercase hover:bg-[#ddc36f]">
+              <Button type="submit" disabled={login.isPending} className="h-12 w-full rounded-full bg-[#2f7772] text-xs font-bold tracking-[0.16em] text-white uppercase hover:bg-[#245f5c]">
                 {login.isPending ? <Loader2 className="size-4 animate-spin" /> : <>Enter the portal <ArrowRight className="ml-2 size-4" /></>}
               </Button>
             </form>
 
             {import.meta.env.DEV ? (
-              <Button variant="ghost" disabled={previewSignIn.isPending} className="mt-4 w-full text-xs text-[#6c7181]" onClick={() => previewSignIn.mutate()}>
+              <Button variant="ghost" disabled={previewSignIn.isPending} className="mt-4 w-full text-xs text-[#6c777b]" onClick={() => previewSignIn.mutate()}>
                 {previewSignIn.isPending ? <Loader2 className="size-4 animate-spin" /> : "Development preview sign-in"}
               </Button>
             ) : null}
             {previewSignIn.error ? <p role="alert" className="mt-2 text-center text-xs text-[#823b32]">{previewSignIn.error.message}</p> : null}
 
-            <p className="mt-8 text-center text-sm leading-6 text-[#6c7181]">
-              Need help accessing your membership? <a href="https://susandrury.com/contact" className="font-semibold text-[#2d7777] underline-offset-4 hover:underline">Contact Susan’s team</a>.
+            <p className="mt-7 text-center text-sm leading-6 text-[#6c777b]">
+              Need help accessing your membership? <a href="https://susandrury.com/contact" className="font-semibold text-[#2f7772] underline-offset-4 hover:underline">Contact Susan’s team</a>.
             </p>
           </div>
         </section>

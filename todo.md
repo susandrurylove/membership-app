@@ -36,3 +36,17 @@
 - [x] Create the `Susan Drury Membership` Railway project in the `susandrurylove` workspace.
 - [x] Provision a healthy Railway MySQL service and expose it to the app as `DATABASE_URL` through a service reference.
 - [x] Configure baseline production variables, deploy commit `1d9db3e664ef7a406d0ce519f89373062e295a53`, and verify `/api/health` returns HTTP 200.
+- [x] Replace the overly dark portal treatment with SusanDrury.com’s light ivory, warm gold, soft teal, and restrained navy brand system.
+- [x] Redesign the shared member shell and mobile navigation so every protected route works cleanly at 320px, 375px, 768px, and desktop widths.
+- [x] Apply the revised Susan brand consistently across dashboard, teachings, courses, connected apps, login, invitation, and administrator surfaces.
+- [x] Verify contrast, keyboard focus, touch targets, overflow, dialogs, tables, and media viewers across mobile and desktop breakpoints.
+- [x] Capture rendered evidence for populated teaching/course detail states and live administrator editors at narrow mobile, tablet, and desktop breakpoints.
+- [x] Exercise and protect keyboard focus order and visible focus treatment through the protected shell and administrator controls before release.
+- [x] Capture a live focused administrator control and verify dialog focus containment and mobile touch-target sizing before final release.
+- [x] Add rendered DOM tests for admin tab focus classes, member card/table variants, and video/audio/image media layouts.
+- [x] Add automated contrast checks for the primary Susan Drury text, teal, gold, ivory, and status-color pairings.
+- [x] Extend keyboard interaction tests to teaching, course, and media administrator controls.
+- [ ] Configure Railway for the canonical `https://membership.susandrury.com` origin and prepare the custom-domain DNS handoff.
+- [ ] Push and deploy the responsive redesign, then verify the live health endpoint and representative protected routes.
+- [x] Re-verify the existing Railway `Susan Drury Membership` project and its GitHub deployment trigger after the Railway new-project picker reports `repository not found`.
+- [x] Document the exact existing Railway project location so a duplicate project is not created from the failing repository picker.

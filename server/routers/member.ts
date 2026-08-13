@@ -12,6 +12,14 @@ import {
   listTeachingCategories,
   updateLessonProgress,
 } from "../memberData";
+import {
+  getDevelopmentCourseFixture,
+  getDevelopmentMediaFixture,
+  getDevelopmentTeachingFixture,
+  isDevelopmentQaRequest,
+  QA_COURSE_SLUG,
+  QA_TEACHING_SLUG,
+} from "../qaFixtures";
 
 const slugSchema = z.string().min(1).max(260).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 
@@ -26,6 +34,9 @@ export const memberRouter = router({
     bySlug: protectedProcedure
       .input(z.object({ slug: slugSchema }))
       .query(async ({ input, ctx }) => {
+        if (isDevelopmentQaRequest() && input.slug === QA_TEACHING_SLUG) {
+          return getDevelopmentTeachingFixture();
+        }
         const item = await getPublishedTeaching(ctx.user.id, input.slug);
         if (!item) throw new TRPCError({ code: "NOT_FOUND", message: "Teaching not found" });
         return item;
@@ -37,6 +48,9 @@ export const memberRouter = router({
     bySlug: protectedProcedure
       .input(z.object({ slug: slugSchema }))
       .query(async ({ input, ctx }) => {
+        if (isDevelopmentQaRequest() && input.slug === QA_COURSE_SLUG) {
+          return getDevelopmentCourseFixture();
+        }
         const course = await getPublishedCourse(ctx.user.id, input.slug);
         if (!course) throw new TRPCError({ code: "NOT_FOUND", message: "Course not found" });
         return course;
@@ -61,6 +75,8 @@ export const memberRouter = router({
     url: protectedProcedure
       .input(z.object({ mediaId: z.number().int().positive() }))
       .query(async ({ input }) => {
+        const developmentMedia = getDevelopmentMediaFixture(input.mediaId);
+        if (developmentMedia) return developmentMedia;
         const media = await getProtectedMediaUrl(input.mediaId);
         if (!media) throw new TRPCError({ code: "NOT_FOUND", message: "Media not found" });
         return media;

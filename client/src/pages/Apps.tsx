@@ -6,9 +6,9 @@ import { ArrowUpRight, Heart, Leaf, Loader2, LockKeyhole, Sparkles } from "lucid
 import { useState } from "react";
 
 const presentation = {
-  elevate: { icon: Heart, color: "from-[#9e3f6d] to-[#612d63]" },
-  enlightened_body: { icon: Leaf, color: "from-[#1f7371] to-[#174b59]" },
-  tao: { icon: Sparkles, color: "from-[#a48132] to-[#5e4820]" },
+  elevate: { icon: Heart, color: "border-[#e5cbd6] bg-[#f5e8ed] text-[#7e3f5c]" },
+  enlightened_body: { icon: Leaf, color: "border-[#c8ddd5] bg-[#e4f0eb] text-[#2f7772]" },
+  tao: { icon: Sparkles, color: "border-[#e1d2ad] bg-[#f5ecd5] text-[#77580f]" },
 };
 
 export default function Apps() {
@@ -24,7 +24,7 @@ export default function Apps() {
     <main className="portal-page">
       <header className="max-w-4xl">
         <p className="eyebrow">Three doorways, one membership</p>
-        <h1 className="mt-4 font-serif text-5xl leading-tight text-[#172044] sm:text-6xl">Susan’s Apps</h1>
+        <h1 className="mt-3 font-serif text-4xl leading-tight text-[#243f4d] sm:text-5xl lg:text-6xl">Susan’s Apps</h1>
         <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">Open Susan’s interactive experiences from one trusted place. A one-time member handoff keeps each launch private and connected to your active membership.</p>
       </header>
 
@@ -39,26 +39,26 @@ export default function Apps() {
               const { icon: Icon, color } = presentation[app.key];
               const isLaunching = launching === app.key;
               return (
-                <article key={app.key} className="group overflow-hidden rounded-[2rem] border border-[#ddd5c5] bg-white shadow-[0_18px_50px_rgba(23,32,68,0.08)]">
-                  <div className={`relative min-h-52 bg-gradient-to-br ${color} p-7 text-white`}>
-                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,rgba(255,255,255,0.3),transparent_22%)]" />
+                <article key={app.key} className="editorial-card group overflow-hidden rounded-[2rem]">
+                  <div className={`relative min-h-48 border-b p-6 ${color} sm:p-7`}>
+                    <div className="pointer-events-none absolute -right-12 -top-14 size-40 rounded-full border-[24px] border-current opacity-[0.08]" />
                     <div className="relative flex items-start justify-between">
-                      <div className="grid size-14 place-items-center rounded-full border border-white/25 bg-white/12 backdrop-blur"><Icon className="size-6" /></div>
+                      <div className="grid size-14 place-items-center rounded-full border border-current/20 bg-white/45"><Icon className="size-6" /></div>
                       {app.enabled ? <ArrowUpRight className="size-5 opacity-60" /> : <LockKeyhole className="size-5 opacity-55" />}
                     </div>
                     <div className="relative mt-12">
-                      <p className="text-[10px] font-bold tracking-[0.2em] text-white/72 uppercase">{app.eyebrow}</p>
+                      <p className="text-[10px] font-bold tracking-[0.2em] opacity-70 uppercase">{app.eyebrow}</p>
                       <h2 className="mt-3 font-serif text-3xl">{app.title}</h2>
                     </div>
                   </div>
-                  <div className="p-7">
-                    <p className="min-h-24 text-sm leading-7 text-muted-foreground">{app.description}</p>
+                  <div className="p-6 sm:p-7">
+                    <p className="text-sm leading-7 text-muted-foreground xl:min-h-24">{app.description}</p>
                     <Button
                       disabled={!app.enabled || launch.isPending}
                       onClick={() => launch.mutate({ appKey: app.key })}
-                      className="mt-6 h-11 w-full rounded-full bg-[#0e1634] text-xs font-bold tracking-[0.12em] text-white uppercase hover:bg-[#1b2855] disabled:opacity-65"
+                      className="mt-6 h-11 w-full rounded-full bg-[#2f7772] text-xs font-bold tracking-[0.12em] text-white uppercase hover:bg-[#245f5c] disabled:opacity-65"
                     >
-                      {isLaunching ? <><Loader2 className="mr-2 size-4 animate-spin" /> Creating secure access</> : app.enabled ? <>Open securely <ArrowUpRight className="ml-2 size-4" /></> : <>Connection not configured <LockKeyhole className="ml-2 size-4" /></>}
+                      {isLaunching ? <><Loader2 className="mr-2 size-4 animate-spin" /> Creating secure access</> : app.enabled ? <>Open securely <ArrowUpRight className="ml-2 size-4" /></> : <><span className="sm:hidden">Setup pending</span><span className="hidden sm:inline">Connection not configured</span><LockKeyhole className="ml-2 size-4 shrink-0" /></>}
                     </Button>
                     {launch.error && isLaunching ? <p role="alert" className="mt-3 text-center text-xs leading-5 text-[#9c493e]">{launch.error.message}</p> : null}
                   </div>

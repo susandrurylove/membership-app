@@ -28,8 +28,8 @@ export function MediaViewer({ asset }: { asset: MediaAsset }) {
 
   if (asset.kind === "video") {
     return (
-      <div className="overflow-hidden rounded-[1.5rem] bg-[#0e1634] shadow-xl">
-        <video controls preload="metadata" className="aspect-video w-full" src={media.data.url}>
+      <div className="overflow-hidden rounded-[1.5rem] border border-[#d9cfbb] bg-[#f1ece1] shadow-[0_18px_45px_rgba(48,66,72,0.1)]">
+        <video controls preload="metadata" className="aspect-video w-full bg-black" src={media.data.url}>
           <track kind="captions" />
         </video>
       </div>
@@ -38,12 +38,12 @@ export function MediaViewer({ asset }: { asset: MediaAsset }) {
 
   if (asset.kind === "audio") {
     return (
-      <div className="rounded-[1.5rem] border border-[#ddd5c5] bg-[#0e1634] p-6 text-[#f5edd6] shadow-xl sm:p-8">
+      <div className="rounded-[1.5rem] border border-[#d5dfd8] bg-[#eaf2ee] p-5 text-[#243f4d] shadow-[0_18px_45px_rgba(48,66,72,0.09)] sm:p-8">
         <div className="mb-6 flex items-center gap-4">
-          <div className="grid size-12 place-items-center rounded-full bg-[#c9a84c] text-[#0e1634]"><FileAudio className="size-5" /></div>
+          <div className="grid size-12 place-items-center rounded-full bg-[#f0dfae] text-[#77580f]"><FileAudio className="size-5" /></div>
           <div>
-            <p className="text-[10px] font-bold tracking-[0.2em] text-[#c9a84c] uppercase">Audio teaching</p>
-            <p className="mt-1 text-sm text-[#d6d8e2]">{asset.originalName}</p>
+            <p className="text-[10px] font-bold tracking-[0.2em] text-[#2f7772] uppercase">Audio teaching</p>
+            <p className="mt-1 break-all text-sm text-[#5c6e72]">{asset.originalName}</p>
           </div>
         </div>
         <audio controls preload="metadata" className="w-full" src={media.data.url} />
@@ -60,7 +60,7 @@ export function MediaViewer({ asset }: { asset: MediaAsset }) {
   }
 
   return (
-    <a href={media.data.url} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-[#ddd5c5] bg-white p-5 text-[#172044] hover:border-[#c9a84c]">
+    <a href={media.data.url} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-[#ddd5c5] bg-white p-5 text-[#243f4d] hover:border-[#c9a84c]">
       {asset.mimeType.startsWith("video/") ? <FileVideo className="size-5" /> : <ImageIcon className="size-5" />}
       Open {asset.originalName}
     </a>

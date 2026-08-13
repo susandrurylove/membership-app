@@ -26,12 +26,12 @@ export default function AcceptInvitation() {
 
   if (!token || (!invitation.isLoading && !invitation.data?.valid)) {
     return (
-      <main className="grid min-h-screen place-items-center bg-[#0e1634] px-6 text-[#f5edd6]">
-        <div className="max-w-lg text-center">
-          <div className="mx-auto mb-6 grid size-16 place-items-center rounded-full border border-[#c9a84c]/50 text-2xl text-[#c9a84c]">✦</div>
-          <h1 className="font-serif text-5xl">This invitation is no longer available</h1>
-          <p className="mx-auto mt-5 max-w-md leading-7 text-[#d6d8e2]">It may have expired or already been used. Susan’s team can send a fresh invitation.</p>
-          <Button asChild className="mt-8 rounded-full bg-[#c9a84c] text-[#0e1634] hover:bg-[#ddc36f]">
+      <main className="grid min-h-screen place-items-center bg-[#f7f1e4] px-5 py-10 text-[#243f4d]">
+        <div className="w-full max-w-lg rounded-[2rem] border border-[#ddcfad] bg-[#fffdf8] p-7 text-center shadow-[0_24px_70px_rgba(54,72,73,0.1)] sm:p-11">
+          <div className="mx-auto mb-6 grid size-16 place-items-center rounded-full border border-[#c9a84c]/60 bg-[#f4ead0] text-2xl text-[#77580f]">✦</div>
+          <h1 className="font-serif text-4xl sm:text-5xl">This invitation is no longer available</h1>
+          <p className="mx-auto mt-5 max-w-md leading-7 text-[#64747a]">It may have expired or already been used. Susan’s team can send a fresh invitation.</p>
+          <Button asChild className="mt-8 rounded-full bg-[#2f7772] text-white hover:bg-[#245f5c]">
             <a href="https://susandrury.com/contact">Contact Susan’s team</a>
           </Button>
         </div>
@@ -40,8 +40,8 @@ export default function AcceptInvitation() {
   }
 
   return (
-    <main className="grid min-h-screen place-items-center bg-[#faf7ef] px-6 py-12 text-[#172044]">
-      <div className="w-full max-w-lg rounded-[2rem] border border-[#ded6c5] bg-white p-7 shadow-[0_24px_80px_rgba(23,32,68,0.12)] sm:p-11">
+    <main className="grid min-h-screen place-items-center bg-[#faf7ef] px-5 py-10 text-[#243f4d]">
+      <div className="w-full max-w-lg rounded-[2rem] border border-[#ded6c5] bg-[#fffdf8] p-6 shadow-[0_24px_80px_rgba(54,72,73,0.1)] sm:p-11">
         <div className="mb-8 flex items-center gap-3">
           <img src="https://susan-website-pull.b-cdn.net/2024/logo/sd-mandala-mark.svg" alt="Susan Drury" className="size-11" />
           <span className="text-sm tracking-[0.16em] uppercase">Member Sanctuary</span>
@@ -80,7 +80,7 @@ export default function AcceptInvitation() {
               {confirmation && password !== confirmation ? <p className="text-sm text-[#9c493e]">The passwords do not match.</p> : null}
               {accept.error ? <p role="alert" className="rounded-xl bg-[#b45a4d]/10 px-4 py-3 text-sm text-[#823b32]">{accept.error.message}</p> : null}
 
-              <Button type="submit" disabled={accept.isPending || password !== confirmation} className="h-12 w-full rounded-full bg-[#c9a84c] text-xs font-bold tracking-[0.16em] text-[#0e1634] uppercase hover:bg-[#ddc36f]">
+              <Button type="submit" disabled={accept.isPending || password !== confirmation} className="h-12 w-full rounded-full bg-[#2f7772] text-xs font-bold tracking-[0.16em] text-white uppercase hover:bg-[#245f5c]">
                 {accept.isPending ? <Loader2 className="size-4 animate-spin" /> : <>Create account <ArrowRight className="ml-2 size-4" /></>}
               </Button>
             </form>
