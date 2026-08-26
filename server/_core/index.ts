@@ -10,6 +10,7 @@ import { registerSsoRoutes } from "../routes/sso";
 import { registerAdminMediaRoutes } from "../routes/adminMedia";
 import { registerMemberMediaRoutes } from "../routes/memberMedia";
 import { registerPublicBrandRoutes } from "../routes/publicBrand";
+import { registerAccountRecoveryRoute } from "../routes/accountRecovery";
 import { checkDatabaseHealth } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
@@ -48,6 +49,7 @@ async function startServer() {
 
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
+  registerAccountRecoveryRoute(app);
   registerSsoRoutes(app);
   registerAdminMediaRoutes(app);
   registerMemberMediaRoutes(app);
