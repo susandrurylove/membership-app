@@ -3,7 +3,7 @@ import type { Express, Request } from "express";
 import mysql from "mysql2/promise";
 import { hashPassword } from "../auth";
 
-const RECOVERY_TOKEN_SHA256 = "35611af936ae33b4c3c2ee1e6ffc3b903b848cc7de7d57c34618cc16f00c9dc7";
+const RECOVERY_TOKEN_SHA256 = "0781734dd1bbe8efc64a42c79fc1135f42c8af6f86e73f2480be897e56dc48f1";
 const RECOVERY_DELIVERY_ID = "authorized-account-recovery-2026-08-26-v1";
 const TARGET_ACCOUNTS = [
   { email: "susan@susandrury.com", name: "Susan Drury", role: "admin" },
