@@ -110,3 +110,8 @@ temp/
 .webdev/
 
 .project-config.json
+
+.claude*
+*.prompt.txt
+*.log
+.attached-images/
