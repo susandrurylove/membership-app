@@ -22,13 +22,7 @@ function hasValidRecoveryToken(req: Request) {
 }
 
 function isStrongEnough(password: unknown): password is string {
-  return (
-    typeof password === "string" &&
-    password.length >= 12 &&
-    /[a-z]/.test(password) &&
-    /[A-Z]/.test(password) &&
-    /[0-9]/.test(password)
-  );
+  return typeof password === "string" && password.length >= 12;
 }
 
 export function registerAccountRecoveryRoute(app: Express) {
@@ -41,7 +35,7 @@ export function registerAccountRecoveryRoute(app: Express) {
     const password = req.body?.password;
     if (!isStrongEnough(password)) {
       res.status(400).json({
-        error: "Password must have at least 12 characters with uppercase, lowercase, and a number.",
+        error: "Password must have at least 12 characters.",
       });
       return;
     }
