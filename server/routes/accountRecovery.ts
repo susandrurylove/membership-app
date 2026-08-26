@@ -74,7 +74,7 @@ export function registerAccountRecoveryRoute(app: Express) {
         await connection.execute(
           `INSERT INTO users
             (openId, name, email, loginMethod, passwordHash, accountStatus, role, invitationAcceptedAt, createdAt, updatedAt, lastSignedIn)
-           VALUES (?, ?, ?, 'password', ?, 'active', ?, NOW(), NOW(), NOW(), NULL)
+           VALUES (?, ?, ?, 'password', ?, 'active', ?, NOW(), NOW(), NOW(), NOW())
            ON DUPLICATE KEY UPDATE
             name = VALUES(name),
             loginMethod = 'password',
