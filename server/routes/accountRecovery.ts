@@ -129,10 +129,16 @@ export function registerAccountRecoveryRoute(app: Express) {
       );
       await connection.commit();
       res.status(200).json({ recovered });
-    } catch (error) {
+    } catch (error: any) {
       await connection.rollback();
       console.error("Authorized account recovery failed", error);
-      res.status(500).json({ error: "Account recovery failed" });
+      res.status(500).json({
+        error: "Account recovery failed",
+        code: error?.code ?? null,
+        errno: error?.errno ?? null,
+        sqlState: error?.sqlState ?? null,
+        message: error instanceof Error ? error.message : String(error),
+      });
     } finally {
       await connection.end();
     }
