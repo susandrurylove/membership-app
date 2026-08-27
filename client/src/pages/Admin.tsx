@@ -30,20 +30,21 @@ function OverviewPanel() {
           return (
             <div key={item.key} className="editorial-card rounded-[1.5rem] p-5">
               <div className={`grid size-10 place-items-center rounded-xl ${item.accent}`}><Icon className="size-4" /></div>
-              <p className="mt-5 font-serif text-3xl text-[#243f4d] sm:text-4xl">{overview.data?.[item.key] ?? 0}</p>
+              <p className="mt-5 font-serif text-3xl text-[#1e234c] sm:text-4xl">{overview.data?.[item.key] ?? 0}</p>
               <p className="mt-2 text-sm text-muted-foreground">{item.label}</p>
             </div>
           );
         })}
       </div>
 
-      <div className="mt-7 rounded-[1.75rem] border border-[#d8c99f] bg-[#eef3e8] p-6 text-[#243f4d] shadow-[0_18px_50px_rgba(54,72,73,0.08)] sm:p-9">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-          <div className="grid size-12 shrink-0 place-items-center rounded-full bg-[#f2e3b9] text-[#77580f]"><Sparkles className="size-5" /></div>
+      <div className="brand-hero mt-7 rounded-[1.75rem] p-6 sm:p-9">
+        <div className="relative z-[2] flex flex-col gap-4 sm:flex-row sm:items-start">
+          <div className="grid size-12 shrink-0 place-items-center rounded-full border border-[#c9a84c]/55 bg-white/5 text-[#ead79c]"><Sparkles className="size-5" /></div>
           <div>
-            <p className="text-[10px] font-bold tracking-[0.22em] text-[#2f7772] uppercase">Susan’s studio</p>
-            <h2 className="mt-3 font-serif text-2xl sm:text-3xl">Everything you publish flows directly to members</h2>
-            <p className="mt-4 max-w-3xl leading-7 text-[#607176]">Use the tabs above to invite and manage clients, prepare teachings, organize course lessons, and upload media. Draft content remains private until you publish it.</p>
+            <p className="brand-eyebrow">Susan’s studio</p>
+            <div className="brand-gold-rule mt-4" />
+            <h2 className="mt-5 font-serif text-2xl text-[#fdfaf5] sm:text-3xl">Everything you publish flows directly to members</h2>
+            <p className="mt-4 max-w-3xl leading-7 text-[#e8e4da]">Use the tabs above to invite and manage clients, prepare teachings, organize course lessons, and upload media. Draft content remains private until you publish it.</p>
           </div>
         </div>
       </div>
@@ -55,14 +56,17 @@ export default function Admin() {
   const requestedTab = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("tab") : null;
   const initialTab = adminTabs.includes(requestedTab as (typeof adminTabs)[number]) ? requestedTab! : "overview";
   const qaFocusedTab = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("qa-focus-admin") : null;
-  const tabClassName = (value: string) => `rounded-xl px-2 py-2.5 text-xs focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 sm:px-4 sm:text-sm ${qaFocusedTab === value ? "ring-2 ring-[#c9a84c] ring-offset-2" : ""}`;
+  const tabClassName = (value: string) => `rounded-xl px-2 py-2.5 text-xs font-semibold tracking-[0.04em] text-[#5b6970] data-[state=active]:bg-[#1e234c] data-[state=active]:text-[#fdfaf5] data-[state=active]:shadow-sm focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 sm:px-4 sm:text-sm ${qaFocusedTab === value ? "ring-2 ring-[#c9a84c] ring-offset-2" : ""}`;
 
   return (
     <main className="portal-page">
-      <header className="max-w-4xl">
-        <p className="eyebrow">Private administration</p>
-        <h1 className="mt-3 font-serif text-4xl leading-tight text-[#243f4d] sm:text-5xl lg:text-6xl">Susan’s Studio</h1>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">Manage member access, teachings, courses, lessons, and media without changing code.</p>
+      <header className="brand-hero rounded-[2.25rem] px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
+        <div className="relative z-[2] max-w-4xl">
+          <p className="brand-eyebrow">Private administration</p>
+          <div className="brand-gold-rule mt-5" />
+          <h1 className="mt-6 font-serif text-4xl leading-tight text-[#fdfaf5] sm:text-5xl lg:text-6xl">Susan’s Studio</h1>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-[#e8e4da] sm:text-lg">Manage member access, teachings, courses, lessons, and Bunny media from one calm, protected workspace.</p>
+        </div>
       </header>
 
       <Tabs
@@ -76,7 +80,7 @@ export default function Admin() {
           window.history.replaceState(null, "", url);
         }}
       >
-        <TabsList className="grid h-auto w-full grid-cols-3 gap-1 rounded-2xl border border-[#ddd3c0] bg-[#fffdf8] p-1.5 shadow-sm sm:grid-cols-5">
+        <TabsList className="brand-panel grid h-auto w-full grid-cols-3 gap-1 rounded-2xl p-1.5 sm:grid-cols-5">
           <TabsTrigger value="overview" className={tabClassName("overview")}>Overview</TabsTrigger>
           <TabsTrigger value="members" className={tabClassName("members")}>Members</TabsTrigger>
           <TabsTrigger value="teachings" className={tabClassName("teachings")}>Teachings</TabsTrigger>

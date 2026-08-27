@@ -1,0 +1,197 @@
+
+> membership-app@1.0.0 qa:protocol:check /home/ubuntu/membership-app
+> pnpm qa:protocol && node scripts/verify-qa-protocol.mjs
+
+
+> membership-app@1.0.0 qa:protocol /home/ubuntu/membership-app
+> node scripts/generate-qa-protocol.mjs
+
+{
+  "totalChecks": 2000,
+  "domains": 25,
+  "summary": [
+    {
+      "domain": "Login Credentials",
+      "slug": "login-credentials",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Login Validation and Feedback",
+      "slug": "login-validation",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Account Bootstrap and Recovery",
+      "slug": "account-bootstrap-recovery",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Session Lifecycle and Security",
+      "slug": "session-security",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Invitation and Password Setup",
+      "slug": "invitation-password",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Member Authorization",
+      "slug": "member-authorization",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Administrator Authorization",
+      "slug": "admin-authorization",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Membership Entitlements",
+      "slug": "membership-entitlements",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Database Integrity",
+      "slug": "database-integrity",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Migrations and Application Boot",
+      "slug": "migrations-boot",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Member Dashboard",
+      "slug": "dashboard",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Teachings Experience",
+      "slug": "teachings",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Courses and Progress",
+      "slug": "courses-progress",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Connected Apps and SSO",
+      "slug": "apps-sso",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Protected Media",
+      "slug": "protected-media",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Administrator Member Management",
+      "slug": "admin-members",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Administrator Teaching Management",
+      "slug": "admin-teachings",
+      "priority": "P2",
+      "checks": 80,
+      "releaseBlocking": 0
+    },
+    {
+      "domain": "Administrator Course Management",
+      "slug": "admin-courses",
+      "priority": "P2",
+      "checks": 80,
+      "releaseBlocking": 0
+    },
+    {
+      "domain": "Administrator Media Management",
+      "slug": "admin-media",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Responsive Layout",
+      "slug": "responsive-layout",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Accessibility and Inclusive Interaction",
+      "slug": "accessibility",
+      "priority": "P1",
+      "checks": 80,
+      "releaseBlocking": 64
+    },
+    {
+      "domain": "Susan Drury Visual Brand",
+      "slug": "visual-brand",
+      "priority": "P2",
+      "checks": 80,
+      "releaseBlocking": 0
+    },
+    {
+      "domain": "Security and Privacy",
+      "slug": "security-privacy",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    },
+    {
+      "domain": "Performance and Reliability",
+      "slug": "performance-reliability",
+      "priority": "P2",
+      "checks": 80,
+      "releaseBlocking": 0
+    },
+    {
+      "domain": "Deployment and Observability",
+      "slug": "deployment-observability",
+      "priority": "P0",
+      "checks": 80,
+      "releaseBlocking": 80
+    }
+  ]
+}
+{
+  "status": "pass",
+  "totalChecks": 2000,
+  "domains": 25,
+  "p0Checks": 800,
+  "loginChecks": 160,
+  "accountSessionInvitationChecks": 240
+}

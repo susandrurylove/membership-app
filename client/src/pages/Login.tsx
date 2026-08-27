@@ -42,42 +42,43 @@ export default function Login() {
   return (
     <main className="min-h-screen bg-[#faf7ef] text-[#243f4d]">
       <div className="grid min-h-screen lg:grid-cols-[0.9fr_1.1fr]">
-        <section className="relative hidden overflow-hidden border-r border-[#ddcfb0] bg-[#e8f0eb] p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
-          <div className="pointer-events-none absolute -right-28 top-24 size-96 rounded-full border-[58px] border-[#c9a84c]/25" />
-          <div className="pointer-events-none absolute -bottom-36 -left-24 size-96 rounded-full bg-[#cfe2db]/70" />
-          <a href="https://susandrury.com" className="relative flex items-center gap-4 text-sm tracking-[0.16em] uppercase">
-            <img src={SUSAN_LOGO.large} alt="Susan Drury" className="h-16 w-auto object-contain drop-shadow-[0_8px_18px_rgba(119,88,15,0.18)]" />
+        <section className="brand-hero hidden p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
+          <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute -right-20 top-1/2 z-[1] h-[32rem] w-auto -translate-y-1/2 object-contain opacity-[0.1]" />
+          <a href="https://susandrury.com" className="relative z-[2] flex items-center gap-4 rounded-full text-sm tracking-[0.16em] text-[#fdfaf5] uppercase focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:outline-none">
+            <img src={SUSAN_LOGO.large} alt="Susan Drury" className="h-16 w-auto object-contain brightness-110 drop-shadow-[0_8px_18px_rgba(201,168,76,0.22)]" />
             <span>Susan Drury</span>
           </a>
 
-          <div className="relative max-w-2xl">
-            <p className="mb-5 text-xs font-semibold tracking-[0.28em] text-[#77580f] uppercase">A private space for your practice</p>
-            <h1 className="max-w-xl font-serif text-5xl leading-[1.06] text-[#243f4d] xl:text-7xl">Come home to what matters.</h1>
-            <p className="mt-7 max-w-lg text-lg leading-8 text-[#586c70]">
+          <div className="relative z-[2] max-w-2xl">
+            <p className="brand-eyebrow">A private space for your practice</p>
+            <div className="brand-gold-rule mt-5" />
+            <h1 className="mt-7 max-w-xl font-serif text-5xl leading-[1.06] text-[#fdfaf5] xl:text-7xl">Come home to what matters.</h1>
+            <p className="mt-7 max-w-lg text-lg leading-8 text-[#e8e4da]">
               Your teachings, courses, and transformational tools—gathered in one quiet, trusted place.
             </p>
           </div>
 
-          <div className="relative flex items-center gap-3 text-sm text-[#52676c]">
-            <ShieldCheck className="size-5 text-[#2f7772]" />
+          <div className="relative z-[2] flex items-center gap-3 text-sm text-[#e8e4da]">
+            <ShieldCheck className="size-5 text-[#ead79c]" />
             Private access for active members
           </div>
         </section>
 
         <section className="relative grid place-items-center overflow-hidden px-5 py-8 sm:px-10 sm:py-12 lg:px-14">
           <div className="pointer-events-none absolute -right-24 -top-28 size-64 rounded-full bg-[#f0dfad]/30 lg:hidden" />
-          <div className="relative w-full max-w-md rounded-[2rem] border border-[#e0d5c0] bg-[#fffdf8]/94 p-6 shadow-[0_22px_70px_rgba(54,72,73,0.1)] sm:p-9 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+          <div className="brand-panel relative w-full max-w-md rounded-[2rem] p-6 sm:p-9 lg:p-10">
             <div className="mb-8 flex items-center gap-3 lg:hidden">
               <img src={SUSAN_LOGO.medium} alt="Susan Drury" className="h-12 w-auto object-contain drop-shadow-[0_6px_14px_rgba(119,88,15,0.16)]" />
               <span>
                 <span className="block text-xs font-semibold tracking-[0.14em] uppercase">Susan Drury</span>
-                <span className="mt-0.5 block text-[9px] tracking-[0.16em] text-[#9b7726] uppercase">Member sanctuary</span>
+                <span className="mt-0.5 block text-[9px] tracking-[0.16em] text-[#77580f] uppercase">Member sanctuary</span>
               </span>
             </div>
 
-            <p className="mb-3 text-xs font-semibold tracking-[0.24em] text-[#2f7772] uppercase">Member sanctuary</p>
-            <h2 className="font-serif text-4xl leading-tight sm:text-5xl">Welcome back</h2>
-            <p className="mt-4 leading-7 text-[#65757a]">Sign in with the email and password connected to your membership.</p>
+            <p className="eyebrow">Member sanctuary</p>
+            <div className="brand-gold-rule mt-4" />
+            <h2 className="mt-5 font-serif text-4xl leading-tight text-[#1e234c] sm:text-5xl">Welcome back</h2>
+            <p className="mt-4 leading-7 text-[#4f6368]">Sign in with the email and password connected to your membership.</p>
 
             <form
               className="mt-8 space-y-5"
@@ -101,19 +102,19 @@ export default function Login() {
                 </p>
               ) : null}
 
-              <Button type="submit" disabled={login.isPending} className="h-12 w-full rounded-full bg-[#2f7772] text-xs font-bold tracking-[0.16em] text-white uppercase hover:bg-[#245f5c]">
+              <Button type="submit" disabled={login.isPending} className="brand-button h-12 w-full text-xs font-bold tracking-[0.16em] uppercase hover:bg-[#205f60]">
                 {login.isPending ? <Loader2 className="size-4 animate-spin" /> : <>Enter the portal <ArrowRight className="ml-2 size-4" /></>}
               </Button>
             </form>
 
             {import.meta.env.DEV ? (
-              <Button variant="ghost" disabled={previewSignIn.isPending} className="mt-4 w-full text-xs text-[#6c777b]" onClick={() => previewSignIn.mutate()}>
+              <Button variant="ghost" disabled={previewSignIn.isPending} className="mt-4 w-full text-xs text-[#526267]" onClick={() => previewSignIn.mutate()}>
                 {previewSignIn.isPending ? <Loader2 className="size-4 animate-spin" /> : "Development preview sign-in"}
               </Button>
             ) : null}
             {previewSignIn.error ? <p role="alert" className="mt-2 text-center text-xs text-[#823b32]">{previewSignIn.error.message}</p> : null}
 
-            <p className="mt-7 text-center text-sm leading-6 text-[#6c777b]">
+            <p className="mt-7 text-center text-sm leading-6 text-[#526267]">
               Need help accessing your membership? <a href="https://susandrury.com/contact" className="font-semibold text-[#2f7772] underline-offset-4 hover:underline">Contact Susan’s team</a>.
             </p>
           </div>

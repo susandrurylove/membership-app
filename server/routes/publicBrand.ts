@@ -18,8 +18,8 @@ async function serveBrandAsset(req: Request, res: Response) {
   try {
     const upstream = await fetchStoredObject(`branding/${filename}`);
     if (!upstream.ok) {
-      if (upstream.status === 404) return res.status(404).json({ error: "Brand asset not found." });
-      throw new Error(`Bunny storage read failed (${upstream.status})`);
+      console.warn(`[Brand Asset] Bunny returned ${upstream.status}; using Railway static fallback for ${filename}`);
+      return res.redirect(307, `/brand/${filename}`);
     }
 
     res.status(200);
@@ -32,8 +32,8 @@ async function serveBrandAsset(req: Request, res: Response) {
     if (!upstream.body || req.method === "HEAD") return res.end();
     Readable.fromWeb(upstream.body as never).pipe(res);
   } catch (error) {
-    console.error("[Brand Asset] Delivery failed", error);
-    return res.status(502).json({ error: "Brand asset is temporarily unavailable." });
+    console.error("[Brand Asset] Bunny delivery failed; using Railway static fallback", error);
+    return res.redirect(307, `/brand/${filename}`);
   }
 }
 

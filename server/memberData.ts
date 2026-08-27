@@ -143,6 +143,12 @@ export async function listPublishedTeachings(categorySlug?: string) {
       contentType: teachings.contentType,
       featured: teachings.featured,
       publishedAt: teachings.publishedAt,
+      sourcePublishedAt: teachings.sourcePublishedAt,
+      sourceType: teachings.sourceType,
+      readingMinutes: teachings.readingMinutes,
+      medicalDisclaimer: teachings.medicalDisclaimer,
+      heroImageUrl: teachings.heroImageUrl,
+      keyThemes: teachings.keyThemes,
       categoryName: contentCategories.name,
       categorySlug: contentCategories.slug,
     })

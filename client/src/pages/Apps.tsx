@@ -1,14 +1,15 @@
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { trpc } from "@/lib/trpc";
 import { ArrowUpRight, Heart, Leaf, Loader2, LockKeyhole, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const presentation = {
-  elevate: { icon: Heart, color: "border-[#e5cbd6] bg-[#f5e8ed] text-[#7e3f5c]" },
-  enlightened_body: { icon: Leaf, color: "border-[#c8ddd5] bg-[#e4f0eb] text-[#2f7772]" },
-  tao: { icon: Sparkles, color: "border-[#e1d2ad] bg-[#f5ecd5] text-[#77580f]" },
+  elevate: { icon: Heart, eyebrow: "Love in practice", wash: "from-[#2d7d7d]/25 via-[#1e234c]/85 to-[#151938]" },
+  enlightened_body: { icon: Leaf, eyebrow: "Embodied wisdom", wash: "from-[#3a7f75]/30 via-[#1e234c]/86 to-[#151938]" },
+  tao: { icon: Sparkles, eyebrow: "Timeless wisdom", wash: "from-[#c9a84c]/27 via-[#1e234c]/88 to-[#151938]" },
 };
 
 export default function Apps() {
@@ -22,10 +23,14 @@ export default function Apps() {
 
   return (
     <main className="portal-page">
-      <header className="max-w-4xl">
-        <p className="eyebrow">Three doorways, one membership</p>
-        <h1 className="mt-3 font-serif text-4xl leading-tight text-[#243f4d] sm:text-5xl lg:text-6xl">Susan’s Apps</h1>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">Open Susan’s interactive experiences from one trusted place. A one-time member handoff keeps each launch private and connected to your active membership.</p>
+      <header className="brand-hero rounded-[2.25rem] px-6 py-11 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-8 top-1/2 z-[1] hidden h-72 w-auto -translate-y-1/2 opacity-[0.12] md:block" />
+        <div className="relative z-[2] max-w-3xl">
+          <p className="brand-eyebrow">Three doorways, one membership</p>
+          <div className="brand-gold-rule mt-5" />
+          <h1 className="mt-6 font-serif text-4xl leading-tight text-[#fdfaf5] sm:text-5xl lg:text-6xl">Susan’s Apps</h1>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-[#e8e4da] sm:text-lg">Move between Susan’s interactive experiences from one trusted place. Each private handoff keeps your journey connected to your active membership.</p>
+        </div>
       </header>
 
       <section className="mt-10">
@@ -36,27 +41,29 @@ export default function Apps() {
         ) : (
           <div className="grid gap-6 xl:grid-cols-3">
             {apps.data?.map(app => {
-              const { icon: Icon, color } = presentation[app.key];
+              const { icon: Icon, eyebrow, wash } = presentation[app.key];
               const isLaunching = launching === app.key;
               return (
-                <article key={app.key} className="editorial-card group overflow-hidden rounded-[2rem]">
-                  <div className={`relative min-h-48 border-b p-6 ${color} sm:p-7`}>
-                    <div className="pointer-events-none absolute -right-12 -top-14 size-40 rounded-full border-[24px] border-current opacity-[0.08]" />
+                <article key={app.key} className="teaching-card group overflow-hidden rounded-[2rem] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#c9a84c] hover:shadow-[0_24px_58px_rgba(30,35,76,0.14)]">
+                  <div className={`relative min-h-56 overflow-hidden bg-gradient-to-br ${wash} p-7 text-[#fdfaf5]`}>
+                    <div className="pointer-events-none absolute -right-12 -top-14 size-44 rounded-full border-[25px] border-[#c9a84c]/15" />
+                    <img src={SUSAN_LOGO.medium} alt="" className="pointer-events-none absolute bottom-4 right-6 h-24 w-auto opacity-[0.1]" />
                     <div className="relative flex items-start justify-between">
-                      <div className="grid size-14 place-items-center rounded-full border border-current/20 bg-white/45"><Icon className="size-6" /></div>
-                      {app.enabled ? <ArrowUpRight className="size-5 opacity-60" /> : <LockKeyhole className="size-5 opacity-55" />}
+                      <div className="grid size-14 place-items-center rounded-full border border-[#c9a84c]/55 bg-white/8 text-[#ead79c]"><Icon className="size-6" /></div>
+                      {app.enabled ? <ArrowUpRight className="size-5 text-[#ead79c]" /> : <LockKeyhole className="size-5 text-[#d8d4ca]" />}
                     </div>
                     <div className="relative mt-12">
-                      <p className="text-[10px] font-bold tracking-[0.2em] opacity-70 uppercase">{app.eyebrow}</p>
-                      <h2 className="mt-3 font-serif text-3xl">{app.title}</h2>
+                      <p className="brand-eyebrow">{app.eyebrow || eyebrow}</p>
+                      <div className="brand-gold-rule mt-4" />
+                      <h2 className="mt-4 font-serif text-3xl">{app.title}</h2>
                     </div>
                   </div>
                   <div className="p-6 sm:p-7">
-                    <p className="text-sm leading-7 text-muted-foreground xl:min-h-24">{app.description}</p>
+                    <p className="text-sm leading-7 text-[#607076] xl:min-h-24">{app.description}</p>
                     <Button
                       disabled={!app.enabled || launch.isPending}
                       onClick={() => launch.mutate({ appKey: app.key })}
-                      className="mt-6 h-11 w-full rounded-full bg-[#2f7772] text-xs font-bold tracking-[0.12em] text-white uppercase hover:bg-[#245f5c] disabled:opacity-65"
+                      className="brand-button mt-6 h-11 w-full text-xs font-bold uppercase hover:bg-[#205f60] disabled:opacity-65"
                     >
                       {isLaunching ? <><Loader2 className="mr-2 size-4 animate-spin" /> Creating secure access</> : app.enabled ? <>Open securely <ArrowUpRight className="ml-2 size-4" /></> : <><span className="sm:hidden">Setup pending</span><span className="hidden sm:inline">Connection not configured</span><LockKeyhole className="ml-2 size-4 shrink-0" /></>}
                     </Button>
@@ -69,8 +76,9 @@ export default function Apps() {
         )}
       </section>
 
-      <aside className="mt-8 rounded-[1.5rem] border border-[#c9a84c]/45 bg-[#f7f1df] px-6 py-5 text-sm leading-6 text-[#675927]">
-        A launch code can be used once and expires quickly. Your portal password, payment information, and reusable session credential are never sent to another app.
+      <aside className="brand-panel mt-8 flex items-start gap-4 rounded-[1.5rem] px-6 py-5 text-sm leading-6 text-[#4f6067]">
+        <LockKeyhole className="mt-0.5 size-5 shrink-0 text-[#8a6819]" />
+        <p>A launch code can be used once and expires quickly. Your portal password, payment information, and reusable session credential are never sent to another app.</p>
       </aside>
     </main>
   );

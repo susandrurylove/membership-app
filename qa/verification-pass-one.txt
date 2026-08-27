@@ -1,0 +1,79 @@
+=== STATUS ===
+ [31mM[m .gitignore
+ [31mM[m client/src/components/EmptyState.tsx
+ [31mM[m client/src/components/MemberShell.tsx
+ [31mM[m client/src/index.css
+ [31mM[m client/src/pages/AcceptInvitation.tsx
+ [31mM[m client/src/pages/Admin.tsx
+ [31mM[m client/src/pages/Apps.tsx
+ [31mM[m client/src/pages/CourseDetail.tsx
+ [31mM[m client/src/pages/Courses.tsx
+ [31mM[m client/src/pages/Home.tsx
+ [31mM[m client/src/pages/Login.tsx
+ [31mM[m client/src/pages/NotFound.tsx
+ [31mM[m client/src/pages/TeachingDetail.tsx
+ [31mM[m client/src/pages/Teachings.tsx
+ [31mM[m drizzle/meta/_journal.json
+ [31mM[m drizzle/schema.ts
+ [31mM[m package.json
+ [31mM[m pnpm-lock.yaml
+ [31mM[m railway.json
+ [31mM[m server/memberData.ts
+[31m??[m content/
+[31m??[m docs/brand-parity-criteria.md
+[31m??[m docs/playwright-test-inventory.txt
+[31m??[m docs/qa-architecture-audit.md
+[31m??[m docs/qa-architecture-inventory.txt
+[31m??[m docs/qa-protocol-2000.md
+[31m??[m docs/qa-protocol-verification.json
+[31m??[m docs/susandrury-token-extract.txt
+[31m??[m docs/susandrury-visual-observations.md
+[31m??[m drizzle/0003_teaching_provenance.sql
+[31m??[m drizzle/meta/0003_snapshot.json
+[31m??[m playwright.config.ts
+[31m??[m qa/
+[31m??[m scripts/build-teaching-library.mjs
+[31m??[m scripts/consolidate-article-curation.mjs
+[31m??[m scripts/consolidate-publication-teachings.mjs
+[31m??[m scripts/enrich_official_articles.py
+[31m??[m scripts/extract-official-articles.mjs
+[31m??[m scripts/extract-publication-segments.mjs
+[31m??[m scripts/fetch-official-article-bodies.mjs
+[31m??[m scripts/generate-qa-protocol.mjs
+[31m??[m scripts/materialize-official-articles.mjs
+[31m??[m scripts/sync-teaching-library.mjs
+[31m??[m scripts/verify-qa-protocol.mjs
+[31m??[m server/auth.database-invariants.test.ts
+[31m??[m server/auth.login-regression.test.ts
+[31m??[m server/auth.router-regression.test.ts
+[31m??[m server/content-library.test.ts
+[31m??[m server/feature.contracts.test.ts
+[31m??[m tests/
+=== DIFF STAT ===
+ .gitignore                            |   5 [32m+[m[31m-[m
+ client/src/components/EmptyState.tsx  |  18 [32m++[m[31m--[m
+ client/src/components/MemberShell.tsx |  52 [32m++++[m[31m-----[m
+ client/src/index.css                  | 125 [32m+++++++++++++++++++++[m[31m-[m
+ client/src/pages/AcceptInvitation.tsx |  23 [32m++[m[31m--[m
+ client/src/pages/Admin.tsx            |  30 [32m+++[m[31m---[m
+ client/src/pages/Apps.tsx             |  46 [32m++++[m[31m----[m
+ client/src/pages/CourseDetail.tsx     |  34 [32m+++[m[31m---[m
+ client/src/pages/Courses.tsx          |  23 [32m++[m[31m--[m
+ client/src/pages/Home.tsx             |  22 [32m++[m[31m--[m
+ client/src/pages/Login.tsx            |  39 [32m+++[m[31m----[m
+ client/src/pages/NotFound.tsx         |  64 [32m++++[m[31m-------[m
+ client/src/pages/TeachingDetail.tsx   |  98 [32m++++++++++++++[m[31m---[m
+ client/src/pages/Teachings.tsx        | 196 [32m++++++++++++++++++++++++++[m[31m--------[m
+ drizzle/meta/_journal.json            |   7 [32m++[m
+ drizzle/schema.ts                     |  34 [32m++++++[m
+ package.json                          |  11 [32m++[m
+ pnpm-lock.yaml                        |  57 [32m++++++++++[m
+ railway.json                          |   2 [32m+[m[31m-[m
+ server/memberData.ts                  |   6 [32m++[m
+ 20 files changed, 650 insertions(+), 242 deletions(-)
+=== SEED SIZES ===
+560K	content/seed/publication-teachings.json
+3.3M	content/seed/teaching-library.json
+2.7M	content/seed/website-article-teachings.json
+=== SECRET SCAN ===
+=== ARCHITECTURE SCAN ===

@@ -173,13 +173,47 @@ export const teachings = mysqlTable(
     featured: boolean("featured").default(false).notNull(),
     sortOrder: int("sortOrder").default(0).notNull(),
     publishedAt: timestamp("publishedAt"),
+    sourceKey: varchar("sourceKey", { length: 320 }),
+    sourceType: varchar("sourceType", { length: 32 }),
+    sourceUrl: varchar("sourceUrl", { length: 1024 }),
+    sourceTitle: varchar("sourceTitle", { length: 320 }),
+    sourceLocator: varchar("sourceLocator", { length: 320 }),
+    sourceYear: int("sourceYear"),
+    sourcePublishedAt: timestamp("sourcePublishedAt"),
+    readingMinutes: int("readingMinutes"),
+    keyThemes: json("keyThemes"),
+    reflectionPrompts: json("reflectionPrompts"),
+    practiceInvitation: text("practiceInvitation"),
+    sensitiveContentNotes: json("sensitiveContentNotes"),
+    medicalDisclaimer: boolean("medicalDisclaimer").default(false).notNull(),
+    sourceCategories: json("sourceCategories"),
+    heroImageUrl: varchar("heroImageUrl", { length: 1024 }),
+    contentHash: char("contentHash", { length: 64 }),
+    importedAt: timestamp("importedAt"),
     createdBy: int("createdBy").references(() => users.id, { onDelete: "set null" }),
     createdAt: timestamp("createdAt").defaultNow().notNull(),
     updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
   },
   table => ({
     slugUnique: uniqueIndex("teachings_slug_unique").on(table.slug),
+    sourceKeyUnique: uniqueIndex("teachings_source_key_unique").on(table.sourceKey),
     listingIndex: index("teachings_listing_idx").on(table.status, table.categoryId, table.sortOrder),
+    sourcePublishedIndex: index("teachings_source_published_idx").on(table.sourcePublishedAt),
+  })
+);
+
+export const contentImports = mysqlTable(
+  "content_imports",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    version: char("version", { length: 64 }).notNull(),
+    recordCount: int("recordCount").notNull(),
+    sourceSummary: varchar("sourceSummary", { length: 512 }).notNull(),
+    importedAt: timestamp("importedAt").defaultNow().notNull(),
+  },
+  table => ({
+    versionUnique: uniqueIndex("content_imports_version_unique").on(table.version),
+    importedAtIndex: index("content_imports_imported_at_idx").on(table.importedAt),
   })
 );
 

@@ -10,8 +10,8 @@ import Login from "@/pages/Login";
 import NotFound from "@/pages/NotFound";
 import TeachingDetail from "@/pages/TeachingDetail";
 import Teachings from "@/pages/Teachings";
-import type { ReactNode } from "react";
-import { Route, Switch } from "wouter";
+import { useEffect, type ReactNode } from "react";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -25,9 +25,22 @@ function MemberPage({ children, requireAdmin = false }: { children: ReactNode; r
   );
 }
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  const pathname = location.split("?")[0];
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+}
+
 function Router() {
   return (
-    <Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
       <Route path="/login" component={Login} />
       <Route path="/accept-invitation" component={AcceptInvitation} />
       <Route path="/teachings/:slug">{() => <MemberPage><TeachingDetail /></MemberPage>}</Route>
@@ -38,7 +51,8 @@ function Router() {
       <Route path="/admin">{() => <MemberPage requireAdmin><Admin /></MemberPage>}</Route>
       <Route path="/">{() => <MemberPage><Home /></MemberPage>}</Route>
       <Route>{() => <MemberPage><NotFound /></MemberPage>}</Route>
-    </Switch>
+      </Switch>
+    </>
   );
 }
 

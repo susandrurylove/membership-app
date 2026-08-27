@@ -82,7 +82,7 @@ describe("Susan Drury responsive brand system", () => {
     expect(mediaViewer).toContain('className="aspect-video w-full bg-black"');
     expect(mediaViewer).toContain('className="w-full"');
     expect(teachingDetail).toContain("text-4xl");
-    expect(teachingDetail).toContain("max-w-[1180px]");
+    expect(teachingDetail).toContain("max-w-[1240px]");
     expect(courseDetail).toContain("lg:grid-cols-[330px_minmax(0,1fr)]");
     expect(courseDetail).toContain("lg:sticky lg:top-28");
     for (const panel of [members, courses, teachings]) {

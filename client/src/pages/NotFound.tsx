@@ -1,52 +1,30 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
+import { SUSAN_LOGO } from "@/lib/brandAssets";
+import { ArrowLeft, Home } from "lucide-react";
 import { useLocation } from "wouter";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
 
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
-
-          <div
-            id="not-found-button-group"
-            className="flex flex-col sm:flex-row gap-3 justify-center"
-          >
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
+    <main className="relative grid min-h-screen place-items-center overflow-hidden bg-[#fdfaf5] px-5 py-10 text-[#26384b]">
+      <div className="pointer-events-none absolute -right-28 -top-28 size-96 rounded-full border-[58px] border-[#c9a84c]/12" />
+      <section className="brand-hero w-full max-w-3xl rounded-[2.25rem] px-6 py-12 text-center sm:px-12 sm:py-16">
+        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute left-1/2 top-1/2 z-[1] h-72 w-auto -translate-x-1/2 -translate-y-1/2 opacity-[0.08]" />
+        <div className="relative z-[2]">
+          <p className="brand-eyebrow">A gentle redirect</p>
+          <div className="brand-gold-rule mx-auto mt-5" />
+          <p className="mt-7 font-serif text-7xl leading-none text-[#ead79c] sm:text-8xl">404</p>
+          <h1 className="mt-5 font-serif text-4xl text-[#fdfaf5] sm:text-5xl">This path is not here</h1>
+          <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-[#e8e4da]">The page may have moved, or the link may no longer be available. Your member sanctuary is still here and ready for you.</p>
+          <Button onClick={() => setLocation("/")} className="mt-8 h-12 rounded-full border border-[#c9a84c] bg-[#c9a84c] px-7 text-xs font-bold tracking-[0.13em] text-[#1e234c] uppercase hover:bg-[#ead79c]">
+            <Home className="mr-2 size-4" /> Return home
+          </Button>
+          <button type="button" onClick={() => window.history.back()} className="mx-auto mt-5 flex items-center gap-2 text-xs font-semibold text-[#ead79c] hover:text-white focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:outline-none">
+            <ArrowLeft className="size-4" /> Go back
+          </button>
+        </div>
+      </section>
+    </main>
   );
 }

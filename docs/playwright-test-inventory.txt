@@ -1,0 +1,38 @@
+Listing tests:
+  [mobile-320] › membership.spec.ts:24:3 › public and login quality gate › QA-LOGIN-VALIDATION-003 renders an operable, correctly labelled login form
+  [mobile-320] › membership.spec.ts:32:3 › public and login quality gate › QA-LOGIN-VALIDATION-004 rejects invalid credentials with the generic safe message
+  [mobile-320] › membership.spec.ts:41:3 › public and login quality gate › QA-RESPONSIVE-LAYOUT-001 has no horizontal overflow at the configured viewport
+  [mobile-320] › membership.spec.ts:50:3 › public and login quality gate › QA-ACCESSIBILITY-001 has no serious or critical automated accessibility violations
+  [mobile-320] › membership.spec.ts:57:3 › public and login quality gate › QA-PERFORMANCE-RELIABILITY-001 reaches an interactive login page within five seconds
+  [mobile-320] › membership.spec.ts:63:3 › public and login quality gate › QA-VISUAL-BRAND-001 matches the reviewed login composition
+  [mobile-320] › membership.spec.ts:68:3 › public and login quality gate › QA-MEMBER-AUTHORIZATION-002 redirects signed-out protected navigation to login
+  [mobile-320] › membership.spec.ts:77:3 › authenticated member smoke gate › QA-LOGIN-CREDENTIALS-007 signs in, resolves identity, navigates protected areas, and signs out
+  [mobile-320] › membership.spec.ts:92:3 › authenticated member smoke gate › QA-ACCESSIBILITY-002 keeps the authenticated dashboard free of serious or critical violations
+  [mobile-430] › membership.spec.ts:24:3 › public and login quality gate › QA-LOGIN-VALIDATION-003 renders an operable, correctly labelled login form
+  [mobile-430] › membership.spec.ts:32:3 › public and login quality gate › QA-LOGIN-VALIDATION-004 rejects invalid credentials with the generic safe message
+  [mobile-430] › membership.spec.ts:41:3 › public and login quality gate › QA-RESPONSIVE-LAYOUT-001 has no horizontal overflow at the configured viewport
+  [mobile-430] › membership.spec.ts:50:3 › public and login quality gate › QA-ACCESSIBILITY-001 has no serious or critical automated accessibility violations
+  [mobile-430] › membership.spec.ts:57:3 › public and login quality gate › QA-PERFORMANCE-RELIABILITY-001 reaches an interactive login page within five seconds
+  [mobile-430] › membership.spec.ts:63:3 › public and login quality gate › QA-VISUAL-BRAND-001 matches the reviewed login composition
+  [mobile-430] › membership.spec.ts:68:3 › public and login quality gate › QA-MEMBER-AUTHORIZATION-002 redirects signed-out protected navigation to login
+  [mobile-430] › membership.spec.ts:77:3 › authenticated member smoke gate › QA-LOGIN-CREDENTIALS-007 signs in, resolves identity, navigates protected areas, and signs out
+  [mobile-430] › membership.spec.ts:92:3 › authenticated member smoke gate › QA-ACCESSIBILITY-002 keeps the authenticated dashboard free of serious or critical violations
+  [tablet-768] › membership.spec.ts:24:3 › public and login quality gate › QA-LOGIN-VALIDATION-003 renders an operable, correctly labelled login form
+  [tablet-768] › membership.spec.ts:32:3 › public and login quality gate › QA-LOGIN-VALIDATION-004 rejects invalid credentials with the generic safe message
+  [tablet-768] › membership.spec.ts:41:3 › public and login quality gate › QA-RESPONSIVE-LAYOUT-001 has no horizontal overflow at the configured viewport
+  [tablet-768] › membership.spec.ts:50:3 › public and login quality gate › QA-ACCESSIBILITY-001 has no serious or critical automated accessibility violations
+  [tablet-768] › membership.spec.ts:57:3 › public and login quality gate › QA-PERFORMANCE-RELIABILITY-001 reaches an interactive login page within five seconds
+  [tablet-768] › membership.spec.ts:63:3 › public and login quality gate › QA-VISUAL-BRAND-001 matches the reviewed login composition
+  [tablet-768] › membership.spec.ts:68:3 › public and login quality gate › QA-MEMBER-AUTHORIZATION-002 redirects signed-out protected navigation to login
+  [tablet-768] › membership.spec.ts:77:3 › authenticated member smoke gate › QA-LOGIN-CREDENTIALS-007 signs in, resolves identity, navigates protected areas, and signs out
+  [tablet-768] › membership.spec.ts:92:3 › authenticated member smoke gate › QA-ACCESSIBILITY-002 keeps the authenticated dashboard free of serious or critical violations
+  [desktop-1440] › membership.spec.ts:24:3 › public and login quality gate › QA-LOGIN-VALIDATION-003 renders an operable, correctly labelled login form
+  [desktop-1440] › membership.spec.ts:32:3 › public and login quality gate › QA-LOGIN-VALIDATION-004 rejects invalid credentials with the generic safe message
+  [desktop-1440] › membership.spec.ts:41:3 › public and login quality gate › QA-RESPONSIVE-LAYOUT-001 has no horizontal overflow at the configured viewport
+  [desktop-1440] › membership.spec.ts:50:3 › public and login quality gate › QA-ACCESSIBILITY-001 has no serious or critical automated accessibility violations
+  [desktop-1440] › membership.spec.ts:57:3 › public and login quality gate › QA-PERFORMANCE-RELIABILITY-001 reaches an interactive login page within five seconds
+  [desktop-1440] › membership.spec.ts:63:3 › public and login quality gate › QA-VISUAL-BRAND-001 matches the reviewed login composition
+  [desktop-1440] › membership.spec.ts:68:3 › public and login quality gate › QA-MEMBER-AUTHORIZATION-002 redirects signed-out protected navigation to login
+  [desktop-1440] › membership.spec.ts:77:3 › authenticated member smoke gate › QA-LOGIN-CREDENTIALS-007 signs in, resolves identity, navigates protected areas, and signs out
+  [desktop-1440] › membership.spec.ts:92:3 › authenticated member smoke gate › QA-ACCESSIBILITY-002 keeps the authenticated dashboard free of serious or critical violations
+Total: 36 tests in 1 file

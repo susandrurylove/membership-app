@@ -46,9 +46,28 @@ pids
 *.pid.lock
 *.bak
 
-# Coverage directory used by tools like istanbul
+# Content-authoring source and intermediate artifacts
+content/sources/
+content/extracted/
+content/official-website-articles*.json
+content/curated-website-articles.json
+content/seed/publication-teachings.json
+content/seed/website-article-teachings.json
+scripts/build-teaching-library.mjs
+scripts/consolidate-article-curation.mjs
+scripts/consolidate-publication-teachings.mjs
+scripts/enrich_official_articles.py
+scripts/extract-official-articles.mjs
+scripts/extract-publication-segments.mjs
+scripts/fetch-official-article-bodies.mjs
+scripts/materialize-official-articles.mjs
+
+# Coverage and browser-test artifacts
 coverage/
 *.lcov
+test-results/
+playwright-report/
+.env.e2e.local
 
 # nyc test coverage
 .nyc_output

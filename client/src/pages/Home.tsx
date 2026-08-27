@@ -73,26 +73,26 @@ export default function Home() {
 
   return (
     <main className="portal-page">
-      <section className="relative overflow-hidden rounded-[2rem] border border-[#dfcfaa] bg-[#f5eddb] px-5 py-9 shadow-[0_24px_70px_rgba(72,83,72,0.09)] sm:px-9 sm:py-11 lg:px-12">
-        <div className="pointer-events-none absolute -right-20 -top-24 size-72 rounded-full border-[42px] border-[#d9b866]/22" />
-        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-7 top-6 hidden h-40 w-auto object-contain opacity-[0.14] md:block lg:right-12 lg:h-52" />
+      <section className="brand-hero rounded-[2.25rem] px-5 py-10 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
+        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-7 top-1/2 z-[1] hidden h-52 w-auto -translate-y-1/2 object-contain opacity-[0.13] md:block lg:right-12 lg:h-64" />
         <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
-          <div>
-            <p className="mb-4 text-[10px] font-bold tracking-[0.24em] text-[#77580f] uppercase">Your private sanctuary</p>
-            <h1 className="max-w-3xl font-serif text-4xl leading-[1.08] text-[#243f4d] sm:text-5xl lg:text-6xl">
+          <div className="relative z-[2]">
+            <p className="brand-eyebrow">Your private sanctuary</p>
+            <div className="brand-gold-rule mt-5" />
+            <h1 className="mt-6 max-w-3xl font-serif text-4xl leading-[1.08] text-[#fdfaf5] sm:text-5xl lg:text-6xl">
               Welcome{firstName ? `, ${firstName}` : ""}.
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-[#566970] sm:text-lg sm:leading-8">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-[#e8e4da] sm:text-lg sm:leading-8">
               A quiet place to deepen your practice, continue your learning, and return to Susan’s guidance whenever you need it.
             </p>
           </div>
 
-          <div className="rounded-[1.5rem] border border-[#d9cfb9] bg-[#fffdf8]/88 p-5 shadow-[0_14px_36px_rgba(56,76,72,0.07)]">
+          <div className="relative z-[2] rounded-[1.5rem] border border-[#c9a84c]/45 bg-[#fdfaf5]/96 p-5 shadow-[0_16px_42px_rgba(10,14,40,0.18)]">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold tracking-[0.15em] text-[#66767b] uppercase">Course journey</span>
-              <span className="text-sm font-semibold text-[#2f7772]">{dashboard.data?.progress.percent ?? 0}%</span>
+              <span className="text-[10px] font-bold tracking-[0.15em] text-[#52666d] uppercase">Course journey</span>
+              <span className="text-sm font-semibold text-[#205f60]">{dashboard.data?.progress.percent ?? 0}%</span>
             </div>
-            <Progress value={dashboard.data?.progress.percent ?? 0} className="mt-4 h-2 bg-[#e8dfcf] [&>div]:bg-[#c9a84c]" />
+            <Progress aria-label="Overall course completion" value={dashboard.data?.progress.percent ?? 0} className="mt-4 h-2 bg-[#e8dfcf] [&>div]:bg-[#c9a84c]" />
             <p className="mt-4 text-sm leading-6 text-[#64747a]">
               {dashboard.data?.progress.completedLessons ?? 0} of {dashboard.data?.progress.totalLessons ?? 0} published lessons complete
             </p>
@@ -112,7 +112,7 @@ export default function Home() {
               <p className="mt-1 text-sm text-muted-foreground">{dashboard.data.continueLearning.courseTitle}</p>
             </div>
           </div>
-          <Button asChild className="mt-5 w-full rounded-full bg-[#2f7772] px-6 text-[#fffdf8] hover:bg-[#245f5c] sm:mt-0 sm:w-auto">
+          <Button asChild className="brand-button mt-5 w-full px-6 hover:bg-[#205f60] sm:mt-0 sm:w-auto">
             <Link href={`/courses/${dashboard.data.continueLearning.courseSlug}?lesson=${dashboard.data.continueLearning.lessonSlug}`}>
               Continue <ArrowRight className="ml-2 size-4" />
             </Link>
