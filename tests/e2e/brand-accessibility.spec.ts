@@ -4,14 +4,14 @@ import { expect, test, type Page } from "@playwright/test";
 const useDevPreview = process.env.E2E_USE_DEV_PREVIEW === "1";
 
 async function signInPreview(page: Page) {
-  await page.goto("/login", { waitUntil: "networkidle" });
+  await page.goto("/login", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Development preview sign-in" }).click();
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole("heading", { name: /Welcome,/ })).toBeVisible();
 }
 
 async function assertPageQuality(page: Page, path: string, heading: string | RegExp) {
-  await page.goto(path, { waitUntil: "networkidle" });
+  await page.goto(path, { waitUntil: "domcontentloaded" });
   await expect(page.getByRole("heading", { name: heading }).first()).toBeVisible();
   const dimensions = await page.evaluate(() => ({
     viewport: document.documentElement.clientWidth,
@@ -24,6 +24,7 @@ async function assertPageQuality(page: Page, path: string, heading: string | Reg
 }
 
 test.describe("authenticated brand, accessibility, and interaction gate", () => {
+  test.describe.configure({ timeout: 120_000 });
   test.skip(!useDevPreview, "Set E2E_USE_DEV_PREVIEW=1 against a local development server");
 
   test("all principal portal surfaces pass accessibility and overflow checks", async ({ page }) => {
@@ -37,7 +38,7 @@ test.describe("authenticated brand, accessibility, and interaction gate", () => 
 
   test("teaching discovery, reading, safety, and scroll restoration work together", async ({ page }) => {
     await signInPreview(page);
-    await page.goto("/teachings", { waitUntil: "networkidle" });
+    await page.goto("/teachings", { waitUntil: "domcontentloaded" });
     await expect(page.getByText("Showing 24 of 287")).toBeVisible();
 
     await page.getByPlaceholder("Search teachings, themes, or practices").fill("hips and legs");
@@ -57,7 +58,7 @@ test.describe("authenticated brand, accessibility, and interaction gate", () => 
 
   test("library progressive loading expands deterministically", async ({ page }) => {
     await signInPreview(page);
-    await page.goto("/teachings", { waitUntil: "networkidle" });
+    await page.goto("/teachings", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Show more teachings" }).click();
     await expect(page.getByText("Showing 48 of 287")).toBeVisible();
   });

@@ -43,7 +43,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/five-minute-body-wisdom-practice.webp",
+      "heroImageAlt": "A lit candle next to an open, blank journal on a wooden table in early morning light."
     },
     {
       "sourceKey": "book:how-to-use-this-journey",
@@ -81,7 +83,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/how-to-use-this-journey.webp",
+      "heroImageAlt": "A sturdy tree root pushing through dark, rocky soil into a patch of sunlight on a mossy forest floor."
     },
     {
       "sourceKey": "booklet:welcome-to-your-body-as-sacred-partner",
@@ -116,7 +120,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/welcome-to-your-body-as-sacred-partner.webp",
+      "heroImageAlt": "A close-up of a leaf with glowing veins resting on dark water, creating a single ripple."
     },
     {
       "sourceKey": "booklet:hips-and-legs-stability-and-flexibility",
@@ -151,7 +157,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 0,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-legs-emotional-roots.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/hips-and-legs-stability-and-flexibility.webp",
+      "heroImageAlt": "Two strong bamboo stalks bending deeply in a breeze within a misty grove."
     },
     {
       "sourceKey": "booklet:hands-giving-and-receiving",
@@ -187,7 +194,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 6,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-opening-in-trust.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/hands-giving-and-receiving.webp",
+      "heroImageAlt": "Two graceful fern fronds unfurling toward each other in a shaded woodland."
     },
     {
       "sourceKey": "booklet:liver-gallbladder-anger-and-discontent",
@@ -225,7 +233,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 12,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-releasing-anger-practice.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/liver-gallbladder-anger-and-discontent.webp",
+      "heroImageAlt": "A smooth, dark river stone being washed by clear, flowing water in a forest stream."
     },
     {
       "sourceKey": "booklet:shoulders-responsibility-and-extension",
@@ -260,7 +269,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 16,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-weight-you-carry.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/shoulders-responsibility-and-extension.webp",
+      "heroImageAlt": "A wide, sturdy oak branch extending outward to gently support a light bird's nest."
     },
     {
       "sourceKey": "booklet:spine-uprightness-and-communication",
@@ -300,7 +310,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 17,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-freedom-practice.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/spine-uprightness-and-communication.webp",
+      "heroImageAlt": "A tall, straight stack of balanced cairn stones on a mountain ridge at sunrise."
     },
     {
       "sourceKey": "booklet:bladder-release-and-completion",
@@ -336,7 +347,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 20,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-emotional-patterns.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/bladder-release-and-completion.webp",
+      "heroImageAlt": "A gentle waterfall flowing freely from a calm mountain pool into a mossy rock basin under moonlight."
     },
     {
       "sourceKey": "booklet:breasts-nurture-and-femininity",
@@ -373,7 +385,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 20,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-transcendence.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/breasts-nurture-and-femininity.webp",
+      "heroImageAlt": "Two soft, rounded river stones resting together in a bed of lush moss bathed in warm light."
     },
     {
       "sourceKey": "booklet:web-of-your-being-unified-wholeness",
@@ -407,7 +420,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 21,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/when-mind-body-spirit-align_cd63426c.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/web-of-your-being-unified-wholeness.webp",
+      "heroImageAlt": "Ivory human silhouette in a dawn forest conducts fine golden threads into a unified web across body and trees, symbolizing integrated wholeness."
     },
     {
       "sourceKey": "booklet:feet-grounding-and-direction",
@@ -446,7 +460,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 24,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-walking-your-path.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/feet-grounding-and-direction.webp",
+      "heroImageAlt": "Bare adult feet make a slow first step onto a mossy stone at dawn, fine golden root-threads linking the soles to earth along a quiet forest path."
     },
     {
       "sourceKey": "booklet:eyes-perception-and-understanding",
@@ -481,7 +496,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 30,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-seeing-with-new-eyes.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/eyes-perception-and-understanding.webp",
+      "heroImageAlt": "Dawn light parts mist over an iris-shaped lake between eyelid-like ridges, a dark stone pupil at center, suggesting clarity and loving perception."
     },
     {
       "sourceKey": "booklet:kidneys-emotional-balance",
@@ -518,7 +534,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 30,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-flowing-with-life.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/kidneys-emotional-balance.webp",
+      "heroImageAlt": "Two kidney-shaped river stones in a dawn-lit stream release tiny golden flecks into the current, framed by moss and deep teal canyon shadows."
     },
     {
       "sourceKey": "booklet:vocal-cords-authentic-expression",
@@ -556,7 +573,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 39,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-speaking-truth.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/vocal-cords-authentic-expression.webp",
+      "heroImageAlt": "Translucent throat silhouette with glowing vocal cords sending golden ripples over a misty dawn lake."
     },
     {
       "sourceKey": "booklet:body-wisdom-in-community",
@@ -593,7 +611,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/body-wisdom-in-community.webp",
+      "heroImageAlt": "Four adults sit in a dawn woodland circle, hands on heart, throat, knee, and lower back around a small candle bowl; thin golden lines link each to the center."
     },
     {
       "sourceKey": "booklet:deepening-your-body-practice",
@@ -630,7 +650,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/deepening-your-body-practice.webp",
+      "heroImageAlt": "Dawn-lit torso of a seated adult with hand on abdomen as soft golden breath threads rise by a window, open journal and steaming mug nearby."
     },
     {
       "sourceKey": "booklet:face-identity-and-authenticity",
@@ -668,7 +690,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 100,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-pain-tension-pretending.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/face-identity-and-authenticity.webp",
+      "heroImageAlt": "Profile silhouette of a human face formed by a woodland pond reflection as a thin golden mask lifts into mist at dawn."
     },
     {
       "sourceKey": "booklet:immune-system-identity-and-boundaries",
@@ -705,7 +728,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 100,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-autoimmune-self-rejection.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/immune-system-identity-and-boundaries.webp",
+      "heroImageAlt": "Backlit torso silhouette with a golden lymph network in a dawn woodland as ivory leaf fragments pass through a ring and become part of the body."
     },
     {
       "sourceKey": "booklet:body-as-messenger",
@@ -743,7 +767,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/body-as-messenger.webp",
+      "heroImageAlt": "Translucent human torso in a dawn woodland, golden threads radiating from body areas to matching elements in the landscape."
     },
     {
       "sourceKey": "book:brain-frequencies",
@@ -777,7 +803,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/brain-frequencies.webp",
+      "heroImageAlt": "Abstract coastal shoreline with light filtering down through shifting layers of water in deep teal and antique gold."
     },
     {
       "sourceKey": "book:understanding-brain-frequencies",
@@ -815,7 +843,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/understanding-brain-frequencies.webp",
+      "heroImageAlt": "A tranquil forest stream widening into a still pool surrounded by mossy woodland."
     },
     {
       "sourceKey": "booklet:nervous-system-safety-and-connection",
@@ -853,7 +883,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 140,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-hypervigilance-peace.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/nervous-system-safety-and-connection.webp",
+      "heroImageAlt": "Close-up of a delicate, intertwined root system resting securely in rich soil in an ancient forest floor."
     },
     {
       "sourceKey": "booklet:reproductive-system-creation-and-sexuality",
@@ -893,7 +924,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 150,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-shame-sexuality.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/reproductive-system-creation-and-sexuality.webp",
+      "heroImageAlt": "A blooming lotus flower unfurling its petals to receive light in a tranquil, moonlit water garden."
     },
     {
       "sourceKey": "booklet:stomach-metabolizing-experience",
@@ -927,7 +959,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 180,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-too-much-to-stomach.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/stomach-metabolizing-experience.webp",
+      "heroImageAlt": "A smooth, hollowed stone basin in a serene mountain stream transforming rushing water into a calm pool."
     },
     {
       "sourceKey": "booklet:head-consciousness-and-identity",
@@ -962,7 +995,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 700,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-quieting-mind-practice.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/head-consciousness-and-identity.webp",
+      "heroImageAlt": "A clear, expansive sky opening above a quiet mountain peak as clouds part."
     },
     {
       "sourceKey": "booklet:lungs-life-force-exchange",
@@ -1000,7 +1034,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 1300,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-inspiration-expiration.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/lungs-life-force-exchange.webp",
+      "heroImageAlt": "Frosted branches releasing morning mist into the clear air in a quiet valley."
     },
     {
       "sourceKey": "book:questioning-what-we-know",
@@ -1036,7 +1071,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/questioning-what-we-know.webp",
+      "heroImageAlt": "An open book resting on a smooth stone with pages gently turning in a breeze."
     },
     {
       "sourceKey": "book:tuning-into-your-nervous-system",
@@ -1075,7 +1112,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 50
+      "sortOrder": 50,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/tuning-into-your-nervous-system.webp",
+      "heroImageAlt": "A single, steady candle flame illuminating a quiet, uncluttered contemplative space."
     },
     {
       "sourceKey": "book:feeling-joy",
@@ -1111,7 +1150,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 90
+      "sortOrder": 90,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/feeling-joy.webp",
+      "heroImageAlt": "A flock of birds taking flight joyfully over a sunlit meadow."
     },
     {
       "sourceKey": "book:discovering-space",
@@ -1147,7 +1188,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/discovering-space.webp",
+      "heroImageAlt": "A vast, calm ocean under a midnight sky with rhythmic mist rising."
     },
     {
       "sourceKey": "book:calling-of-the-creative-force",
@@ -1184,7 +1227,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/calling-of-the-creative-force.webp",
+      "heroImageAlt": "A winding forest path with a crossroads illuminated by a beam of golden light."
     },
     {
       "sourceKey": "book:foundation-of-safety",
@@ -1221,7 +1266,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 106
+      "sortOrder": 106,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/foundation-of-safety.webp",
+      "heroImageAlt": "Sturdy roots of a grand oak tree firmly anchoring into the dark forest floor."
     },
     {
       "sourceKey": "booklet:three-card-body-dialogue-process",
@@ -1256,7 +1303,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 110
+      "sortOrder": 110,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/three-card-body-dialogue-process.webp",
+      "heroImageAlt": "Three smooth, balanced river stones resting in a clear woodland stream."
     },
     {
       "sourceKey": "booklet:oracle-practice-for-life-guidance",
@@ -1291,7 +1340,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 120
+      "sortOrder": 120,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/oracle-practice-for-life-guidance.webp",
+      "heroImageAlt": "A still mountain lake reflecting the surrounding peaks at twilight."
     },
     {
       "sourceKey": "book:meeting-our-needs-with-love",
@@ -1327,7 +1378,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 141
+      "sortOrder": 141,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/meeting-our-needs-with-love.webp",
+      "heroImageAlt": "A sheltered, glowing alcove within a gentle cave, illuminated by soft golden light."
     },
     {
       "sourceKey": "book:exploring-the-theta-state",
@@ -1362,7 +1415,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 153
+      "sortOrder": 153,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/exploring-the-theta-state.webp",
+      "heroImageAlt": "A macro close-up of a single dewdrop magnifying the intricate veins of a green leaf."
     },
     {
       "sourceKey": "book:ever-present-spaciousness",
@@ -1400,7 +1455,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 156
+      "sortOrder": 156,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/ever-present-spaciousness.webp",
+      "heroImageAlt": "A vast, open desert canyon with wind sweeping through the immense space."
     },
     {
       "sourceKey": "book:what-are-you-creating-with-your-energy",
@@ -1436,7 +1493,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 265
+      "sortOrder": 265,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/what-are-you-creating-with-your-energy.webp",
+      "heroImageAlt": "Dynamic, swirling currents of water in a clear river shaping the stones below."
     },
     {
       "sourceKey": "book:loving-welcome-to-the-world",
@@ -1476,7 +1535,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/loving-welcome-to-the-world.webp",
+      "heroImageAlt": "A delicate, newly unfurled fern frond gently sheltered by larger leaves."
     },
     {
       "sourceKey": "book:default-mode-and-conserving-energy",
@@ -1511,7 +1572,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/default-mode-and-conserving-energy.webp",
+      "heroImageAlt": "A woodland scene where a deeply worn, shadowy path diverges into a new, sunlit trail."
     },
     {
       "sourceKey": "book:life-as-our-mirror",
@@ -1551,7 +1614,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/life-as-our-mirror.webp",
+      "heroImageAlt": "A dark pool of water reflecting a large tree, with a single leaf causing ripples that distort the image."
     },
     {
       "sourceKey": "book:running-on-energy",
@@ -1588,7 +1653,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/running-on-energy.webp",
+      "heroImageAlt": "Close-up of ancient tree roots glowing with golden energy in dark earth."
     },
     {
       "sourceKey": "book:mother-before-you",
@@ -1626,7 +1693,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/mother-before-you.webp",
+      "heroImageAlt": "Two glowing spheres of light gently merging in a starry night sky above a calm ocean."
     },
     {
       "sourceKey": "book:energy-and-matter",
@@ -1660,7 +1729,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 1
+      "sortOrder": 1,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/energy-and-matter.webp",
+      "heroImageAlt": "A solid stone in a zen garden transitioning into glowing particles of light."
     },
     {
       "sourceKey": "book:childhood-brain-states",
@@ -1699,7 +1770,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/childhood-brain-states.webp",
+      "heroImageAlt": "A small bird weaving a nest from twigs and leaves in a blossoming tree."
     },
     {
       "sourceKey": "book:confirmation",
@@ -1736,7 +1809,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/confirmation.webp",
+      "heroImageAlt": "A solitary figure stands at an open doorway looking out over a vast, misty mountain valley."
     },
     {
       "sourceKey": "book:introduction-to-elevating-origins",
@@ -1773,7 +1848,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/introduction-to-elevating-origins.webp",
+      "heroImageAlt": "A bright green seedling growing through a crack in dry, rocky earth."
     },
     {
       "sourceKey": "book:my-beginnings",
@@ -1810,7 +1887,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 10
+      "sortOrder": 10,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/my-beginnings.webp",
+      "heroImageAlt": "A lighthouse casting a bright beam across a stormy, dark ocean."
     },
     {
       "sourceKey": "book:new-relation-to-time-and-space",
@@ -1846,7 +1925,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 59
+      "sortOrder": 59,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/new-relation-to-time-and-space.webp",
+      "heroImageAlt": "A translucent chrysalis hanging quietly from a branch in a shaded grove."
     },
     {
       "sourceKey": "book:discovering-this-and-that",
@@ -1881,7 +1962,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/discovering-this-and-that.webp",
+      "heroImageAlt": "A child's-eye view of a vibrant, distinct natural world in early morning light."
     },
     {
       "sourceKey": "book:elevating-generations-through-love",
@@ -1918,7 +2001,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/elevating-generations-through-love.webp",
+      "heroImageAlt": "An ancient forest path at twilight, symbolizing ancestral lineage and inherited burdens."
     },
     {
       "sourceKey": "book:meeting-your-parents",
@@ -1955,7 +2040,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/meeting-your-parents.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:rooting-our-humanness",
@@ -1991,7 +2078,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/rooting-our-humanness.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:the-newborn-brain",
@@ -2027,7 +2116,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/the-newborn-brain.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:whats-your-state-of-mind",
@@ -2063,7 +2154,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/whats-your-state-of-mind.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:where-did-you-come-from",
@@ -2102,7 +2195,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/where-did-you-come-from.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:to-be-or-not",
@@ -2138,7 +2233,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 102
+      "sortOrder": 102,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/to-be-or-not.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:birthing-influences",
@@ -2174,7 +2271,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 111
+      "sortOrder": 111,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/birthing-influences.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:emerging-into-the-world",
@@ -2210,7 +2309,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 117
+      "sortOrder": 117,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/emerging-into-the-world.webp",
+      "heroImageAlt": "A serene, enclosed garden in filtered woodland light, representing inner awareness."
     },
     {
       "sourceKey": "book:needs-not-always-met",
@@ -2246,7 +2347,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 120
+      "sortOrder": 120,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/needs-not-always-met.webp",
+      "heroImageAlt": "A woven nest rests on ancient tree roots in a forest hollow, bathed in the warm light of early dawn."
     },
     {
       "sourceKey": "book:filling-gaps-from-our-beginnings",
@@ -2282,7 +2385,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 123
+      "sortOrder": 123,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/filling-gaps-from-our-beginnings.webp",
+      "heroImageAlt": "A sturdy stone pathway emerges from a misty ancient woodland, becoming clearer in the morning light."
     },
     {
       "sourceKey": "book:why-are-we-doing-this",
@@ -2320,7 +2425,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 147
+      "sortOrder": 147,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/why-are-we-doing-this.webp",
+      "heroImageAlt": "A quiet river flows smoothly, carving a new, gentle channel through a serene valley in the late afternoon."
     },
     {
       "sourceKey": "book:discovering-a-gap-that-wasnt",
@@ -2358,7 +2465,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 150
+      "sortOrder": 150,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/discovering-a-gap-that-wasnt.webp",
+      "heroImageAlt": "An infant peacefully resting in a glowing, nest-like incubator surrounded by a tranquil hospital nursery at night, illuminated by gentle moonlight."
     },
     {
       "sourceKey": "book:an-inherent-protection",
@@ -2398,7 +2507,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 152
+      "sortOrder": 152,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/an-inherent-protection.webp",
+      "heroImageAlt": "An adult's hands gently uncovering a delicate, glowing seed nestled within layers of dark earth and protective roots, illuminated by soft dawn light."
     },
     {
       "sourceKey": "book:you-should-know-better",
@@ -2436,7 +2547,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 156
+      "sortOrder": 156,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/you-should-know-better.webp",
+      "heroImageAlt": "A small child stands before a vast, blank canvas in a softly lit studio, holding a single brush as morning light streams through tall windows."
     },
     {
       "sourceKey": "book:randomness-of-root-causes",
@@ -2474,7 +2587,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 158
+      "sortOrder": 158,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/randomness-of-root-causes.webp",
+      "heroImageAlt": "A glowing seed sprouting from beneath a heavy, moss-covered rock in a shadowy forest, illuminated by a warm beam of light filtering through the trees."
     },
     {
       "sourceKey": "book:uncovering-what-we-assumed",
@@ -2512,7 +2627,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 162
+      "sortOrder": 162,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/uncovering-what-we-assumed.webp",
+      "heroImageAlt": "A delicate young sapling emerging from beneath heavy, layered stones in a shadowed forest floor, with soft dawn light revealing its bright green leaves."
     },
     {
       "sourceKey": "book:theta-state-survival-manual",
@@ -2549,7 +2666,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 167
+      "sortOrder": 167,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/theta-state-survival-manual.webp",
+      "heroImageAlt": "A glowing, delicate root system branching out within a sheltered woodland hollow, illuminated by a warm dawn light filtering through ancient mossy stones."
     },
     {
       "sourceKey": "book:puzzle-pieces",
@@ -2588,7 +2707,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 168
+      "sortOrder": 168,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/puzzle-pieces.webp",
+      "heroImageAlt": "A puzzle piece carved from wood resting in a child-scale woodland clearing, illuminated by a warm, revealing light piercing through deep teal shadows."
     },
     {
       "sourceKey": "book:feeling-into-the-human-experience",
@@ -2624,7 +2745,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 710
+      "sortOrder": 710,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/feeling-into-the-human-experience.webp",
+      "heroImageAlt": "A luminous natural threshold of roots and light in a deep woodland."
     },
     {
       "sourceKey": "book:elevating-with-a-partner",
@@ -2659,7 +2782,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/elevating-with-a-partner.webp",
+      "heroImageAlt": "Two natural stones resting in a shallow bowl of sand."
     },
     {
       "sourceKey": "book:moving-beyond-limiting-judgment",
@@ -2697,7 +2822,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/moving-beyond-limiting-judgment.webp",
+      "heroImageAlt": "A still pool of water reflecting a tangled forest canopy."
     },
     {
       "sourceKey": "book:when-expectations-collide",
@@ -2734,7 +2861,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/when-expectations-collide.webp",
+      "heroImageAlt": "Two distinct weather fronts colliding over a vast valley."
     },
     {
       "sourceKey": "book:knowing-for-others",
@@ -2768,7 +2897,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 191
+      "sortOrder": 191,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/knowing-for-others.webp",
+      "heroImageAlt": "A weathered mirror in a garden reflecting an overgrown path."
     },
     {
       "sourceKey": "book:dreaming-of-a-being",
@@ -2804,7 +2935,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/dreaming-of-a-being.webp",
+      "heroImageAlt": "A luminous portal in a starlit sky above calm moonlit water."
     },
     {
       "sourceKey": "book:laying-down-a-new-history",
@@ -2842,7 +2975,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/laying-down-a-new-history.webp",
+      "heroImageAlt": "A dark forest thicket opening into a sunlit, warm meadow."
     },
     {
       "sourceKey": "book:neuroplasticity-and-new-pathways",
@@ -2876,7 +3011,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/neuroplasticity-and-new-pathways.webp",
+      "heroImageAlt": "A glowing stream carving a fresh path through ancient stone."
     },
     {
       "sourceKey": "booklet:investigating-a-specific-body-part",
@@ -2914,7 +3051,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 13
+      "sortOrder": 13,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/investigating-a-specific-body-part.webp",
+      "heroImageAlt": "A resilient ancient tree gently illuminated by warm light in a misty grove."
     },
     {
       "sourceKey": "booklet:thyroid-rhythm-and-transformation",
@@ -2950,7 +3089,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 38,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-authentic-rhythm.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/thyroid-rhythm-and-transformation.webp",
+      "heroImageAlt": "A translucent butterfly resting on a steady stone in a flowing stream."
     },
     {
       "sourceKey": "book:changing-a-story-higher-truth",
@@ -2987,7 +3127,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/changing-a-story-higher-truth.webp",
+      "heroImageAlt": "Close-up of a glowing golden thread being woven into a dark blue tapestry."
     },
     {
       "sourceKey": "book:compassion-toward-ourselves",
@@ -3024,7 +3166,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/compassion-toward-ourselves.webp",
+      "heroImageAlt": "A delicate seedling emerging from a cracked, moss-covered stone in a forest."
     },
     {
       "sourceKey": "book:from-wrong-to-neutral",
@@ -3059,7 +3203,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/from-wrong-to-neutral.webp",
+      "heroImageAlt": "A weathered stone bridge crossing a gentle stream, with mist lifting as soft dawn light reveals a new, peaceful pathway."
     },
     {
       "sourceKey": "booklet:heart-courage-and-love",
@@ -3097,7 +3243,8 @@
       "status": "published",
       "featured": false,
       "sortOrder": 100,
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/articles/the-heart-speaks-listening-to-the-sacred-language-within-9a07cf.webp"
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/heart-courage-and-love.webp",
+      "heroImageAlt": "A radiant, heart-shaped natural spring welling up from the earth in a lush valley."
     },
     {
       "sourceKey": "booklet:supporting-your-body-journey",
@@ -3136,7 +3283,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/supporting-your-body-journey.webp",
+      "heroImageAlt": "An ancient tree with deep roots intertwining with supportive stones in a misty woodland."
     },
     {
       "sourceKey": "book:great-tapestry-of-you",
@@ -3174,7 +3323,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/great-tapestry-of-you.webp",
+      "heroImageAlt": "A vast, intricate landscape seen from a high mountain peak at twilight."
     },
     {
       "sourceKey": "book:trust-in-our-circumstances",
@@ -3213,7 +3364,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 100
+      "sortOrder": 100,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/trust-in-our-circumstances.webp",
+      "heroImageAlt": "A large, majestic elk standing quietly in a snow-covered forest clearing at night."
     },
     {
       "sourceKey": "book:elevating-to-love-process",
@@ -3250,7 +3403,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 170
+      "sortOrder": 170,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/elevating-to-love-process.webp",
+      "heroImageAlt": "Two glowing embers, one large and one small, resting together in a warm stone hearth."
     },
     {
       "sourceKey": "book:circle-that-never-ends",
@@ -3287,7 +3442,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 257
+      "sortOrder": 257,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/circle-that-never-ends.webp",
+      "heroImageAlt": "A gentle, luminous circle of light reflecting on a calm lake at dawn."
     },
     {
       "sourceKey": "booklet:blessing-for-your-body-journey",
@@ -3322,7 +3479,9 @@
       ],
       "status": "published",
       "featured": false,
-      "sortOrder": 9000
+      "sortOrder": 9000,
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/blessing-for-your-body-journey.webp",
+      "heroImageAlt": "An open, sunlit pathway leading through an ancient archway of trees in a vibrant forest."
     },
     {
       "sourceKey": "web:bc-body-not-broken",
@@ -3363,10 +3522,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-not-broken.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-body-not-broken.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1000
+      "sortOrder": 1000,
+      "heroImageAlt": "Earthen torso-shaped vessel on a coastal bluff, rejoined by glowing gold seams in soft dawn light."
     },
     {
       "sourceKey": "web:bc-sacred-art-listening",
@@ -3405,10 +3565,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-listening.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-sacred-art-listening.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1001
+      "sortOrder": 1001,
+      "heroImageAlt": "Open hands over a wooden table with soft light ripples, a small journal nearby in morning window light."
     },
     {
       "sourceKey": "web:bc-integration-modern-life",
@@ -3448,10 +3609,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-integration.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-integration-modern-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1002
+      "sortOrder": 1002,
+      "heroImageAlt": "A hand selects a small blank card on a sunlit kitchen counter as mug steam drifts like a soft breath at sunrise."
     },
     {
       "sourceKey": "web:bc-ancestral-collective-healing",
@@ -3492,10 +3654,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-ancestral.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-ancestral-collective-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1003
+      "sortOrder": 1003,
+      "heroImageAlt": "Tree roots shaped like a pelvic bowl with a gold thread rising through a faint back silhouette in a misty forest at dusk."
     },
     {
       "sourceKey": "web:bc-deepening-your-practice",
@@ -3536,10 +3699,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-deepening.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-deepening-your-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1004
+      "sortOrder": 1004,
+      "heroImageAlt": "Open journal with a candle and river stone on a desk at blue hour, breath lifting a ribbon slightly."
     },
     {
       "sourceKey": "web:bc-three-card-process",
@@ -3580,10 +3744,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-three-card.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-three-card-process.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1005
+      "sortOrder": 1005,
+      "heroImageAlt": "Three blank cards in an arc on a candlelit table as a hand traces a thin gold thread between them."
     },
     {
       "sourceKey": "web:bc-holographic-body",
@@ -3624,10 +3789,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-holographic.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-holographic-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1006
+      "sortOrder": 1006,
+      "heroImageAlt": "A moonlit droplet above an open palm reflects trees and a faint human silhouette."
     },
     {
       "sourceKey": "web:the-heart-speaks-listening-to-the-sacred-language-within",
@@ -3667,10 +3833,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/articles/the-heart-speaks-listening-to-the-sacred-language-within-9a07cf.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-heart-speaks-listening-to-the-sacred-language-within.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1007
+      "sortOrder": 1007,
+      "heroImageAlt": "Hands rest over the heart on a clothed chest as subtle ripples radiate in warm sunset tones."
     },
     {
       "sourceKey": "web:the-sacred-alchemy-of-personal-transformation-dancing-with-change-from-the-inside-out",
@@ -3712,10 +3879,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/articles/the-sacred-alchemy-of-personal-transformation-dancing-with-change-from-the-inside-out-dd725b.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-sacred-alchemy-of-personal-transformation-dancing-with-change-from-the-inside-out.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1008
+      "sortOrder": 1008,
+      "heroImageAlt": "A forest chrysalis cracks open at dawn, warm light spilling as nearby frost melts into a small stream."
     },
     {
       "sourceKey": "web:the-subtle-art-of-homeopathy-healing-through-the-language-of-life",
@@ -3754,10 +3922,11 @@
       "sourceCategories": [
         "Homeopathy"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/articles/the-subtle-art-of-homeopathy-healing-through-the-language-of-life-7f0aa5.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-subtle-art-of-homeopathy-healing-through-the-language-of-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1009
+      "sortOrder": 1009,
+      "heroImageAlt": "A drop falls from a small amber vial into a glass of water, forming gentle ripples on a sunlit wooden desk."
     },
     {
       "sourceKey": "web:beneath-the-surface-the-journey-into-deep-spiritual-healing",
@@ -3796,10 +3965,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/articles/beneath-the-surface-the-journey-into-deep-spiritual-healing-69f81e.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-beneath-the-surface-the-journey-into-deep-spiritual-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1010
+      "sortOrder": 1010,
+      "heroImageAlt": "Close-up of ice cracking on a winter river at twilight, revealing dark flowing water beneath."
     },
     {
       "sourceKey": "web:bc-beliefs-paradigms-body",
@@ -3839,10 +4009,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-beliefs.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-beliefs-paradigms-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1011
+      "sortOrder": 1011,
+      "heroImageAlt": "A dense tangle of ancient roots on a forest floor with a single new green shoot emerging in dappled light."
     },
     {
       "sourceKey": "web:thyroid-authentic-rhythm",
@@ -3881,10 +4052,11 @@
       "sourceCategories": [
         "Thyroid"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-authentic-rhythm.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-thyroid-authentic-rhythm.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1012
+      "sortOrder": 1012,
+      "heroImageAlt": "A chrysalis hanging in stillness from a branch in a misty garden at early dawn."
     },
     {
       "sourceKey": "web:hips-legs-emotional-roots",
@@ -3925,10 +4097,11 @@
       "sourceCategories": [
         "Hips & Legs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-legs-emotional-roots.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hips-legs-emotional-roots.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1013
+      "sortOrder": 1013,
+      "heroImageAlt": "A willow tree in an open meadow bending gracefully in the wind, showing flexible stability."
     },
     {
       "sourceKey": "web:bc-body-as-messenger",
@@ -3969,10 +4142,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-body-messenger.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-body-as-messenger.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1014
+      "sortOrder": 1014,
+      "heroImageAlt": "Concentric ripples expanding outward on a still woodland pond under moonlight."
     },
     {
       "sourceKey": "web:immune-autoimmune-self-rejection",
@@ -4011,10 +4185,11 @@
       "sourceCategories": [
         "Immune System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-autoimmune-self-rejection.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-immune-autoimmune-self-rejection.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1015
+      "sortOrder": 1015,
+      "heroImageAlt": "Two distinct streams gently merging into a single river in a forested valley."
     },
     {
       "sourceKey": "web:liver-releasing-anger-practice",
@@ -4053,10 +4228,11 @@
       "sourceCategories": [
         "Liver-Gallbladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-releasing-anger-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-liver-releasing-anger-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1016
+      "sortOrder": 1016,
+      "heroImageAlt": "A tight knot of forest vines beginning to loosen and unravel in a patch of sunlight."
     },
     {
       "sourceKey": "web:feet-walking-your-path",
@@ -4095,10 +4271,11 @@
       "sourceCategories": [
         "Feet"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-walking-your-path.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-feet-walking-your-path.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1017
+      "sortOrder": 1017,
+      "heroImageAlt": "A gentle, inviting dirt path winding through an ancient woodland in late afternoon light."
     },
     {
       "sourceKey": "web:eyes-seeing-with-new-eyes",
@@ -4138,10 +4315,11 @@
       "sourceCategories": [
         "Eyes"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-seeing-with-new-eyes.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-eyes-seeing-with-new-eyes.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1018
+      "sortOrder": 1018,
+      "heroImageAlt": "Morning mist lifting from a mountain valley at dawn, revealing the clear landscape below."
     },
     {
       "sourceKey": "web:shoulders-weight-you-carry",
@@ -4181,10 +4359,11 @@
       "sourceCategories": [
         "Shoulders"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-weight-you-carry.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-shoulders-weight-you-carry.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1019
+      "sortOrder": 1019,
+      "heroImageAlt": "A heavy, smooth stone resting peacefully on a bed of soft moss on a forest floor."
     },
     {
       "sourceKey": "web:when-mind-body-spirit-align",
@@ -4223,10 +4402,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/when-mind-body-spirit-align_cd63426c.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-when-mind-body-spirit-align.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1020
+      "sortOrder": 1020,
+      "heroImageAlt": "Middle-aged Black woman stands barefoot on moss by a forest lake at dawn, breathing slowly as subtle golden motes rise toward the open sky."
     },
     {
       "sourceKey": "web:face-pain-tension-pretending",
@@ -4266,10 +4446,11 @@
       "sourceCategories": [
         "Face"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-pain-tension-pretending.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-face-pain-tension-pretending.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1021
+      "sortOrder": 1021,
+      "heroImageAlt": "At dawn by a window, a midlife Black woman warms her hands and rests them on her jaw, breathing softly as a hint of playful expression begins to return."
     },
     {
       "sourceKey": "web:healing-the-healer",
@@ -4307,10 +4488,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/healing-the-healer_6c7b6184.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-healing-the-healer.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1022
+      "sortOrder": 1022,
+      "heroImageAlt": "At dawn in a quiet garden, a tired caregiver sits on a bench as an older neighbor offers a warm mug of tea; soft light shows the relief of receiving."
     },
     {
       "sourceKey": "web:heart-loves-itself-first",
@@ -4350,10 +4532,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-loves-itself-first.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-heart-loves-itself-first.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1023
+      "sortOrder": 1023,
+      "heroImageAlt": "At dawn in a mossy forest, a mid-50s Black woman sits with one hand over her heart as soft golden breath flows in and gently radiates from her chest."
     },
     {
       "sourceKey": "web:stomach-too-much-to-stomach",
@@ -4392,10 +4575,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-too-much-to-stomach.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-stomach-too-much-to-stomach.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1024
+      "sortOrder": 1024,
+      "heroImageAlt": "Calm Black woman by a deep‑teal river at dawn, hands over belly; soft golden breath threads into a water spiral, evoking the stomach as an alchemical cauldron."
     },
     {
       "sourceKey": "web:spine-freedom-practice",
@@ -4433,10 +4617,11 @@
       "sourceCategories": [
         "Spine"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-freedom-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-spine-freedom-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1025
+      "sortOrder": 1025,
+      "heroImageAlt": "Adult seated upright on a wooden chair in a dawn-lit woodland; a subtle golden line rises along their spine, suggesting integrity and ease."
     },
     {
       "sourceKey": "web:liver-metabolizing-betrayal",
@@ -4475,10 +4660,11 @@
       "sourceCategories": [
         "Liver-Gallbladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-metabolizing-betrayal.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-liver-metabolizing-betrayal.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1026
+      "sortOrder": 1026,
+      "heroImageAlt": "At dawn by a mossy river, an adult rests a right hand over the lower right ribs as dark leaves drift from their open palm, turning gold in the light."
     },
     {
       "sourceKey": "web:bc-web-of-being-unified-field",
@@ -4518,10 +4704,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-web.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-web-of-being-unified-field.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1027
+      "sortOrder": 1027,
+      "heroImageAlt": "At dawn in a mossy forest, an adult rests hand on heart and belly as fine golden threads link their body to the surroundings, evoking a unified inner field."
     },
     {
       "sourceKey": "web:immune-consciousness-practice",
@@ -4559,10 +4746,11 @@
       "sourceCategories": [
         "Immune System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-consciousness-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-immune-consciousness-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1028
+      "sortOrder": 1028,
+      "heroImageAlt": "At dawn in a forest clearing, a seated adult holds a hand to their heart as a soft golden field glows around them, suggesting a calm, permeable boundary."
     },
     {
       "sourceKey": "web:lungs-inspiration-expiration",
@@ -4602,10 +4790,11 @@
       "sourceCategories": [
         "Lungs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-inspiration-expiration.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-lungs-inspiration-expiration.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1029
+      "sortOrder": 1029,
+      "heroImageAlt": "At dawn by a mossy lake, a woman rests a hand on her chest and belly, exhaling a soft golden mist as she practices gentle breath with a longer out-breath."
     },
     {
       "sourceKey": "web:when-the-body-whispers",
@@ -4644,10 +4833,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/when-the-body-whispers.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-when-the-body-whispers.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1030
+      "sortOrder": 1030,
+      "heroImageAlt": "Illustration of gentle hands resting on mossy tree roots in a quiet dawn woodland, representing embodied listening and re-establishing trust."
     },
     {
       "sourceKey": "web:when-life-falls-apart",
@@ -4686,10 +4876,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/when-life-falls-apart_65fa6a35.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-when-life-falls-apart.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1031
+      "sortOrder": 1031,
+      "heroImageAlt": "Close-up of a shattered ceramic bowl meticulously mended with gold lacquer, resting on a smooth stone surface near a calm river in late afternoon."
     },
     {
       "sourceKey": "web:spine-having-backbone",
@@ -4729,10 +4920,11 @@
       "sourceCategories": [
         "Spine"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-having-backbone.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-spine-having-backbone.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1032
+      "sortOrder": 1032,
+      "heroImageAlt": "Illustration of a tall, supple fern unfurling from the earth in a sunlit forest clearing, showing both strength and flexibility."
     },
     {
       "sourceKey": "web:lungs-breathwork-practice",
@@ -4772,10 +4964,11 @@
       "sourceCategories": [
         "Lungs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-breathwork-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-lungs-breathwork-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1033
+      "sortOrder": 1033,
+      "heroImageAlt": "A cinematic illustration of a woman in a misty valley practicing three-part breathwork, her chest glowing with warm golden light against deep teal."
     },
     {
       "sourceKey": "web:spine-sacred-central-channel",
@@ -4814,10 +5007,11 @@
       "sourceCategories": [
         "Spine"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-sacred-central-channel.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-spine-sacred-central-channel.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1034
+      "sortOrder": 1034,
+      "heroImageAlt": "Illustration of a graceful, glowing spine silhouette layered over an ancient forest pathway, illuminated by soft golden light filtering through trees."
     },
     {
       "sourceKey": "web:what-your-childhood-taught-your-body",
@@ -4856,10 +5050,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/what-your-childhood-taught-your-body.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-what-your-childhood-taught-your-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1035
+      "sortOrder": 1035,
+      "heroImageAlt": "Illustration of a weathered stone carrying layered moss, resting in a serene woodland clearing as gentle morning light reveals its deep textures."
     },
     {
       "sourceKey": "web:bc-vocal-cords-vibrational-signature",
@@ -4900,10 +5095,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-vocal.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-vocal-cords-vibrational-signature.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1036
+      "sortOrder": 1036,
+      "heroImageAlt": "Cinematic illustration of delicate vocal cords rendered as glowing, layered organic ribbons within a warm, luminous throat silhouette, emitting soft hums."
     },
     {
       "sourceKey": "web:liver-poison-to-power",
@@ -4942,10 +5138,11 @@
       "sourceCategories": [
         "Liver-Gallbladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-poison-to-power.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-liver-poison-to-power.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1037
+      "sortOrder": 1037,
+      "heroImageAlt": "A graceful silhouette of the liver glowing with soft fiery energy inside a human form, set against a calm, deep teal background."
     },
     {
       "sourceKey": "web:heart-first-declaration",
@@ -4984,10 +5181,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-first-declaration.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-heart-first-declaration.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1038
+      "sortOrder": 1038,
+      "heroImageAlt": "Illustration of a glowing ember in a hearth within a dark, quiet cave."
     },
     {
       "sourceKey": "web:web-of-being-unified-field",
@@ -5028,10 +5226,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/web-of-being-unified-field.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-web-of-being-unified-field.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1039
+      "sortOrder": 1039,
+      "heroImageAlt": "Macro illustration of a delicate, dew-covered spiderweb illuminated by early morning light in a misty meadow."
     },
     {
       "sourceKey": "web:kidneys-flowing-with-life",
@@ -5069,10 +5268,11 @@
       "sourceCategories": [
         "Kidneys"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-flowing-with-life.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-kidneys-flowing-with-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1040
+      "sortOrder": 1040,
+      "heroImageAlt": "A powerful silver-brown river flowing effortlessly through a deep mountain valley at dawn, symbolizing the release of crystallized emotional resistance."
     },
     {
       "sourceKey": "web:the-gift-of-difficult-emotions",
@@ -5113,10 +5313,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-gift-of-difficult-emotions.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-gift-of-difficult-emotions.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1041
+      "sortOrder": 1041,
+      "heroImageAlt": "A hand placed over the heart, radiating a gentle golden warmth, set against a quiet backdrop of softly falling rain, symbolizing emotional acceptance."
     },
     {
       "sourceKey": "web:bc-thyroid-butterfly-transformation",
@@ -5157,10 +5358,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-thyroid.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-thyroid-butterfly-transformation.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1042
+      "sortOrder": 1042,
+      "heroImageAlt": "A graceful silhouette of the throat area where a delicate butterfly form merges with the thyroid gland, illuminated by gentle morning light."
     },
     {
       "sourceKey": "web:liver-gallstones-bitterness",
@@ -5198,10 +5400,11 @@
       "sourceCategories": [
         "Liver-Gallbladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-gallstones-bitterness.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-liver-gallstones-bitterness.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1043
+      "sortOrder": 1043,
+      "heroImageAlt": "A graceful anatomical silhouette of a liver dissolving sharp stones into warm golden light within a deep teal woodland setting."
     },
     {
       "sourceKey": "web:reproductive-shame-sexuality",
@@ -5240,10 +5443,11 @@
       "sourceCategories": [
         "Reproductive System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-shame-sexuality.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reproductive-shame-sexuality.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1044
+      "sortOrder": 1044,
+      "heroImageAlt": "A child's vibrant drawing and crayons resting on a rustic wooden table in a dimly lit room, with a warm ray of light illuminating the colorful artwork."
     },
     {
       "sourceKey": "web:stomach-ulcers-acid-bitterness",
@@ -5284,10 +5488,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-ulcers-acid-bitterness.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-stomach-ulcers-acid-bitterness.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1045
+      "sortOrder": 1045,
+      "heroImageAlt": "A softly glowing stomach silhouette filled with soothing golden light, resting within a dark, tranquil forest clearing."
     },
     {
       "sourceKey": "web:bladder-emotional-patterns",
@@ -5327,10 +5532,11 @@
       "sourceCategories": [
         "Bladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-emotional-patterns.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bladder-emotional-patterns.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1046
+      "sortOrder": 1046,
+      "heroImageAlt": "A calm reservoir releasing water through a spillway, symbolizing the release of held emotions."
     },
     {
       "sourceKey": "web:developing-conscious-loving-relationship",
@@ -5371,10 +5577,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/developing-conscious-loving-relationship.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-developing-conscious-loving-relationship.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1047
+      "sortOrder": 1047,
+      "heroImageAlt": "A pair of hands gently holding a ceramic bowl mended with gold, resting on a wooden table, bathed in warm sunlight."
     },
     {
       "sourceKey": "web:vocal-cords-speaking-truth",
@@ -5413,10 +5620,11 @@
       "sourceCategories": [
         "Vocal Cords"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-speaking-truth.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-vocal-cords-speaking-truth.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1048
+      "sortOrder": 1048,
+      "heroImageAlt": "A graceful anatomical silhouette of the throat and vocal cords, illuminated by a warm, luminous turquoise light radiating from the chest upward."
     },
     {
       "sourceKey": "web:breasts-transcendence",
@@ -5455,10 +5663,11 @@
       "sourceCategories": [
         "Breasts"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-transcendence.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breasts-transcendence.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1049
+      "sortOrder": 1049,
+      "heroImageAlt": "A graceful female silhouette formed by a glowing wellspring, symbolizing the breasts as a source of self-nurturing and life force."
     },
     {
       "sourceKey": "web:heart-attacks-of-soul",
@@ -5497,10 +5706,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-attacks-of-soul.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-heart-attacks-of-soul.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1050
+      "sortOrder": 1050,
+      "heroImageAlt": "A person in a dim woodland rests a hand on their glowing chest as dawn light breaks."
     },
     {
       "sourceKey": "web:bc-stomach-alchemical-cauldron",
@@ -5541,10 +5751,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-stomach.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-stomach-alchemical-cauldron.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1051
+      "sortOrder": 1051,
+      "heroImageAlt": "A person by a rocky pool holds their belly, where a golden light dissolves dark mist."
     },
     {
       "sourceKey": "web:what-would-it-be-like-to-elevate-everything-to-love",
@@ -5583,10 +5794,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/what-would-it-be-like-to-elevate-everything-to-love.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-what-would-it-be-like-to-elevate-everything-to-love.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1052
+      "sortOrder": 1052,
+      "heroImageAlt": "A close-up of a hand gently cupping the space under a rose leaf holding a water drop."
     },
     {
       "sourceKey": "web:the-still-point-where-deep-healing-begins",
@@ -5625,10 +5837,11 @@
       "sourceCategories": [
         "Cranial Sacral & Similar Therapies"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-still-point-where-deep-healing-begins_2c79df93.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-still-point-where-deep-healing-begins.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1053
+      "sortOrder": 1053,
+      "heroImageAlt": "A person sits in deep stillness beside a vast, moonlit ocean."
     },
     {
       "sourceKey": "web:love-as-a-practice",
@@ -5668,10 +5881,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/love-as-a-practice_694938c4.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-love-as-a-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1054
+      "sortOrder": 1054,
+      "heroImageAlt": "Two hands gently tend to a small plant in a sunlit garden."
     },
     {
       "sourceKey": "web:heart-disheartened",
@@ -5709,10 +5923,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-disheartened.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-heart-disheartened.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1055
+      "sortOrder": 1055,
+      "heroImageAlt": "Hands hold an empty cup under a gentle stream of water in a forest."
     },
     {
       "sourceKey": "web:hands-opening-in-trust",
@@ -5750,10 +5965,11 @@
       "sourceCategories": [
         "Hands"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-opening-in-trust.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hands-opening-in-trust.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1056
+      "sortOrder": 1056,
+      "heroImageAlt": "Close-up of hands resting open and relaxed on a lap in a dappled woodland."
     },
     {
       "sourceKey": "web:bc-spine-sacred-channel",
@@ -5794,10 +6010,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-spine.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-spine-sacred-channel.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1057
+      "sortOrder": 1057,
+      "heroImageAlt": "A person stands tall in a forest, their spine glowing with a gentle, flexible light."
     },
     {
       "sourceKey": "web:kidneys-alchemists-emotional-balance",
@@ -5837,10 +6054,11 @@
       "sourceCategories": [
         "Kidneys"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-alchemists-emotional-balance.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-kidneys-alchemists-emotional-balance.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1058
+      "sortOrder": 1058,
+      "heroImageAlt": "Clear water flows over two smooth stones in a riverbed, washing away silt."
     },
     {
       "sourceKey": "web:shoulders-releasing-tension-practice",
@@ -5881,10 +6099,11 @@
       "sourceCategories": [
         "Shoulders"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-releasing-tension-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-shoulders-releasing-tension-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1059
+      "sortOrder": 1059,
+      "heroImageAlt": "A person at a river's edge tosses a heavy stone into the water, their shoulders relaxed."
     },
     {
       "sourceKey": "web:the-vital-force",
@@ -5921,10 +6140,11 @@
       "sourceCategories": [
         "Homeopathy"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-vital-force_4413a1f0.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-vital-force.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1060
+      "sortOrder": 1060,
+      "heroImageAlt": "Hands gently tending a vibrant seedling in dark soil, illuminated by morning sunlight."
     },
     {
       "sourceKey": "web:feet-foundation-of-journey",
@@ -5963,10 +6183,11 @@
       "sourceCategories": [
         "Feet"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-foundation-of-journey.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-feet-foundation-of-journey.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1061
+      "sortOrder": 1061,
+      "heroImageAlt": "Bare feet standing firmly on smooth, moss-covered stones on a forest path."
     },
     {
       "sourceKey": "web:kidneys-fear-willpower",
@@ -6005,10 +6226,11 @@
       "sourceCategories": [
         "Kidneys"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-fear-willpower.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-kidneys-fear-willpower.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1062
+      "sortOrder": 1062,
+      "heroImageAlt": "Two smooth river stones resting in a gentle stream of clear water at twilight."
     },
     {
       "sourceKey": "web:the-sacred-pause",
@@ -6043,10 +6265,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-sacred-pause_c50805fc.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-sacred-pause.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1063
+      "sortOrder": 1063,
+      "heroImageAlt": "A hummingbird hovering perfectly still in mid-air before a soft rose blossom in a misty garden."
     },
     {
       "sourceKey": "web:improve-the-world-it-starts-with-us-transforming-the-worlds-energy",
@@ -6085,10 +6308,11 @@
       "sourceCategories": [
         "Other"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/03/blog-transform-world-energy-hero.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-improve-the-world-it-starts-with-us-transforming-the-worlds-energy.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1064
+      "sortOrder": 1064,
+      "heroImageAlt": "A single drop of water creating gentle, expanding ripples across a calm, dark pond."
     },
     {
       "sourceKey": "web:immune-guardian-of-identity",
@@ -6127,10 +6351,11 @@
       "sourceCategories": [
         "Immune System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-guardian-of-identity.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-immune-guardian-of-identity.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1065
+      "sortOrder": 1065,
+      "heroImageAlt": "A sturdy, ancient tree with deep roots standing distinctly in a misty, serene landscape."
     },
     {
       "sourceKey": "web:quantum-physics-and-healing-heart",
@@ -6168,10 +6393,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/quantum-physics-and-healing-heart.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-quantum-physics-and-healing-heart.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1066
+      "sortOrder": 1066,
+      "heroImageAlt": "A coherent, glowing wave of golden light illuminating a shadowed path in a dark forest."
     },
     {
       "sourceKey": "web:neuroscience-of-stillness",
@@ -6208,10 +6434,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/neuroscience-of-stillness.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-neuroscience-of-stillness.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1067
+      "sortOrder": 1067,
+      "heroImageAlt": "A tranquil, mirror-like alpine lake perfectly reflecting a vast, clear sky."
     },
     {
       "sourceKey": "web:nervous-system-hypervigilance-peace",
@@ -6250,10 +6477,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-hypervigilance-peace.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nervous-system-hypervigilance-peace.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1068
+      "sortOrder": 1068,
+      "heroImageAlt": "A tightly coiled green fern frond slowly unfurling in a patch of soft sunlight on the forest floor."
     },
     {
       "sourceKey": "web:bc-shoulders-cradle-responsibility",
@@ -6294,10 +6522,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-shoulders.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-shoulders-cradle-responsibility.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1069
+      "sortOrder": 1069,
+      "heroImageAlt": "A graceful, arched stone bridge spanning a quiet, misty gorge."
     },
     {
       "sourceKey": "web:hands-cold-hands-warm-heart",
@@ -6337,10 +6566,11 @@
       "sourceCategories": [
         "Hands"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-cold-hands-warm-heart.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hands-cold-hands-warm-heart.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1070
+      "sortOrder": 1070,
+      "heroImageAlt": "A pair of hands gently opening to release autumn leaves in a softly lit woodland."
     },
     {
       "sourceKey": "web:feet-stuck-uncertain",
@@ -6378,10 +6608,11 @@
       "sourceCategories": [
         "Feet"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-stuck-uncertain.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-feet-stuck-uncertain.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1071
+      "sortOrder": 1071,
+      "heroImageAlt": "Bare feet stepping carefully onto smooth river stones near the water's edge."
     },
     {
       "sourceKey": "web:stomach-alchemical-cauldron",
@@ -6421,10 +6652,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-alchemical-cauldron.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-stomach-alchemical-cauldron.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1072
+      "sortOrder": 1072,
+      "heroImageAlt": "A silhouetted figure in a misty valley with a gentle, glowing cauldron motif over the stomach area."
     },
     {
       "sourceKey": "web:unwinding-the-bodys-story-fascia",
@@ -6462,10 +6694,11 @@
       "sourceCategories": [
         "Cranial Sacral & Similar Therapies"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/unwinding-the-bodys-story-fascia_2abdd6b0.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-unwinding-the-bodys-story-fascia.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1073
+      "sortOrder": 1073,
+      "heroImageAlt": "Hands resting gently near a subtle, glowing crystalline web intertwined with forest roots."
     },
     {
       "sourceKey": "web:why-we-hold-on",
@@ -6504,10 +6737,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/why-we-hold-on.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-why-we-hold-on.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1074
+      "sortOrder": 1074,
+      "heroImageAlt": "A hand gently resting on a sturdy stone wall covered in soft moss."
     },
     {
       "sourceKey": "web:breasts-healing-mother-wound",
@@ -6547,10 +6781,11 @@
       "sourceCategories": [
         "Breasts"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-healing-mother-wound.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breasts-healing-mother-wound.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1075
+      "sortOrder": 1075,
+      "heroImageAlt": "A woman's silhouette in a serene garden, hands resting gently over her heart and chest near a flowing stream."
     },
     {
       "sourceKey": "web:reproductive-sacred-portal",
@@ -6590,10 +6825,11 @@
       "sourceCategories": [
         "Reproductive System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-sacred-portal.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reproductive-sacred-portal.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1076
+      "sortOrder": 1076,
+      "heroImageAlt": "A seated figure in a blooming desert with a warm, glowing light radiating from the lower belly."
     },
     {
       "sourceKey": "web:feet-grounding-practice",
@@ -6632,10 +6868,11 @@
       "sourceCategories": [
         "Feet"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-grounding-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-feet-grounding-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1077
+      "sortOrder": 1077,
+      "heroImageAlt": "Bare feet standing firmly on soft forest moss with subtle glowing roots extending into the earth."
     },
     {
       "sourceKey": "web:hips-legs-dance-through-life",
@@ -6674,10 +6911,11 @@
       "sourceCategories": [
         "Hips & Legs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-legs-dance-through-life.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hips-legs-dance-through-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1078
+      "sortOrder": 1078,
+      "heroImageAlt": "A figure standing in a grounded, balanced stance on a mountain path overlooking a vast landscape."
     },
     {
       "sourceKey": "web:like-cures-like-homeopathic-healing",
@@ -6714,10 +6952,11 @@
       "sourceCategories": [
         "Homeopathy"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/like-cures-like-homeopathic-healing_16c44c9e.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-like-cures-like-homeopathic-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1079
+      "sortOrder": 1079,
+      "heroImageAlt": "A single drop of water falling into a quiet pool, creating expanding ripples."
     },
     {
       "sourceKey": "web:bc-reproductive-system-creation",
@@ -6758,10 +6997,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-reproductive.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-reproductive-system-creation.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1080
+      "sortOrder": 1080,
+      "heroImageAlt": "A serene, shadowed grotto with a gently glowing pool of water reflecting warm light, representing the pelvis as a sacred vessel."
     },
     {
       "sourceKey": "web:nervous-system-fight-flight-freeze",
@@ -6801,10 +7041,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-fight-flight-freeze.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nervous-system-fight-flight-freeze.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1081
+      "sortOrder": 1081,
+      "heroImageAlt": "A delicate, shimmering web of light threads vibrating slightly on a misty woodland path in early morning."
     },
     {
       "sourceKey": "web:face-letting-soul-shine",
@@ -6842,10 +7083,11 @@
       "sourceCategories": [
         "Face"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-letting-soul-shine.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-face-letting-soul-shine.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1082
+      "sortOrder": 1082,
+      "heroImageAlt": "A serene, abstract reflection of soft radiant light in a still pond surrounded by smooth dark stones at twilight."
     },
     {
       "sourceKey": "web:head-quieting-mind-practice",
@@ -6880,10 +7122,11 @@
       "sourceCategories": [
         "Head"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-quieting-mind-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-head-quieting-mind-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1083
+      "sortOrder": 1083,
+      "heroImageAlt": "A single, steady candle flame burning brightly in a spacious, dimly lit stone alcove at night."
     },
     {
       "sourceKey": "web:from-reaction-to-response",
@@ -6924,10 +7167,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/from-reaction-to-response_fda48520.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-from-reaction-to-response.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1084
+      "sortOrder": 1084,
+      "heroImageAlt": "A tranquil river flowing smoothly and gracefully around a large, solid boulder in late afternoon."
     },
     {
       "sourceKey": "web:hips-legs-dancing-with-life",
@@ -6965,10 +7209,11 @@
       "sourceCategories": [
         "Hips & Legs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-legs-dancing-with-life.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hips-legs-dancing-with-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1085
+      "sortOrder": 1085,
+      "heroImageAlt": "Strong, flexible roots of an ancient tree gripping a rich earthy forest floor, swaying slightly in filtered light."
     },
     {
       "sourceKey": "web:bc-nervous-system-safety",
@@ -7009,10 +7254,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-nervous.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-nervous-system-safety.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1086
+      "sortOrder": 1086,
+      "heroImageAlt": "A glowing, protective nest-like structure holding soft warm light high in the branches of a sturdy tree at sunset."
     },
     {
       "sourceKey": "web:immune-beyond-attack-defend",
@@ -7053,10 +7299,11 @@
       "sourceCategories": [
         "Immune System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-beyond-attack-defend.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-immune-beyond-attack-defend.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1087
+      "sortOrder": 1087,
+      "heroImageAlt": "A gentle, luminous mist moving through a peaceful mountain valley at dawn, softening the landscape."
     },
     {
       "sourceKey": "web:embodied-healing-beyond-mind",
@@ -7095,10 +7342,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/embodied-healing-beyond-mind.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-embodied-healing-beyond-mind.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1088
+      "sortOrder": 1088,
+      "heroImageAlt": "A beautifully woven tapestry of light and natural fibers gently weaving together to mend a fragmented pattern."
     },
     {
       "sourceKey": "web:web-of-being-fragmentation",
@@ -7137,10 +7385,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/web-of-being-fragmentation.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-web-of-being-fragmentation.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1089
+      "sortOrder": 1089,
+      "heroImageAlt": "A harmonious orchestra of floating, resonant light orbs gently aligning and pulsing together in a starlit night sky."
     },
     {
       "sourceKey": "web:eyes-emotional-roots-of-vision",
@@ -7179,10 +7428,11 @@
       "sourceCategories": [
         "Eyes"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-emotional-roots-of-vision.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-eyes-emotional-roots-of-vision.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1090
+      "sortOrder": 1090,
+      "heroImageAlt": "A coastal path where a foreground flower is in sharp focus against a softly blurred distant horizon in morning light."
     },
     {
       "sourceKey": "web:reproductive-reclaiming-creative-fire",
@@ -7221,10 +7471,11 @@
       "sourceCategories": [
         "Reproductive System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-reclaiming-creative-fire.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reproductive-reclaiming-creative-fire.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1091
+      "sortOrder": 1091,
+      "heroImageAlt": "A pelvic-shaped ceramic bowl holding a glowing ember and blooming soft rose flowers in a twilit studio."
     },
     {
       "sourceKey": "web:breasts-sacred-symbol-nurture",
@@ -7265,10 +7516,11 @@
       "sourceCategories": [
         "Breasts"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-sacred-symbol-nurture.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breasts-sacred-symbol-nurture.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1092
+      "sortOrder": 1092,
+      "heroImageAlt": "A serene stone fountain in a quiet courtyard where water flows gently from a central spring into a balanced, overflowing basin."
     },
     {
       "sourceKey": "web:reproductive-womb-sacred-vessel",
@@ -7308,10 +7560,11 @@
       "sourceCategories": [
         "Reproductive System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-womb-sacred-vessel.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reproductive-womb-sacred-vessel.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1093
+      "sortOrder": 1093,
+      "heroImageAlt": "A natural, hollowed stone vessel filled with clear water, illuminated by a shaft of golden light in a deep forest grotto."
     },
     {
       "sourceKey": "web:hips-flexibility-rigidity",
@@ -7350,10 +7603,11 @@
       "sourceCategories": [
         "Hips & Legs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-flexibility-rigidity.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hips-flexibility-rigidity.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1094
+      "sortOrder": 1094,
+      "heroImageAlt": "A strong, deeply rooted tree on a coastal bluff swaying gracefully in the wind at dusk, showing flexible stability."
     },
     {
       "sourceKey": "web:your-body-as-oracle",
@@ -7392,10 +7646,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/your-body-as-oracle_e77fbf97.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-your-body-as-oracle.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1095
+      "sortOrder": 1095,
+      "heroImageAlt": "A tranquil river flowing smoothly around ancient, submerged stones in a canyon at dawn, catching the early light."
     },
     {
       "sourceKey": "web:head-headaches-overthinking",
@@ -7435,10 +7690,11 @@
       "sourceCategories": [
         "Head"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-headaches-overthinking.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-head-headaches-overthinking.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1096
+      "sortOrder": 1096,
+      "heroImageAlt": "A tightly knotted vine in a dense thicket beginning to loosen and uncoil where a patch of soft sunlight touches it."
     },
     {
       "sourceKey": "web:vocal-cords-losing-voice",
@@ -7478,10 +7734,11 @@
       "sourceCategories": [
         "Vocal Cords"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-losing-voice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-vocal-cords-losing-voice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1097
+      "sortOrder": 1097,
+      "heroImageAlt": "A single drop of water falling into a still pool inside a quiet cave, creating perfect, expanding ripples."
     },
     {
       "sourceKey": "web:head-releasing-ego",
@@ -7518,10 +7775,11 @@
       "sourceCategories": [
         "Head"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-releasing-ego.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-head-releasing-ego.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1098
+      "sortOrder": 1098,
+      "heroImageAlt": "An empty, ornate stone chair resting quietly on a peaceful garden terrace, surrounded by thriving, diverse plants in early evening light."
     },
     {
       "sourceKey": "web:bc-lungs-sacred-exchange",
@@ -7562,10 +7820,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-lungs.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-lungs-sacred-exchange.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1099
+      "sortOrder": 1099,
+      "heroImageAlt": "Morning mist gently rising and falling through the branches of ancient pine trees on a high, airy mountain pass at dawn."
     },
     {
       "sourceKey": "web:sacred-art-of-listening-to-your-body",
@@ -7603,10 +7862,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/sacred-art-of-listening-to-your-body.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-sacred-art-of-listening-to-your-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1100
+      "sortOrder": 1100,
+      "heroImageAlt": "An illustration representing The Sacred Art of Listening to Your Body."
     },
     {
       "sourceKey": "web:a-conversation-with-your-body",
@@ -7645,10 +7905,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/a-conversation-with-your-body_fec9b233.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-a-conversation-with-your-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1101
+      "sortOrder": 1101,
+      "heroImageAlt": "An illustration representing A Conversation with Your Body: The Practice of Deep Listening."
     },
     {
       "sourceKey": "web:immune-boundaries-discernment",
@@ -7688,10 +7949,11 @@
       "sourceCategories": [
         "Immune System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/immune-boundaries-discernment.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-immune-boundaries-discernment.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1102
+      "sortOrder": 1102,
+      "heroImageAlt": "An illustration representing Boundaries, Discernment, and Your Immune Intelligence."
     },
     {
       "sourceKey": "web:healing-the-lineage",
@@ -7731,10 +7993,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/healing-the-lineage.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-healing-the-lineage.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1103
+      "sortOrder": 1103,
+      "heroImageAlt": "An illustration representing Healing the Lineage: How Personal Transformation Ripples Through Generations."
     },
     {
       "sourceKey": "web:spine-standing-tall",
@@ -7773,10 +8036,11 @@
       "sourceCategories": [
         "Spine"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-standing-tall.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-spine-standing-tall.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1104
+      "sortOrder": 1104,
+      "heroImageAlt": "An illustration representing Standing Tall in Your Truth: Transcending Spinal Patterns."
     },
     {
       "sourceKey": "web:thyroid-running-too-fast",
@@ -7815,10 +8079,11 @@
       "sourceCategories": [
         "Thyroid"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-running-too-fast.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-thyroid-running-too-fast.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1105
+      "sortOrder": 1105,
+      "heroImageAlt": "An illustration representing Running Too Fast: Hyperthyroidism and the Compulsion to Perform."
     },
     {
       "sourceKey": "web:the-tide-within-cranial-sacral-rhythm",
@@ -7856,10 +8121,11 @@
       "sourceCategories": [
         "Cranial Sacral & Similar Therapies"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-tide-within-cranial-sacral-rhythm_431e34c9.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-tide-within-cranial-sacral-rhythm.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1106
+      "sortOrder": 1106,
+      "heroImageAlt": "An illustration representing The Tide Within: Understanding Cranial Sacral Rhythm and Healing."
     },
     {
       "sourceKey": "web:eyes-windows-of-perception",
@@ -7898,10 +8164,11 @@
       "sourceCategories": [
         "Eyes"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-windows-of-perception.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-eyes-windows-of-perception.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1107
+      "sortOrder": 1107,
+      "heroImageAlt": "An illustration representing Windows of Perception: What Your Eyes Reveal About Your Inner World."
     },
     {
       "sourceKey": "web:face-releasing-tension-practice",
@@ -7939,10 +8206,11 @@
       "sourceCategories": [
         "Face"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-releasing-tension-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-face-releasing-tension-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1108
+      "sortOrder": 1108,
+      "heroImageAlt": "An illustration representing A Practice for Releasing Facial Tension and Embracing Authentic Expression."
     },
     {
       "sourceKey": "web:sacred-wounds-gifts-hidden-inside-deepest-pain",
@@ -7983,10 +8251,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/sacred-wounds-gifts-hidden-inside-deepest-pain_b5010027.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-sacred-wounds-gifts-hidden-inside-deepest-pain.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1109
+      "sortOrder": 1109,
+      "heroImageAlt": "An illustration representing Sacred Wounds: The Gifts Hidden Inside Our Deepest Pain."
     },
     {
       "sourceKey": "web:vocal-cords-vibrational-signature",
@@ -8027,10 +8296,11 @@
       "sourceCategories": [
         "Vocal Cords"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-vibrational-signature.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-vocal-cords-vibrational-signature.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1110
+      "sortOrder": 1110,
+      "heroImageAlt": "Seated adult hums with hands on throat and chest; antique-gold ripples from the throat connect to a mossy pond and a listening bird at dawn."
     },
     {
       "sourceKey": "web:bc-liver-gallbladder-anger",
@@ -8071,10 +8341,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-liver.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-liver-gallbladder-anger.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1111
+      "sortOrder": 1111,
+      "heroImageAlt": "Person on a mossy cliff with right hand over right abdomen, a gallbladder-shaped lantern in left hand, gold leaf motes rising toward the sea."
     },
     {
       "sourceKey": "web:nothing-is-beyond-healing",
@@ -8112,10 +8383,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nothing-is-beyond-healing.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nothing-is-beyond-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1112
+      "sortOrder": 1112,
+      "heroImageAlt": "Reclining adult under an ancient oak, hand on heart, soft-rose glow in torso with antique-gold filaments connecting into mossy roots."
     },
     {
       "sourceKey": "web:stomach-palate-for-life",
@@ -8155,10 +8427,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-palate-for-life.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-stomach-palate-for-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1113
+      "sortOrder": 1113,
+      "heroImageAlt": "Moonlit adult cradles a small cauldron on their belly as golden steam condenses into tiny seedlings drifting into the earth."
     },
     {
       "sourceKey": "web:the-alchemy-of-grief",
@@ -8197,10 +8470,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-alchemy-of-grief_0c60fe50.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-alchemy-of-grief.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1114
+      "sortOrder": 1114,
+      "heroImageAlt": "Two adults back-to-back on a riverstone bench, hands on heart and belly, breath turning into gold moths and stars in a misty pre-dawn meadow."
     },
     {
       "sourceKey": "web:bc-kidneys-emotional-balance",
@@ -8239,10 +8513,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-kidneys.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-kidneys-emotional-balance.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1115
+      "sortOrder": 1115,
+      "heroImageAlt": "Person at a mossy spring pressing palms to lower back as antique-gold crystals melt into deep-teal water flowing into a stone basin."
     },
     {
       "sourceKey": "web:you-are-not-broken",
@@ -8282,10 +8557,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/you-are-not-broken.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-you-are-not-broken.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1116
+      "sortOrder": 1116,
+      "heroImageAlt": "Mid-dawn medium shot of an adult cupping a kintsugi-repaired ceramic heart tilted above their abdomen, gold light pouring inward over a misty marsh."
     },
     {
       "sourceKey": "web:a-guided-practice-for-tuning-into-your-nervous-system",
@@ -8324,10 +8600,11 @@
       "sourceCategories": [
         "Other"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2026/03/blog-nervous-system-hero.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-a-guided-practice-for-tuning-into-your-nervous-system.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1117
+      "sortOrder": 1117,
+      "heroImageAlt": "Adult gently swaying on a blue-hour lakeshore as antique-gold ribbons untangle deep-teal tension knots into petals and pebbles."
     },
     {
       "sourceKey": "web:hands-healing-practice",
@@ -8365,10 +8642,11 @@
       "sourceCategories": [
         "Hands"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-healing-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hands-healing-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1118
+      "sortOrder": 1118,
+      "heroImageAlt": "Seated adult massaging one palm with the other as warm light flows from their chest into their hands over a mossy knoll at golden hour."
     },
     {
       "sourceKey": "web:what-your-resistance-is-trying-to-tell-you",
@@ -8407,10 +8685,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/what-your-resistance-is-trying-to-tell-you_638f7ebc.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-what-your-resistance-is-trying-to-tell-you.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1119
+      "sortOrder": 1119,
+      "heroImageAlt": "Adult at a shallow stream ford, foot in water, touching the flow while journaling; antique-gold currents link the water to their chest."
     },
     {
       "sourceKey": "web:breasts-nurturing-depletion",
@@ -8451,10 +8730,11 @@
       "sourceCategories": [
         "Breasts"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-nurturing-depletion.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breasts-nurturing-depletion.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1120
+      "sortOrder": 1120,
+      "heroImageAlt": "A gentle woodland spring feeding into a larger river, bathed in morning light."
     },
     {
       "sourceKey": "web:the-courage-to-be-seen",
@@ -8493,10 +8773,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-courage-to-be-seen_7f68bf08.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-courage-to-be-seen.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1121
+      "sortOrder": 1121,
+      "heroImageAlt": "A delicate soft rose flower emerging from a crack in a dark, hard stone."
     },
     {
       "sourceKey": "web:heart-whole-hearted-practice",
@@ -8536,10 +8817,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-whole-hearted-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-heart-whole-hearted-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1122
+      "sortOrder": 1122,
+      "heroImageAlt": "An ancient stone basin gently overflowing with clear, luminous water."
     },
     {
       "sourceKey": "web:hips-legs-movement-practice",
@@ -8578,10 +8860,11 @@
       "sourceCategories": [
         "Hips & Legs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hips-legs-movement-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hips-legs-movement-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1123
+      "sortOrder": 1123,
+      "heroImageAlt": "Strong, graceful tree roots anchoring deeply into a mossy forest floor."
     },
     {
       "sourceKey": "web:the-ripple-effect",
@@ -8619,10 +8902,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-ripple-effect_1480111e.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-ripple-effect.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1124
+      "sortOrder": 1124,
+      "heroImageAlt": "A single drop creating expanding, harmonious ripples across a still, moonlit pond."
     },
     {
       "sourceKey": "web:lungs-breathing-freely",
@@ -8662,10 +8946,11 @@
       "sourceCategories": [
         "Lungs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-breathing-freely.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-lungs-breathing-freely.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1125
+      "sortOrder": 1125,
+      "heroImageAlt": "Wind gently moving through a canopy of delicate, branching leaves in an open valley."
     },
     {
       "sourceKey": "web:the-belly-of-trust-when-your-stomach-holds-what-you-cannot-digest",
@@ -8704,10 +8989,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-too-much-to-stomach.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-belly-of-trust-when-your-stomach-holds-what-you-cannot-digest.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1126
+      "sortOrder": 1126,
+      "heroImageAlt": "A gentle, glowing ember warming a smooth, hollowed stone in a quiet alcove."
     },
     {
       "sourceKey": "web:the-body-as-sacred-messenger",
@@ -8749,10 +9035,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-body-as-sacred-messenger.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-body-as-sacred-messenger.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1127
+      "sortOrder": 1127,
+      "heroImageAlt": "Soft golden light illuminating intricate carvings on an ancient stone temple entrance in nature."
     },
     {
       "sourceKey": "web:the-frequency-of-gratitude",
@@ -8787,10 +9074,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-frequency-of-gratitude_25a08e9c.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-frequency-of-gratitude.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1128
+      "sortOrder": 1128,
+      "heroImageAlt": "Golden motes of light gently rising and catching the sunrise in a tranquil meadow."
     },
     {
       "sourceKey": "web:bc-immune-system-guardian",
@@ -8831,10 +9119,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-immune.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-immune-system-guardian.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1129
+      "sortOrder": 1129,
+      "heroImageAlt": "A graceful, ornate gate standing open in a well-tended walled garden, with lush vines weaving through."
     },
     {
       "sourceKey": "web:the-art-of-holding-space",
@@ -8873,10 +9162,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-art-of-holding-space_f39fef69.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-art-of-holding-space.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1130
+      "sortOrder": 1130,
+      "heroImageAlt": "Cupped hands resting on a mossy stone holding a small pool of reflecting water in a quiet forest at dawn."
     },
     {
       "sourceKey": "web:how-beliefs-shape-your-biology",
@@ -8915,10 +9205,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/how-beliefs-shape-your-biology.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-how-beliefs-shape-your-biology.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1131
+      "sortOrder": 1131,
+      "heroImageAlt": "A delicate fern uncurling from dark soil toward a single shaft of light in a deep woodland."
     },
     {
       "sourceKey": "web:nervous-system-somatic-practice",
@@ -8958,10 +9249,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-somatic-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nervous-system-somatic-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1132
+      "sortOrder": 1132,
+      "heroImageAlt": "A calm woman seated by a mountain lake at twilight, placing a hand on her heart."
     },
     {
       "sourceKey": "web:bladder-flow-of-completion",
@@ -9000,10 +9292,11 @@
       "sourceCategories": [
         "Bladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-flow-of-completion.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bladder-flow-of-completion.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1133
+      "sortOrder": 1133,
+      "heroImageAlt": "A smooth river stone in a gentle stream, allowing water to wash over it."
     },
     {
       "sourceKey": "web:lungs-sacred-exchange",
@@ -9042,10 +9335,11 @@
       "sourceCategories": [
         "Lungs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-sacred-exchange.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-lungs-sacred-exchange.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1134
+      "sortOrder": 1134,
+      "heroImageAlt": "Two towering cedar trees swaying in the misty wind of a coastal forest."
     },
     {
       "sourceKey": "web:head-wars-with-heart",
@@ -9084,10 +9378,11 @@
       "sourceCategories": [
         "Head"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-wars-with-heart.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-head-wars-with-heart.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1135
+      "sortOrder": 1135,
+      "heroImageAlt": "A delicate bridge woven from living vines connecting two cliffs over a river at sunset."
     },
     {
       "sourceKey": "web:breasts-self-mothering",
@@ -9128,10 +9423,11 @@
       "sourceCategories": [
         "Breasts"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breasts-self-mothering.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breasts-self-mothering.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1136
+      "sortOrder": 1136,
+      "heroImageAlt": "A mature woman wrapped in a shawl resting in a sandstone alcove, hands gently on her chest."
     },
     {
       "sourceKey": "web:the-tidal-pool-within-how-cranial-fluid-carries-your-deepest-healing-intelligenc",
@@ -9170,10 +9466,11 @@
       "sourceCategories": [
         "Cranial Sacral & Similar Therapies"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/2024/09/meditating-group.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-tidal-pool-within-how-cranial-fluid-carries-your-deepest-healing-intelligenc.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1137
+      "sortOrder": 1137,
+      "heroImageAlt": "Gentle concentric ripples expanding outward in a dark, moonlit tidal pool."
     },
     {
       "sourceKey": "web:bc-hips-legs-dance-of-life",
@@ -9212,10 +9509,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-hips-legs.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-hips-legs-dance-of-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1138
+      "sortOrder": 1138,
+      "heroImageAlt": "Sturdy tree roots gripping a rocky hillside, anchoring the tree in golden hour light."
     },
     {
       "sourceKey": "web:web-of-being-becoming-conductor",
@@ -9254,10 +9552,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/web-of-being-becoming-conductor.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-web-of-being-becoming-conductor.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1139
+      "sortOrder": 1139,
+      "heroImageAlt": "A solitary figure on a high ridge at sunrise, gently raising arms toward the sweeping valley."
     },
     {
       "sourceKey": "web:simplicity-patience-and-compassion",
@@ -9297,10 +9596,11 @@
         "Tao te Ching",
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/simplicity-patience-compassion_80f712fc.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-simplicity-patience-and-compassion.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1140
+      "sortOrder": 1140,
+      "heroImageAlt": "A serene figure sitting in a mist-covered valley at dawn, embodying simplicity and patience."
     },
     {
       "sourceKey": "web:reproductive-honoring-practice",
@@ -9340,10 +9640,11 @@
       "sourceCategories": [
         "Reproductive System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reproductive-honoring-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reproductive-honoring-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1141
+      "sortOrder": 1141,
+      "heroImageAlt": "A graceful silhouette placing hands on the lower abdomen, radiating a warm golden light."
     },
     {
       "sourceKey": "web:the-holographic-body-healing-transforms-whole",
@@ -9381,10 +9682,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-holographic-body_eafaeccb.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-holographic-body-healing-transforms-whole.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1142
+      "sortOrder": 1142,
+      "heroImageAlt": "A shimmering dew-covered spiderweb in an early morning forest, with a single water drop creating ripples."
     },
     {
       "sourceKey": "web:face-saving-face",
@@ -9421,10 +9723,11 @@
       "sourceCategories": [
         "Face"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-saving-face.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-face-saving-face.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1143
+      "sortOrder": 1143,
+      "heroImageAlt": "A smooth stone face in a garden, with a gentle crack revealing warm light inside."
     },
     {
       "sourceKey": "web:thyroid-slowing-down",
@@ -9465,10 +9768,11 @@
       "sourceCategories": [
         "Thyroid"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-slowing-down.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-thyroid-slowing-down.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1144
+      "sortOrder": 1144,
+      "heroImageAlt": "A delicate butterfly resting on a frosted branch, opening its wings to the morning sun."
     },
     {
       "sourceKey": "web:thyroid-butterfly-transformation",
@@ -9508,10 +9812,11 @@
       "sourceCategories": [
         "Thyroid"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-butterfly-transformation.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-thyroid-butterfly-transformation.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1145
+      "sortOrder": 1145,
+      "heroImageAlt": "A glowing chrysalis suspended from a vibrant leaf in a sun-dappled canopy."
     },
     {
       "sourceKey": "web:the-embodied-compass-navigating-life-through-your-nervous-systems-wisdom",
@@ -9552,10 +9857,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-electrical-network.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-embodied-compass-navigating-life-through-your-nervous-systems-wisdom.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1146
+      "sortOrder": 1146,
+      "heroImageAlt": "A sturdy ancient maple tree with deep roots standing firm on a coastal cliff during a rainstorm."
     },
     {
       "sourceKey": "web:the-gentle-current-how-waters-wisdom-soothes-a-strained-nervous-system",
@@ -9595,10 +9901,11 @@
       "sourceCategories": [
         "Tao te Ching"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/ancient-wisdom-of-the-tao-te-ching-an-origin-story.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-gentle-current-how-waters-wisdom-soothes-a-strained-nervous-system.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1147
+      "sortOrder": 1147,
+      "heroImageAlt": "A smooth river stone in a clear stream, with water gracefully flowing around it."
     },
     {
       "sourceKey": "web:the-hearts-inner-compass-navigating-life-through-its-neural-wisdom",
@@ -9638,10 +9945,11 @@
       "sourceCategories": [
         "Heart"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/heart-first-declaration.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-hearts-inner-compass-navigating-life-through-its-neural-wisdom.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1148
+      "sortOrder": 1148,
+      "heroImageAlt": "A glowing network of golden roots pulsing in the deep earth beneath a forest floor."
     },
     {
       "sourceKey": "web:the-unfolding-stillness-how-staying-with-discomfort-unlocks-deep-healing",
@@ -9679,10 +9987,11 @@
       "sourceCategories": [
         "Deep Spiritual Healing"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-benefits-of-meditation-for-stress-and-anxiety.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-unfolding-stillness-how-staying-with-discomfort-unlocks-deep-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1149
+      "sortOrder": 1149,
+      "heroImageAlt": "A solitary uncarved block of wood resting in a quiet room illuminated by a shaft of moonlight."
     },
     {
       "sourceKey": "web:paradigms-invisible-puppet-masters",
@@ -9723,10 +10032,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/paradigms-invisible-puppet-masters.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-paradigms-invisible-puppet-masters.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1150
+      "sortOrder": 1150,
+      "heroImageAlt": "An ornate teapot rests in shadow on a high shelf, while a simple teacup sits in warm sunlight below."
     },
     {
       "sourceKey": "web:the-art-of-becoming",
@@ -9765,10 +10075,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-art-of-becoming_6fb5ff22.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-art-of-becoming.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1151
+      "sortOrder": 1151,
+      "heroImageAlt": "A partially translucent chrysalis attached to a milkweed stem in a garden at dawn."
     },
     {
       "sourceKey": "web:bc-heart-first-declaration",
@@ -9808,10 +10119,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-heart.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-heart-first-declaration.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1152
+      "sortOrder": 1152,
+      "heroImageAlt": "A luminous sun suspended above a quiet, rhythmic ocean tide at twilight."
     },
     {
       "sourceKey": "web:stomach-digestive-healing-practice",
@@ -9850,10 +10162,11 @@
       "sourceCategories": [
         "Stomach"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/stomach-digestive-healing-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-stomach-digestive-healing-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1153
+      "sortOrder": 1153,
+      "heroImageAlt": "A steady fire burning gently within a smooth, hollowed stone vessel in a mossy forest alcove."
     },
     {
       "sourceKey": "web:shoulders-frozen-over-responsibility",
@@ -9893,10 +10206,11 @@
       "sourceCategories": [
         "Shoulders"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-frozen-over-responsibility.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-shoulders-frozen-over-responsibility.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1154
+      "sortOrder": 1154,
+      "heroImageAlt": "An ancient tree in a snowy woodland; one branch is weighed down by snow, the other reaches upward."
     },
     {
       "sourceKey": "web:shoulders-left-right-feminine-masculine",
@@ -9935,10 +10249,11 @@
       "sourceCategories": [
         "Shoulders"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-left-right-feminine-masculine.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-shoulders-left-right-feminine-masculine.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1155
+      "sortOrder": 1155,
+      "heroImageAlt": "Two streams of water in a rocky landscape: one rushing forcefully, the other pooling gently."
     },
     {
       "sourceKey": "web:bladder-letting-go-without-shame",
@@ -9978,10 +10293,11 @@
       "sourceCategories": [
         "Bladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-letting-go-without-shame.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bladder-letting-go-without-shame.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1156
+      "sortOrder": 1156,
+      "heroImageAlt": "A small, clear spring beginning to thaw and flow outward from within a tight, thorny thicket."
     },
     {
       "sourceKey": "web:vocal-cords-silver-tongue",
@@ -10022,10 +10338,11 @@
       "sourceCategories": [
         "Vocal Cords"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-silver-tongue.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-vocal-cords-silver-tongue.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1157
+      "sortOrder": 1157,
+      "heroImageAlt": "A polished silver bell hanging silently next to a raw, vibrating wooden flute."
     },
     {
       "sourceKey": "web:the-supreme-good-is-like-water",
@@ -10064,10 +10381,11 @@
       "sourceCategories": [
         "Tao te Ching"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-supreme-good-is-like-water_5f1835f8.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-supreme-good-is-like-water.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1158
+      "sortOrder": 1158,
+      "heroImageAlt": "Water flowing effortlessly down a series of low, stepped rock pools in a quiet valley."
     },
     {
       "sourceKey": "web:bc-head-crown-consciousness",
@@ -10107,10 +10425,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-head.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-head-crown-consciousness.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1159
+      "sortOrder": 1159,
+      "heroImageAlt": "A delicate crown of light resting above a deep, grounded stone basin on a mountain peak."
     },
     {
       "sourceKey": "web:shoulders-putting-down",
@@ -10150,10 +10469,11 @@
       "sourceCategories": [
         "Shoulders"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/shoulders-putting-down.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-shoulders-putting-down.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1160
+      "sortOrder": 1160,
+      "heroImageAlt": "A cinematic illustration of human shoulders in a misty alpine meadow, with golden light dissolving heavy shadows."
     },
     {
       "sourceKey": "web:alchemy-of-compassion",
@@ -10192,10 +10512,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/alchemy-of-compassion.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-alchemy-of-compassion.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1161
+      "sortOrder": 1161,
+      "heroImageAlt": "A close-up illustration of a hand gently resting over a heart in a warmly lit room."
     },
     {
       "sourceKey": "web:feet-grounding-into-trust",
@@ -10235,10 +10556,11 @@
       "sourceCategories": [
         "Feet"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/feet-grounding-into-trust.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-feet-grounding-into-trust.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1162
+      "sortOrder": 1162,
+      "heroImageAlt": "An illustration of bare feet standing on mossy earth, with subtle roots extending downward."
     },
     {
       "sourceKey": "web:hands-handling-life",
@@ -10277,10 +10599,11 @@
       "sourceCategories": [
         "Hands"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-handling-life.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hands-handling-life.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1163
+      "sortOrder": 1163,
+      "heroImageAlt": "A close-up illustration of open hands resting palms up in a serene garden."
     },
     {
       "sourceKey": "web:lungs-cannot-breathe-grief",
@@ -10320,10 +10643,11 @@
       "sourceCategories": [
         "Lungs"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/lungs-cannot-breathe-grief.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-lungs-cannot-breathe-grief.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1164
+      "sortOrder": 1164,
+      "heroImageAlt": "An illustration of a human chest breathing in luminous air against a vast twilight sky."
     },
     {
       "sourceKey": "web:kidneys-stones-crystallized-emotions",
@@ -10361,10 +10685,11 @@
       "sourceCategories": [
         "Kidneys"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-stones-crystallized-emotions.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-kidneys-stones-crystallized-emotions.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1165
+      "sortOrder": 1165,
+      "heroImageAlt": "An illustration of hands resting on a lower back, with warmth dissolving crystals into a flowing river."
     },
     {
       "sourceKey": "web:bc-hands-instruments-love",
@@ -10404,10 +10729,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-hands.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-hands-instruments-love.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1166
+      "sortOrder": 1166,
+      "heroImageAlt": "A close-up illustration of one hand offering a small stone to another receptive hand in warm light."
     },
     {
       "sourceKey": "web:head-crown-of-consciousness",
@@ -10446,10 +10772,11 @@
       "sourceCategories": [
         "Head"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/head-crown-of-consciousness.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-head-crown-of-consciousness.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1167
+      "sortOrder": 1167,
+      "heroImageAlt": "An illustration of a human head with a radiant light at the crown, beneath a starry night sky."
     },
     {
       "sourceKey": "web:the-holographic-body",
@@ -10488,10 +10815,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-holographic-body.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-holographic-body.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1168
+      "sortOrder": 1168,
+      "heroImageAlt": "An illustration of a human silhouette reflecting the intricate patterns of a woodland pool."
     },
     {
       "sourceKey": "web:eyes-illuminated-vision",
@@ -10529,10 +10857,11 @@
       "sourceCategories": [
         "Eyes"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-illuminated-vision.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-eyes-illuminated-vision.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1169
+      "sortOrder": 1169,
+      "heroImageAlt": "A close-up illustration of closed eyes with a warm golden light illuminating the space between the brows."
     },
     {
       "sourceKey": "web:the-tricky-business-of-being-human",
@@ -10572,10 +10901,11 @@
       "sourceCategories": [
         "Elevating Life Into Love"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-tricky-business-of-being-human.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-tricky-business-of-being-human.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1170
+      "sortOrder": 1170,
+      "heroImageAlt": "A weathered wooden bowl sits on a kitchen counter, illuminated by a warm beam of morning light with dust motes dancing in the air."
     },
     {
       "sourceKey": "web:bladder-reservoir-of-release",
@@ -10615,10 +10945,11 @@
       "sourceCategories": [
         "Bladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-reservoir-of-release.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bladder-reservoir-of-release.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1171
+      "sortOrder": 1171,
+      "heroImageAlt": "A natural stone basin in a mossy forest gently overflows with clear water into a small stream at twilight."
     },
     {
       "sourceKey": "web:the-soft-and-supple-why-flexibility-is-the-true-strength",
@@ -10657,10 +10988,11 @@
         "Tao te Ching",
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/soft-and-supple-flexibility-MSupx6uV372k5rGSwEreub.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-soft-and-supple-why-flexibility-is-the-true-strength.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1172
+      "sortOrder": 1172,
+      "heroImageAlt": "A young maple sapling bends gracefully in the wind on an autumn hillside, demonstrating flexibility and strength."
     },
     {
       "sourceKey": "web:vocal-cords-freeing-voice-practice",
@@ -10701,10 +11033,11 @@
       "sourceCategories": [
         "Vocal Cords"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/vocal-cords-freeing-voice-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-vocal-cords-freeing-voice-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1173
+      "sortOrder": 1173,
+      "heroImageAlt": "A single resilient seed sprouts from dark soil, reaching towards a ray of light."
     },
     {
       "sourceKey": "web:nervous-system-electrical-network",
@@ -10744,10 +11077,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-electrical-network.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nervous-system-electrical-network.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1174
+      "sortOrder": 1174,
+      "heroImageAlt": "Bioluminescent roots pulse with gentle golden light beneath a forest floor, resembling a calm, interconnected nervous system."
     },
     {
       "sourceKey": "web:bc-feet-grounding-point",
@@ -10786,10 +11120,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-feet.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-feet-grounding-point.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1175
+      "sortOrder": 1175,
+      "heroImageAlt": "Ancient tree roots grip firmly into mossy earth, anchoring the tree with deep stability."
     },
     {
       "sourceKey": "web:spine-bending-breaks-you",
@@ -10830,10 +11165,11 @@
       "sourceCategories": [
         "Spine"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/spine-bending-breaks-you.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-spine-bending-breaks-you.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1176
+      "sortOrder": 1176,
+      "heroImageAlt": "A gracefully curving vine climbs a sturdy stone pillar, adapting to its contours without breaking."
     },
     {
       "sourceKey": "web:hands-instruments-of-love",
@@ -10872,10 +11208,11 @@
       "sourceCategories": [
         "Hands"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/hands-instruments-of-love.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-hands-instruments-of-love.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1177
+      "sortOrder": 1177,
+      "heroImageAlt": "Two delicate, intertwined branches gently support a blooming wild rose in a sun-dappled woodland."
     },
     {
       "sourceKey": "web:kidneys-healing-practice",
@@ -10914,10 +11251,11 @@
       "sourceCategories": [
         "Kidneys"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/kidneys-healing-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-kidneys-healing-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1178
+      "sortOrder": 1178,
+      "heroImageAlt": "Twin smooth river stones rest in a gentle stream, with clear water flowing smoothly over and around them."
     },
     {
       "sourceKey": "web:thyroid-balance-practice",
@@ -10957,10 +11295,11 @@
       "sourceCategories": [
         "Thyroid"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/thyroid-balance-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-thyroid-balance-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1179
+      "sortOrder": 1179,
+      "heroImageAlt": "A perfectly balanced stack of smooth stones maintains equilibrium amidst swirling mist in a mountain pass."
     },
     {
       "sourceKey": "web:bc-face-mirror-of-soul",
@@ -11001,10 +11340,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-face.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-face-mirror-of-soul.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1180
+      "sortOrder": 1180,
+      "heroImageAlt": "Three-quarter close-up of an adult cupping their cheeks while looking into an antique mirror, dawn light and mossy window behind."
     },
     {
       "sourceKey": "web:the-thread-that-connects-everything",
@@ -11045,10 +11385,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/the-thread-that-connects-everything_95498682.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-the-thread-that-connects-everything.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1181
+      "sortOrder": 1181,
+      "heroImageAlt": "Seated person in a mossy dawn clearing with a glowing gold thread weaving through their body linking pebble, leaf, feather, and stream."
     },
     {
       "sourceKey": "web:breaking-the-spell-inherited-beliefs",
@@ -11086,10 +11427,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/breaking-the-spell-inherited-beliefs_dbef604a.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-breaking-the-spell-inherited-beliefs.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1182
+      "sortOrder": 1182,
+      "heroImageAlt": "Adult sits hand-on-heart as a folded parchment map unfurls into golden threads rising from the chest and forming stepping-stones toward dawn."
     },
     {
       "sourceKey": "web:constitutional-healing",
@@ -11130,10 +11472,11 @@
       "sourceCategories": [
         "Homeopathy"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/constitutional-healing_5a6f26af.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-constitutional-healing.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1183
+      "sortOrder": 1183,
+      "heroImageAlt": "Seated adult with hands on belly, translucent roots linking body to earth and small memory objects, dawn light, calm contemplative mood."
     },
     {
       "sourceKey": "web:bc-eyes-windows-perception",
@@ -11173,10 +11516,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-eyes.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-eyes-windows-perception.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1184
+      "sortOrder": 1184,
+      "heroImageAlt": "Warm hands cupping closed eyes, golden light through the lids like ripples, dawn woods and a calm pool behind."
     },
     {
       "sourceKey": "web:face-identity-masks-authenticity",
@@ -11215,10 +11559,11 @@
       "sourceCategories": [
         "Face"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/face-identity-masks-authenticity.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-face-identity-masks-authenticity.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1185
+      "sortOrder": 1185,
+      "heroImageAlt": "An adult softening their jaw before a hand mirror as a thin golden mask drifts away in a moonlit-dawn woodland palette."
     },
     {
       "sourceKey": "web:eyes-courage-of-clear-vision",
@@ -11259,10 +11604,11 @@
       "sourceCategories": [
         "Eyes"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/eyes-courage-of-clear-vision.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-eyes-courage-of-clear-vision.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1186
+      "sortOrder": 1186,
+      "heroImageAlt": "Seated figure in a dawn woodland lets a warm golden thread rise from their chest to gently light their eyes."
     },
     {
       "sourceKey": "web:nervous-system-rewiring-safety",
@@ -11303,10 +11649,11 @@
       "sourceCategories": [
         "Nervous System"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/nervous-system-rewiring-safety.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-nervous-system-rewiring-safety.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1187
+      "sortOrder": 1187,
+      "heroImageAlt": "Seated adult, feet on the floor, hands in lap; gold neural-root threads knit into the earth in soft dawn light."
     },
     {
       "sourceKey": "web:liver-alchemist-of-anger",
@@ -11344,10 +11691,11 @@
       "sourceCategories": [
         "Liver-Gallbladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/liver-alchemist-of-anger.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-liver-alchemist-of-anger.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1188
+      "sortOrder": 1188,
+      "heroImageAlt": "Waist-up figure with a warm hand over the right ribs; dark residue inside the liver transforms into an antique-gold current flowing toward a prism."
     },
     {
       "sourceKey": "web:bc-breasts-sacred-nurture",
@@ -11387,10 +11735,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-breasts.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-breasts-sacred-nurture.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1189
+      "sortOrder": 1189,
+      "heroImageAlt": "Hands over the breasts with a warm golden light and nest-like roots in a dawn-lit mossy clearing."
     },
     {
       "sourceKey": "web:web-of-being-integration-practice",
@@ -11430,10 +11779,11 @@
       "sourceCategories": [
         "Web of Your Being"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/web-of-being-integration-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-web-of-being-integration-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1190
+      "sortOrder": 1190,
+      "heroImageAlt": "A serene figure in a woodland clearing at dawn, with a subtle warm light expanding from their chest, representing inner integration."
     },
     {
       "sourceKey": "web:from-surviving-to-thriving",
@@ -11473,10 +11823,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/from-surviving-to-thriving.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-from-surviving-to-thriving.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1191
+      "sortOrder": 1191,
+      "heroImageAlt": "A person pausing on a mossy stone path to touch a solid wall, finding grounded safety in the late afternoon light."
     },
     {
       "sourceKey": "web:bladder-guided-practice",
@@ -11516,10 +11867,11 @@
       "sourceCategories": [
         "Bladder"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/bladder-guided-practice.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bladder-guided-practice.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1192
+      "sortOrder": 1192,
+      "heroImageAlt": "A natural stone basin gently releasing a clear stream of water at twilight, symbolizing safe and natural release."
     },
     {
       "sourceKey": "web:reclaiming-your-story",
@@ -11558,10 +11910,11 @@
       "sourceCategories": [
         "Personal Transformation"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/reclaiming-your-story_e3ed1641.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-reclaiming-your-story.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1193
+      "sortOrder": 1193,
+      "heroImageAlt": "An open journal resting on an ancient tree stump in a sunlit clearing, its pages gently turning in the morning breeze."
     },
     {
       "sourceKey": "web:bc-bladder-reservoir-of-release",
@@ -11601,10 +11954,11 @@
       "sourceCategories": [
         "Body Cards"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/body-cards-articles/bc-bladder.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-bc-bladder-reservoir-of-release.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1194
+      "sortOrder": 1194,
+      "heroImageAlt": "A serene waterfall flowing smoothly over smooth stones in a moonlit valley, representing the natural grace of release."
     },
     {
       "sourceKey": "web:righting-what-seems-so-wrong-elevating-your-life-to-love",
@@ -11643,10 +11997,11 @@
       "sourceCategories": [
         "Other"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/righting-what-seems-so-wrong-elevating-your-life-to-love.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-righting-what-seems-so-wrong-elevating-your-life-to-love.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1195
+      "sortOrder": 1195,
+      "heroImageAlt": "A weathered, split rock at dusk, with warm golden light gently glowing from within its cracks."
     },
     {
       "sourceKey": "web:why-wellness-retreats-improve-long-term-well-being",
@@ -11685,10 +12040,11 @@
       "sourceCategories": [
         "Other"
       ],
-      "heroImageUrl": "https://susan-website-pull.b-cdn.net/blog-images/why-wellness-retreats-improve-long-term-well-being.webp",
+      "heroImageUrl": "https://membership-susan.b-cdn.net/teachings/v2/journal-why-wellness-retreats-improve-long-term-well-being.webp",
       "status": "published",
       "featured": false,
-      "sortOrder": 1196
+      "sortOrder": 1196,
+      "heroImageAlt": "A person walking slowly down a quiet, misty forest path in the early morning, stepping away from the familiar."
     }
   ]
 }

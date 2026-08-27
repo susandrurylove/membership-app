@@ -1,9 +1,9 @@
 import { MediaViewer } from "@/components/MediaViewer";
 import { MarkdownContent } from "@/components/MarkdownContent";
+import { BunnyImage } from "@/components/BunnyImage";
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { SUSAN_LOGO } from "@/lib/brandAssets";
 import { trpc } from "@/lib/trpc";
 import { ArrowLeft, BookOpenText, Clock3, ExternalLink, HeartHandshake, ShieldCheck, Sparkles } from "lucide-react";
 import { Link, useParams } from "wouter";
@@ -49,9 +49,8 @@ export default function TeachingDetail() {
       <Button asChild variant="ghost" className="-ml-3 rounded-full text-[#2d7d7d] hover:bg-[#f4ead0] hover:text-[#1e234c]"><Link href="/teachings"><ArrowLeft className="mr-2 size-4" /> All teachings</Link></Button>
 
       <header className="brand-hero mt-6 min-h-[25rem] rounded-[2.25rem]">
-        {item.heroImageUrl ? <img src={item.heroImageUrl} alt="" className="absolute inset-0 h-full w-full object-cover opacity-48" /> : null}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(21,25,56,0.98)_0%,rgba(30,35,76,0.9)_50%,rgba(30,35,76,0.42)_100%)]" />
-        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-8 top-1/2 z-[1] hidden h-72 w-auto -translate-y-1/2 opacity-[0.12] lg:block" />
+        {item.heroImageUrl ? <BunnyImage src={item.heroImageUrl} alt={`Illustration for ${item.title}`} loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover object-center opacity-75" /> : null}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(21,25,56,0.98)_0%,rgba(30,35,76,0.88)_48%,rgba(30,35,76,0.38)_100%)]" />
         <div className="relative z-[2] flex min-h-[25rem] max-w-4xl flex-col justify-end px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
           <p className="brand-eyebrow">{category?.name || "Susan’s teaching"}</p>
           <div className="brand-gold-rule mt-5" />

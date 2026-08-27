@@ -10,6 +10,7 @@ import { registerSsoRoutes } from "../routes/sso";
 import { registerAdminMediaRoutes } from "../routes/adminMedia";
 import { registerMemberMediaRoutes } from "../routes/memberMedia";
 import { registerPublicBrandRoutes } from "../routes/publicBrand";
+import { registerPublicBunnyImageRoutes } from "../routes/publicBunnyImages";
 import { checkDatabaseHealth } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
@@ -52,6 +53,7 @@ async function startServer() {
   registerAdminMediaRoutes(app);
   registerMemberMediaRoutes(app);
   registerPublicBrandRoutes(app);
+  registerPublicBunnyImageRoutes(app);
 
   app.use(
     "/api/trpc",

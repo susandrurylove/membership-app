@@ -1,10 +1,13 @@
 import { EmptyState } from "@/components/EmptyState";
+import { PortalHeroImage } from "@/components/PortalMedia";
+import { BunnyImage } from "@/components/BunnyImage";
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SUSAN_LOGO } from "@/lib/brandAssets";
+import { PORTAL_IMAGES } from "@/lib/portalImages";
 import { trpc } from "@/lib/trpc";
 import { ArrowRight, BookOpenText, Clock3, Search, Sparkles } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -38,11 +41,7 @@ export default function Teachings() {
   return (
     <main className="portal-page">
       <header className="brand-hero rounded-[2.25rem] px-6 py-11 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-        <img
-          src={SUSAN_LOGO.hero}
-          alt=""
-          className="pointer-events-none absolute -right-4 top-1/2 z-[1] hidden h-[18rem] w-auto -translate-y-1/2 object-contain opacity-[0.12] md:block lg:right-10 lg:h-[23rem]"
-        />
+        <PortalHeroImage image={PORTAL_IMAGES.teachingsHero} />
         <div className="relative z-[2] max-w-3xl">
           <p className="brand-eyebrow">The member journal</p>
           <div className="brand-gold-rule mt-5" />
@@ -130,7 +129,7 @@ export default function Teachings() {
                 >
                   <div className="teaching-cover overflow-hidden rounded-t-[1.68rem]">
                     {item.heroImageUrl ? (
-                      <img src={item.heroImageUrl} alt="" loading="lazy" className="h-full min-h-[11.5rem] w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]" />
+                      <BunnyImage src={item.heroImageUrl} alt={`Illustration for ${item.title}`} loading="lazy" decoding="async" className="h-full min-h-[11.5rem] w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]" />
                     ) : (
                       <div className="grid min-h-[11.5rem] place-items-center">
                         <img src={SUSAN_LOGO.medium} alt="" className="relative z-[1] h-20 w-auto opacity-35" />

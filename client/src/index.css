@@ -178,10 +178,53 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
+    z-index: 1;
     opacity: 0.25;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.35) 0 0.8px, transparent 0.9px);
     background-size: 22px 22px;
     mask-image: linear-gradient(90deg, transparent 15%, black 72%, transparent);
+  }
+
+  .portal-hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .portal-hero-media > img {
+    transform: scale(1.015);
+    filter: saturate(0.92) contrast(1.02);
+  }
+
+  .portal-hero-media__veil {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(21, 25, 56, 0.97) 0%, rgba(30, 35, 76, 0.9) 45%, rgba(30, 35, 76, 0.48) 78%, rgba(20, 45, 54, 0.42) 100%),
+      linear-gradient(0deg, rgba(21, 25, 56, 0.48), transparent 56%);
+  }
+
+  .portal-card-media {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--sd-navy), #285e68);
+  }
+
+  .portal-card-media > img {
+    transition: transform 700ms ease;
+  }
+
+  .group:hover .portal-card-media > img,
+  .group:focus-visible .portal-card-media > img {
+    transform: scale(1.035);
+  }
+
+  .portal-card-media__veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 38%, rgba(21, 25, 56, 0.7));
+    pointer-events: none;
   }
 
   .brand-eyebrow {
@@ -270,6 +313,14 @@
     background: var(--sd-teal);
     color: var(--sd-ivory);
     letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 639px) {
+    .portal-hero-media__veil {
+      background:
+        linear-gradient(90deg, rgba(21, 25, 56, 0.96), rgba(30, 35, 76, 0.82)),
+        linear-gradient(0deg, rgba(21, 25, 56, 0.7), transparent 58%);
+    }
   }
 
   @media (min-width: 640px) {

@@ -62,6 +62,23 @@ scripts/extract-publication-segments.mjs
 scripts/fetch-official-article-bodies.mjs
 scripts/materialize-official-articles.mjs
 
+# Teaching-image authoring and upload artifacts (production files live on Bunny)
+assets/teaching-images/
+assets/bunny-upload/
+qa/images/
+qa/website-bunny/
+scripts/apply-bunny-image-manifest.py
+scripts/audit-teaching-images.py
+scripts/build-final-teaching-overviews.py
+scripts/build-website-candidate-sheets.py
+scripts/debug-bunny-browser-load.mjs
+scripts/fix-single-crop.py
+scripts/inventory-website-bunny.py
+scripts/prepare-bunny-webp-assets.py
+scripts/prepare-final-visual-corrections.py
+scripts/prepare-visual-remediation.py
+scripts/upload-bunny-webp-assets.py
+
 # Coverage and browser-test artifacts
 coverage/
 *.lcov

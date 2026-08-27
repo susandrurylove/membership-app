@@ -1,7 +1,9 @@
 import { EmptyState } from "@/components/EmptyState";
+import { PortalImage } from "@/components/PortalMedia";
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { PORTAL_IMAGES } from "@/lib/portalImages";
 import { trpc } from "@/lib/trpc";
 import { ArrowRight, BookHeart, CheckCircle2, Clock3 } from "lucide-react";
 import { Link } from "wouter";
@@ -11,16 +13,20 @@ export default function Courses() {
 
   return (
     <main className="portal-page">
-      <header className="brand-hero grid gap-8 rounded-[2.25rem] px-6 py-11 sm:px-10 sm:py-14 lg:grid-cols-[1fr_240px] lg:items-center lg:px-14">
+      <header className="brand-hero grid gap-8 rounded-[2.25rem] px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,27rem)] lg:items-center lg:px-12 lg:py-12">
         <div className="relative z-[2]">
           <p className="brand-eyebrow">Learn at your own rhythm</p>
           <div className="brand-gold-rule mt-5" />
           <h1 className="mt-6 font-serif text-4xl leading-tight text-[#fdfaf5] sm:text-5xl lg:text-6xl">Susan’s Courses</h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-[#e8e4da] sm:text-lg">Move through each course in your own time. Your place and completion history are held here for your return.</p>
         </div>
-        <div className="relative z-[2] mx-auto grid size-36 place-items-center rounded-full border border-[#c9a84c]/65 bg-white/5 text-center shadow-[inset_0_0_0_13px_rgba(201,168,76,0.08)] sm:size-44 sm:shadow-[inset_0_0_0_16px_rgba(201,168,76,0.08)]">
-          <BookHeart className="size-9 text-[#ead79c] sm:size-11" />
-          <span className="absolute bottom-6 text-[9px] font-bold tracking-[0.18em] text-[#ead79c] uppercase sm:bottom-8 sm:text-[10px]">Guided learning</span>
+        <div className="relative z-[2] h-60 overflow-hidden rounded-[1.6rem] border border-[#c9a84c]/60 bg-[#151938] shadow-[0_20px_54px_rgba(5,9,28,0.3)] sm:h-72">
+          <PortalImage image={PORTAL_IMAGES.coursesHero} eager />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#151938]/78 via-transparent to-transparent" aria-hidden="true" />
+          <div className="absolute inset-x-5 bottom-5 flex items-center gap-3 text-[#fdfaf5]">
+            <span className="grid size-10 place-items-center rounded-full border border-[#c9a84c]/60 bg-[#1e234c]/80 text-[#ead79c]"><BookHeart className="size-5" /></span>
+            <span className="text-[10px] font-bold tracking-[0.18em] uppercase">Guided learning with Susan</span>
+          </div>
         </div>
       </header>
 

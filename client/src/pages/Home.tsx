@@ -1,10 +1,11 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { EmptyState } from "@/components/EmptyState";
+import { PortalCardMedia, PortalHeroImage } from "@/components/PortalMedia";
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
-import { SUSAN_LOGO } from "@/lib/brandAssets";
+import { PORTAL_IMAGES } from "@/lib/portalImages";
 import { trpc } from "@/lib/trpc";
 import {
   ArrowRight,
@@ -23,6 +24,7 @@ const quickLinks = [
     title: "Susan’s Teachings",
     description: "Return to meditations, reflections, audio, video, and written wisdom.",
     icon: BookOpenText,
+    image: PORTAL_IMAGES.readingCard,
     accent: "bg-[#e7f1ed] text-[#2f7772]",
   },
   {
@@ -30,6 +32,7 @@ const quickLinks = [
     title: "Your Courses",
     description: "Continue step by step and keep your place across every lesson.",
     icon: BookHeart,
+    image: PORTAL_IMAGES.coursesHero,
     accent: "bg-[#f5ead0] text-[#77580f]",
   },
   {
@@ -37,6 +40,7 @@ const quickLinks = [
     title: "Susan’s Apps",
     description: "Open Elevate To Love, Enlightened Body, and Tao Interactive.",
     icon: Sparkles,
+    image: PORTAL_IMAGES.appsHero,
     accent: "bg-[#efe9f2] text-[#6d5577]",
   },
 ];
@@ -74,7 +78,7 @@ export default function Home() {
   return (
     <main className="portal-page">
       <section className="brand-hero rounded-[2.25rem] px-5 py-10 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
-        <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute right-7 top-1/2 z-[1] hidden h-52 w-auto -translate-y-1/2 object-contain opacity-[0.13] md:block lg:right-12 lg:h-64" />
+        <PortalHeroImage image={PORTAL_IMAGES.memberWelcome} />
         <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
           <div className="relative z-[2]">
             <p className="brand-eyebrow">Your private sanctuary</p>
@@ -132,16 +136,19 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="editorial-card group rounded-[1.75rem] p-5 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#c9a84c]/60 hover:shadow-[0_22px_52px_rgba(48,66,72,0.11)] focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 focus-visible:outline-none sm:p-7"
+                className="editorial-card group overflow-hidden rounded-[1.75rem] transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[#c9a84c]/60 hover:shadow-[0_22px_52px_rgba(48,66,72,0.11)] focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 focus-visible:outline-none"
               >
-                <div className={`grid size-12 place-items-center rounded-2xl ${item.accent}`}>
-                  <Icon className="size-5" />
+                <PortalCardMedia image={item.image} className="h-44 sm:h-48" />
+                <div className="p-5 sm:p-7">
+                  <div className={`grid size-12 place-items-center rounded-2xl ${item.accent}`}>
+                    <Icon className="size-5" />
+                  </div>
+                  <h3 className="mt-6 font-serif text-2xl text-[#243f4d]">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground md:min-h-18">{item.description}</p>
+                  <span className="mt-6 flex items-center gap-2 text-xs font-bold tracking-[0.14em] text-[#2f7772] uppercase">
+                    Explore <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                  </span>
                 </div>
-                <h3 className="mt-7 font-serif text-2xl text-[#243f4d]">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground md:min-h-18">{item.description}</p>
-                <span className="mt-6 flex items-center gap-2 text-xs font-bold tracking-[0.14em] text-[#2f7772] uppercase">
-                  Explore <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </span>
               </Link>
             );
           })}

@@ -1,10 +1,12 @@
 import { EmptyState } from "@/components/EmptyState";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { MediaViewer } from "@/components/MediaViewer";
+import { PortalHeroImage } from "@/components/PortalMedia";
 import { QueryErrorState } from "@/components/QueryErrorState";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { PORTAL_IMAGES } from "@/lib/portalImages";
 import { trpc } from "@/lib/trpc";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, Check, CheckCircle2, Circle, Clock3, Loader2, Play } from "lucide-react";
@@ -47,6 +49,7 @@ export default function CourseDetail() {
       <Button asChild variant="ghost" className="-ml-3 rounded-full text-[#2d7d7d] hover:bg-[#f4ead0] hover:text-[#1e234c]"><Link href="/courses"><ArrowLeft className="mr-2 size-4" /> All courses</Link></Button>
 
       <header className="brand-hero mt-6 rounded-[2.25rem] px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
+        <PortalHeroImage image={PORTAL_IMAGES.innerPeaceCourse} />
         <div className="relative z-[2] grid gap-9 lg:grid-cols-[1fr_340px] lg:items-end">
           <div>
             <p className="brand-eyebrow">Self-paced course</p>

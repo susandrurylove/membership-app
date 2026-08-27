@@ -1,8 +1,10 @@
 import { useAuth } from "@/_core/hooks/useAuth";
+import { PortalHeroImage } from "@/components/PortalMedia";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { SUSAN_LOGO } from "@/lib/brandAssets";
+import { PORTAL_IMAGES } from "@/lib/portalImages";
 import { trpc } from "@/lib/trpc";
 import { ArrowRight, Loader2, ShieldCheck } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -43,7 +45,7 @@ export default function Login() {
     <main className="min-h-screen bg-[#faf7ef] text-[#243f4d]">
       <div className="grid min-h-screen lg:grid-cols-[0.9fr_1.1fr]">
         <section className="brand-hero hidden p-12 lg:flex lg:flex-col lg:justify-between xl:p-16">
-          <img src={SUSAN_LOGO.hero} alt="" className="pointer-events-none absolute -right-20 top-1/2 z-[1] h-[32rem] w-auto -translate-y-1/2 object-contain opacity-[0.1]" />
+          <PortalHeroImage image={PORTAL_IMAGES.natureReflection} />
           <a href="https://susandrury.com" className="relative z-[2] flex items-center gap-4 rounded-full text-sm tracking-[0.16em] text-[#fdfaf5] uppercase focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:outline-none">
             <img src={SUSAN_LOGO.large} alt="Susan Drury" className="h-16 w-auto object-contain brightness-110 drop-shadow-[0_8px_18px_rgba(201,168,76,0.22)]" />
             <span>Susan Drury</span>
