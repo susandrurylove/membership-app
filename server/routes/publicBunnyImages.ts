@@ -14,12 +14,16 @@ export function registerPublicBunnyImageRoutes(app: Express) {
 
     try {
       const storageEndpoint = process.env.BUNNY_STORAGE_ENDPOINT?.replace(/\/$/, "");
+      const storageZone = process.env.BUNNY_STORAGE_ZONE;
       const storageKey = process.env.BUNNY_STORAGE_ACCESS_KEY;
-      const upstreamUrl = storageEndpoint && storageKey
-        ? `${storageEndpoint}/${assetPath}`
+      const storageRoot = storageEndpoint && storageZone
+        ? storageEndpoint.endsWith(`/${storageZone}`) ? storageEndpoint : `${storageEndpoint}/${storageZone}`
+        : null;
+      const upstreamUrl = storageRoot && storageKey
+        ? `${storageRoot}/${assetPath}`
         : `${BUNNY_CDN_ORIGIN}/${assetPath}`;
       const headers: Record<string, string> = { Accept: "image/webp" };
-      if (storageKey && storageEndpoint) headers.AccessKey = storageKey;
+      if (storageKey && storageRoot) headers.AccessKey = storageKey;
 
       const upstream = await fetch(upstreamUrl, {
         headers,
