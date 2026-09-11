@@ -89,6 +89,7 @@ export default function Music() {
                   className={active ? "brand-button mt-5 w-full" : "mt-5 w-full border-[#c9a84c]/55 bg-white text-[#294854] hover:bg-[#f7f1e7]"}
                   onClick={() => selectAndPlay(track.slug)}
                   aria-pressed={active}
+                  aria-label={`${active ? "Selected" : "Listen to"} ${track.title}`}
                 >
                   <Play className="mr-2 size-4" aria-hidden="true" /> {active ? "Selected" : "Listen"}
                 </Button>

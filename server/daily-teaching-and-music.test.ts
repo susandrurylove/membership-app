@@ -64,6 +64,8 @@ describe("Daily Teaching and Healing Music release contracts", () => {
   const railway = JSON.parse(fs.readFileSync(path.join(root, "railway.json"), "utf8"));
   const home = fs.readFileSync(path.join(root, "client/src/pages/Home.tsx"), "utf8");
   const app = fs.readFileSync(path.join(root, "client/src/App.tsx"), "utf8");
+  const html = fs.readFileSync(path.join(root, "client/index.html"), "utf8");
+  const musicPage = fs.readFileSync(path.join(root, "client/src/pages/Music.tsx"), "utf8");
 
   it("contains exactly 365 concise, uniquely illustrated Daily Teachings", () => {
     expect(daily.teachings).toHaveLength(365);
@@ -90,5 +92,10 @@ describe("Daily Teaching and Healing Music release contracts", () => {
     expect(home).toContain("Susan’s Healing Music");
     expect(app).toContain('/daily-teachings/:slug');
     expect(app).toContain('/music');
+  });
+
+  it("allows mobile zoom and names every music action by track", () => {
+    expect(html).not.toContain("maximum-scale=1");
+    expect(musicPage).toContain('aria-label={`${active ? "Selected" : "Listen to"} ${track.title}`}');
   });
 });
