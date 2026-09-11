@@ -1,14 +1,14 @@
 import type { Express, Request, Response } from "express";
 const BUNNY_CDN_ORIGIN = "https://membership-susan.b-cdn.net";
-const SAFE_PATH = /^(teachings|portal)\/v2\/[a-z0-9-]+\.webp$/;
+const SAFE_PATH = /^(?:teachings|portal)\/v2\/[a-z0-9-]+\.webp$|^daily-teachings\/v1\/[a-z0-9-]+\.webp$/;
 
 function getSafeAssetPath(req: Request): string | null {
-  const assetPath = `${req.params.collection}/v2/${req.params.filename}`;
+  const assetPath = `${req.params.collection}/${req.params.version}/${req.params.filename}`;
   return SAFE_PATH.test(assetPath) ? assetPath : null;
 }
 
 export function registerPublicBunnyImageRoutes(app: Express) {
-  app.get("/api/public/images/:collection/v2/:filename", async (req: Request, res: Response) => {
+  app.get("/api/public/images/:collection/:version/:filename", async (req: Request, res: Response) => {
     const assetPath = getSafeAssetPath(req);
     if (!assetPath) return res.status(404).end();
 

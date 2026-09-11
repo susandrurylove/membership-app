@@ -6,7 +6,9 @@ import Admin from "@/pages/Admin";
 import Apps from "@/pages/Apps";
 import CourseDetail from "@/pages/CourseDetail";
 import Courses from "@/pages/Courses";
+import DailyTeachingDetail from "@/pages/DailyTeachingDetail";
 import Login from "@/pages/Login";
+import Music from "@/pages/Music";
 import NotFound from "@/pages/NotFound";
 import TeachingDetail from "@/pages/TeachingDetail";
 import Teachings from "@/pages/Teachings";
@@ -43,10 +45,12 @@ function Router() {
       <Switch>
       <Route path="/login" component={Login} />
       <Route path="/accept-invitation" component={AcceptInvitation} />
+      <Route path="/daily-teachings/:slug">{() => <MemberPage><DailyTeachingDetail /></MemberPage>}</Route>
       <Route path="/teachings/:slug">{() => <MemberPage><TeachingDetail /></MemberPage>}</Route>
       <Route path="/teachings">{() => <MemberPage><Teachings /></MemberPage>}</Route>
       <Route path="/courses/:slug">{() => <MemberPage><CourseDetail /></MemberPage>}</Route>
       <Route path="/courses">{() => <MemberPage><Courses /></MemberPage>}</Route>
+      <Route path="/music">{() => <MemberPage><Music /></MemberPage>}</Route>
       <Route path="/apps">{() => <MemberPage><Apps /></MemberPage>}</Route>
       <Route path="/admin">{() => <MemberPage requireAdmin><Admin /></MemberPage>}</Route>
       <Route path="/">{() => <MemberPage><Home /></MemberPage>}</Route>

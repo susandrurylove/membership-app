@@ -2,6 +2,7 @@ import {
   bigint,
   boolean,
   char,
+  date,
   index,
   int,
   json,
@@ -217,6 +218,92 @@ export const contentImports = mysqlTable(
   })
 );
 
+export const dailyTeachings = mysqlTable(
+  "daily_teachings",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    sequence: int("sequence").notNull(),
+    sourceKey: varchar("sourceKey", { length: 320 }).notNull(),
+    sourceType: varchar("sourceType", { length: 32 }).notNull(),
+    sourceTitle: varchar("sourceTitle", { length: 320 }).notNull(),
+    sourceLocator: varchar("sourceLocator", { length: 320 }),
+    sourceUrl: varchar("sourceUrl", { length: 1024 }),
+    existingTeachingSlug: varchar("existingTeachingSlug", { length: 260 }),
+    collection: varchar("collection", { length: 160 }).notNull(),
+    slug: varchar("slug", { length: 260 }).notNull(),
+    title: varchar("title", { length: 240 }).notNull(),
+    summary: text("summary").notNull(),
+    body: text("body").notNull(),
+    reflectionPrompt: text("reflectionPrompt").notNull(),
+    practice: text("practice").notNull(),
+    sourceNote: text("sourceNote").notNull(),
+    safetyNote: text("safetyNote"),
+    medicalDisclaimer: boolean("medicalDisclaimer").default(false).notNull(),
+    imageUrl: varchar("imageUrl", { length: 1024 }).notNull(),
+    imageAlt: varchar("imageAlt", { length: 512 }).notNull(),
+    totalWordCount: int("totalWordCount").notNull(),
+    contentHash: char("contentHash", { length: 64 }).notNull(),
+    status: mysqlEnum("status", ["draft", "published", "archived"]).default("published").notNull(),
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+    updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+  },
+  table => ({
+    sequenceUnique: uniqueIndex("daily_teachings_sequence_unique").on(table.sequence),
+    sourceKeyUnique: uniqueIndex("daily_teachings_source_key_unique").on(table.sourceKey),
+    slugUnique: uniqueIndex("daily_teachings_slug_unique").on(table.slug),
+    statusSequenceIndex: index("daily_teachings_status_sequence_idx").on(table.status, table.sequence),
+  })
+);
+
+export const dailyTeachingPreferences = mysqlTable(
+  "daily_teaching_preferences",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    userId: int("userId")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    frequency: mysqlEnum("frequency", ["off", "daily", "weekly"]).default("off").notNull(),
+    timezone: varchar("timezone", { length: 80 }).default("America/Denver").notNull(),
+    preferredHour: int("preferredHour").default(8).notNull(),
+    promptDismissedAt: timestamp("promptDismissedAt"),
+    lastSentAt: timestamp("lastSentAt"),
+    nextDueAt: timestamp("nextDueAt"),
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+    updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+  },
+  table => ({
+    userUnique: uniqueIndex("daily_teaching_preferences_user_unique").on(table.userId),
+    dueIndex: index("daily_teaching_preferences_due_idx").on(table.frequency, table.nextDueAt),
+  })
+);
+
+export const dailyTeachingDeliveries = mysqlTable(
+  "daily_teaching_deliveries",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    userId: int("userId")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    dailyTeachingId: int("dailyTeachingId")
+      .notNull()
+      .references(() => dailyTeachings.id, { onDelete: "cascade" }),
+    scheduledDate: date("scheduledDate", { mode: "string" }).notNull(),
+    frequency: mysqlEnum("frequency", ["daily", "weekly"]).notNull(),
+    status: mysqlEnum("status", ["pending", "sending", "sent", "skipped", "failed"]).default("pending").notNull(),
+    provider: varchar("provider", { length: 32 }).default("smtp2go").notNull(),
+    providerMessageId: varchar("providerMessageId", { length: 255 }),
+    attemptCount: int("attemptCount").default(0).notNull(),
+    errorMessage: text("errorMessage"),
+    sentAt: timestamp("sentAt"),
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+    updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+  },
+  table => ({
+    deliveryUnique: uniqueIndex("daily_teaching_deliveries_unique").on(table.userId, table.dailyTeachingId, table.scheduledDate),
+    statusIndex: index("daily_teaching_deliveries_status_idx").on(table.status, table.createdAt),
+  })
+);
+
 export const teachingAssets = mysqlTable(
   "teaching_assets",
   {
@@ -417,6 +504,9 @@ export type InsertUser = typeof users.$inferInsert;
 export type MemberSession = typeof memberSessions.$inferSelect;
 export type Membership = typeof memberships.$inferSelect;
 export type Teaching = typeof teachings.$inferSelect;
+export type DailyTeaching = typeof dailyTeachings.$inferSelect;
+export type DailyTeachingPreference = typeof dailyTeachingPreferences.$inferSelect;
+export type DailyTeachingDelivery = typeof dailyTeachingDeliveries.$inferSelect;
 export type Course = typeof courses.$inferSelect;
 export type CourseLesson = typeof courseLessons.$inferSelect;
 export type LessonProgress = typeof lessonProgress.$inferSelect;

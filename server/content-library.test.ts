@@ -103,7 +103,7 @@ describe("Railway MySQL import contract", () => {
 
   it("runs migrations, verification, and content sync before Railway starts", () => {
     expect(railway.deploy.preDeployCommand).toEqual([
-      "pnpm db:migrate && pnpm db:verify && pnpm content:sync",
+      "pnpm db:migrate && pnpm db:verify && pnpm content:sync && pnpm daily:sync",
     ]);
   });
 });

@@ -3,6 +3,14 @@ import { z } from "zod";
 import { protectedProcedure, router } from "../_core/trpc";
 import { appKeys, createSsoLaunch, listIntegrationStatus } from "../sso";
 import {
+  dismissDailyTeachingPrompt,
+  getCurrentDailyTeaching,
+  getDailyTeachingBySlug,
+  getDailyTeachingPreference,
+  isValidTimeZone,
+  saveDailyTeachingPreference,
+} from "../dailyTeaching";
+import {
   getMemberDashboard,
   getProtectedMediaUrl,
   getPublishedCourse,
@@ -25,6 +33,28 @@ const slugSchema = z.string().min(1).max(260).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export const memberRouter = router({
   dashboard: protectedProcedure.query(({ ctx }) => getMemberDashboard(ctx.user.id)),
+
+  dailyTeaching: router({
+    current: protectedProcedure.query(({ ctx }) => getCurrentDailyTeaching(ctx.user.id)),
+    bySlug: protectedProcedure
+      .input(z.object({ slug: slugSchema }))
+      .query(async ({ input }) => {
+        const teaching = await getDailyTeachingBySlug(input.slug);
+        if (!teaching) throw new TRPCError({ code: "NOT_FOUND", message: "Daily Teaching not found" });
+        return teaching;
+      }),
+    preference: protectedProcedure.query(({ ctx }) => getDailyTeachingPreference(ctx.user.id)),
+    savePreference: protectedProcedure
+      .input(
+        z.object({
+          frequency: z.enum(["off", "daily", "weekly"]),
+          timezone: z.string().min(1).max(80).refine(isValidTimeZone, "Select a valid timezone"),
+          preferredHour: z.number().int().min(0).max(23).default(8),
+        })
+      )
+      .mutation(({ input, ctx }) => saveDailyTeachingPreference({ userId: ctx.user.id, ...input })),
+    dismissPrompt: protectedProcedure.mutation(({ ctx }) => dismissDailyTeachingPrompt(ctx.user.id)),
+  }),
 
   teachings: router({
     categories: protectedProcedure.query(() => listTeachingCategories()),

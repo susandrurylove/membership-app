@@ -9,6 +9,9 @@ const expectedTables = [
   "course_lessons",
   "course_sections",
   "courses",
+  "daily_teaching_deliveries",
+  "daily_teaching_preferences",
+  "daily_teachings",
   "invitation_tokens",
   "lesson_progress",
   "media_assets",
@@ -40,7 +43,8 @@ try {
   const [[mediaProviderColumn]] = await connection.query(
     "SELECT COLUMN_DEFAULT AS columnDefault FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'media_assets' AND COLUMN_NAME = 'storageProvider'"
   );
-  if (!mediaProviderColumn || mediaProviderColumn.columnDefault !== "bunny") {
+  const mediaProviderDefault = String(mediaProviderColumn?.columnDefault ?? "").replace(/^['\"]|['\"]$/g, "");
+  if (!mediaProviderColumn || mediaProviderDefault !== "bunny") {
     throw new Error("Migration verification failed: media_assets.storageProvider must default to bunny");
   }
 
@@ -50,7 +54,7 @@ try {
     serverFamily: String(server.serverVersion).toLowerCase().includes("mysql") ? "MySQL" : "MySQL-compatible",
     requiredTables: expectedTables.length,
     missingTables,
-    mediaStorageProviderDefault: mediaProviderColumn.columnDefault,
+    mediaStorageProviderDefault: mediaProviderDefault,
   }));
 } finally {
   await connection.end();

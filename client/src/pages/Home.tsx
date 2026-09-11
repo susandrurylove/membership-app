@@ -1,4 +1,5 @@
 import { useAuth } from "@/_core/hooks/useAuth";
+import { DailyTeachingPromo } from "@/components/DailyTeachingPromo";
 import { EmptyState } from "@/components/EmptyState";
 import { PortalCardMedia, PortalHeroImage } from "@/components/PortalMedia";
 import { QueryErrorState } from "@/components/QueryErrorState";
@@ -13,6 +14,7 @@ import {
   BookOpenText,
   CheckCircle2,
   Clock3,
+  Music2,
   PlayCircle,
   Sparkles,
 } from "lucide-react";
@@ -33,6 +35,14 @@ const quickLinks = [
     description: "Continue step by step and keep your place across every lesson.",
     icon: BookHeart,
     image: PORTAL_IMAGES.coursesHero,
+    accent: "bg-[#f5ead0] text-[#77580f]",
+  },
+  {
+    href: "/music",
+    title: "Susan’s Healing Music",
+    description: "Listen to gentle songs and meditations for the body, heart, and nervous system.",
+    icon: Music2,
+    image: PORTAL_IMAGES.listeningHero,
     accent: "bg-[#f5ead0] text-[#77580f]",
   },
   {
@@ -77,7 +87,8 @@ export default function Home() {
 
   return (
     <main className="portal-page">
-      <section className="brand-hero rounded-[2.25rem] px-5 py-10 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
+      <div className="flex flex-col">
+      <section className="brand-hero order-2 mt-7 rounded-[2.25rem] px-5 py-10 sm:order-1 sm:mt-0 sm:px-9 sm:py-12 lg:px-12 lg:py-14">
         <PortalHeroImage image={PORTAL_IMAGES.memberWelcome} />
         <div className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
           <div className="relative z-[2]">
@@ -104,6 +115,11 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="order-1 sm:order-2">
+        <DailyTeachingPromo />
+      </div>
+      </div>
+
       {dashboard.data?.continueLearning ? (
         <section className="editorial-card mt-7 rounded-[1.75rem] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-7">
           <div className="flex items-start gap-4">
@@ -129,7 +145,7 @@ export default function Home() {
           <p className="eyebrow">Continue your journey</p>
           <h2 className="mt-3 font-serif text-3xl text-[#243f4d] sm:text-4xl">Everything in one place</h2>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {quickLinks.map(item => {
             const Icon = item.icon;
             return (

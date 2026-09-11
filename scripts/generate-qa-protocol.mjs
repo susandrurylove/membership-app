@@ -355,7 +355,6 @@ for (const domain of domains) {
 lines.push("## Protocol Maintenance");
 lines.push("");
 lines.push("Run `pnpm qa:protocol` after changing the taxonomy. The generator fails unless exactly 2,000 unique checks are produced. Automated suites should reference stable QA IDs in test names or comments so evidence can be mapped back to this protocol.");
-lines.push("");
 fs.writeFileSync(path.join(docsDir, "qa-protocol-2000.md"), `${lines.join("\n")}\n`);
 
 console.log(JSON.stringify({ totalChecks: checks.length, domains: domains.length, summary }, null, 2));

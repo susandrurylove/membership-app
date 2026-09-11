@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ImgHTMLAttributes } from "react";
 
 const MEMBERSHIP_BUNNY_ORIGIN = "https://membership-susan.b-cdn.net/";
-const SAFE_ASSET_PATH = /^(teachings|portal)\/v2\/[a-z0-9-]+\.webp$/;
+const SAFE_ASSET_PATH = /^(?:teachings|portal)\/v2\/[a-z0-9-]+\.webp$|^daily-teachings\/v1\/[a-z0-9-]+\.webp$/;
 
 function getFallbackSource(src: string): string | null {
   if (!src.startsWith(MEMBERSHIP_BUNNY_ORIGIN)) return null;

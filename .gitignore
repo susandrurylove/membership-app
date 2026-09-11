@@ -84,6 +84,9 @@ coverage/
 *.lcov
 test-results/
 playwright-report/
+qa/daily-music-screenshots/
+qa/daily-music-contact-sheets/
+scripts/build-daily-music-contact-sheets.py
 .env.e2e.local
 
 # nyc test coverage

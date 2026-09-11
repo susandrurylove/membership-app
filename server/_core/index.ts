@@ -12,6 +12,7 @@ import { registerMemberMediaRoutes } from "../routes/memberMedia";
 import { registerPublicBrandRoutes } from "../routes/publicBrand";
 import { registerPublicBunnyImageRoutes } from "../routes/publicBunnyImages";
 import { checkDatabaseHealth } from "../db";
+import { startDailyTeachingReminderWorker } from "../dailyTeachingWorker";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -79,6 +80,7 @@ async function startServer() {
 
   server.listen(port, () => {
     console.log(`Server running on http://localhost:${port}/`);
+    startDailyTeachingReminderWorker();
   });
 }
 
