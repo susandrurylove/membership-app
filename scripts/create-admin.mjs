@@ -59,6 +59,14 @@ try {
   if (!userId) throw new Error("The administrator account could not be resolved after creation.");
 
   await connection.execute(
+    "UPDATE member_sessions SET revokedAt = NOW() WHERE userId = ? AND revokedAt IS NULL",
+    [userId]
+  );
+  await connection.execute(
+    "UPDATE invitation_tokens SET consumedAt = NOW() WHERE userId = ? AND consumedAt IS NULL",
+    [userId]
+  );
+  await connection.execute(
     `INSERT INTO memberships
       (userId, tier, status, source, startsAt, createdAt, updatedAt)
      VALUES (?, 'custom', 'active', 'manual', NOW(), NOW(), NOW())
@@ -73,4 +81,3 @@ try {
 } finally {
   await connection.end();
 }
-

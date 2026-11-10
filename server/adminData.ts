@@ -1,5 +1,5 @@
 import { randomBytes } from "crypto";
-import { and, asc, count, desc, eq, like, or } from "drizzle-orm";
+import { and, asc, count, desc, eq, isNull, like, or } from "drizzle-orm";
 import {
   auditLogs,
   contentCategories,
@@ -7,6 +7,7 @@ import {
   courseSections,
   courses,
   invitationTokens,
+  memberSessions,
   mediaAssets,
   memberships,
   teachingAssets,
@@ -154,25 +155,33 @@ export async function createInvitedMember(input: {
 
 export async function refreshMemberInvitation(actorUserId: number, userId: number) {
   const db = await requireDb();
-  const memberRows = await db.select().from(users).where(eq(users.id, userId)).limit(1);
-  const member = memberRows[0];
-  if (!member) return null;
   const rawToken = createOpaqueToken();
   const invitationTtlHours = Math.max(1, Number(process.env.INVITATION_TTL_HOURS || 72));
   const expiresAt = new Date(Date.now() + invitationTtlHours * 60 * 60 * 1000);
-  await db.insert(invitationTokens).values({
-    userId,
-    tokenHash: sha256(rawToken),
-    expiresAt,
-    createdBy: actorUserId,
+  const refreshed = await db.transaction(async tx => {
+    const memberRows = await tx.select().from(users).where(eq(users.id, userId)).limit(1).for("update");
+    const member = memberRows[0];
+    if (!member || member.accountStatus === "suspended") return false;
+    await tx
+      .update(invitationTokens)
+      .set({ consumedAt: new Date() })
+      .where(and(eq(invitationTokens.userId, userId), isNull(invitationTokens.consumedAt)));
+    await tx.insert(invitationTokens).values({
+      userId,
+      tokenHash: sha256(rawToken),
+      expiresAt,
+      createdBy: actorUserId,
+    });
+    await tx.insert(auditLogs).values({
+      actorUserId,
+      action: "member.invitation_refreshed",
+      targetType: "user",
+      targetId: String(userId),
+      summary: `Created a new invitation for ${member.email || userId}`,
+    });
+    return true;
   });
-  await writeAudit(db, {
-    actorUserId,
-    action: "member.invitation_refreshed",
-    targetType: "user",
-    targetId: String(userId),
-    summary: `Created a new invitation for ${member.email || userId}`,
-  });
+  if (!refreshed) return null;
   const origin = (process.env.APP_ORIGIN || "http://localhost:3000").replace(/\/$/, "");
   return { invitationUrl: `${origin}/accept-invitation?token=${encodeURIComponent(rawToken)}`, expiresAt };
 }
@@ -194,6 +203,17 @@ export async function updateMemberAccess(input: {
   }
   await db.transaction(async tx => {
     await tx.update(users).set({ accountStatus: input.accountStatus }).where(eq(users.id, input.userId));
+    if (input.accountStatus === "suspended") {
+      const suspendedAt = new Date();
+      await tx
+        .update(invitationTokens)
+        .set({ consumedAt: suspendedAt })
+        .where(and(eq(invitationTokens.userId, input.userId), isNull(invitationTokens.consumedAt)));
+      await tx
+        .update(memberSessions)
+        .set({ revokedAt: suspendedAt })
+        .where(and(eq(memberSessions.userId, input.userId), isNull(memberSessions.revokedAt)));
+    }
     await tx
       .insert(memberships)
       .values({

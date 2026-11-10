@@ -55,10 +55,12 @@ export async function processDueDailyTeachingReminders(now = new Date()) {
           AND p.nextDueAt <= ?
           AND u.accountStatus = 'active'
           AND m.status = 'active'
+          AND (m.startsAt IS NULL OR m.startsAt <= ?)
+          AND (m.endsAt IS NULL OR m.endsAt > ?)
           AND u.email IS NOT NULL
         ORDER BY p.nextDueAt ASC
         LIMIT 100`,
-      [now]
+      [now, now, now]
     );
     summary.due = preferences.length;
 
@@ -103,10 +105,34 @@ export async function processDueDailyTeachingReminders(now = new Date()) {
       }
 
       try {
+        // Recheck at delivery time, not the potentially stale batch timestamp.
+        const deliveryAt = new Date();
+        const [recipients] = await connection.execute<PreferenceRow[]>(
+          `SELECT u.email, u.name
+             FROM daily_teaching_preferences p
+             INNER JOIN users u ON u.id = p.userId
+             INNER JOIN memberships m ON m.userId = p.userId
+            WHERE p.id = ? AND p.userId = ? AND p.frequency = ?
+              AND u.accountStatus = 'active' AND m.status = 'active'
+              AND (m.startsAt IS NULL OR m.startsAt <= ?)
+              AND (m.endsAt IS NULL OR m.endsAt > ?)
+              AND u.email IS NOT NULL
+            LIMIT 1`,
+          [preference.id, preference.userId, frequency, deliveryAt, deliveryAt]
+        );
+        const recipient = recipients[0];
+        if (!recipient) {
+          await connection.execute<ResultSetHeader>(
+            "UPDATE daily_teaching_deliveries SET status = 'skipped', errorMessage = 'Member is no longer eligible for this reminder' WHERE id = ?",
+            [delivery.id]
+          );
+          summary.skipped += 1;
+          continue;
+        }
         const sent = await sendDailyTeachingEmail({
           teaching,
-          recipientEmail: preference.email,
-          recipientName: preference.name,
+          recipientEmail: recipient.email,
+          recipientName: recipient.name,
         });
         const nextDueAt = calculateNextDueAt(frequency, preference.timezone, Number(preference.preferredHour), new Date(now.getTime() + 60_000));
         await connection.beginTransaction();

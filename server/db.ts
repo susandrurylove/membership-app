@@ -185,7 +185,8 @@ export async function acceptInvitationByTokenHash(tokenHash: string, passwordHas
       .for("update");
 
     const row = rows[0];
-    if (!row) return undefined;
+    // The locking read also locks the joined user, serializing suspension.
+    if (!row || row.user.accountStatus === "suspended") return undefined;
 
     const acceptedAt = new Date();
     await tx
@@ -201,7 +202,11 @@ export async function acceptInvitationByTokenHash(tokenHash: string, passwordHas
     await tx
       .update(invitationTokens)
       .set({ consumedAt: acceptedAt })
-      .where(eq(invitationTokens.id, row.invitation.id));
+      .where(and(eq(invitationTokens.userId, row.user.id), isNull(invitationTokens.consumedAt)));
+    await tx
+      .update(memberSessions)
+      .set({ revokedAt: acceptedAt })
+      .where(and(eq(memberSessions.userId, row.user.id), isNull(memberSessions.revokedAt)));
 
     const updatedUsers = await tx.select().from(users).where(eq(users.id, row.user.id)).limit(1);
     const updatedMemberships = await tx
